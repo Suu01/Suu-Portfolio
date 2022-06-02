@@ -1,1 +1,338 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://webfontworld.github.io/HSYuJi/HSYuJi.css");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #333;
+  color: #fff;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fbeeea;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+span {
+  display: block;
+  font-size: 1em;
+}
+
+header,
+nav,
+main,
+section,
+aside,
+article,
+footer {
+  display: block;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid #fbeeea;
+  background-color: #333;
+}
+
+header div.h-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 76px;
+  padding: 0 20px;
+}
+
+header div.h-wrap h1 a:first-child {
+  display: none;
+}
+
+header div.h-wrap ul.gnb li {
+  display: none;
+}
+
+header div.h-wrap ul.gnb li:first-child {
+  display: block;
+}
+
+main {
+  width: 100%;
+}
+
+main section.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 80px 20px 0 20px;
+}
+
+main section.main-section div.main-txt {
+  height: 70%;
+  margin: auto;
+}
+
+main section.main-section div.main-txt .wel {
+  font-weight: 600;
+  font-size: 6.25vw;
+  color: #777;
+}
+
+main section.main-section div.main-txt h2 {
+  font-weight: 600;
+  font-size: 11.875vw;
+  margin: 10px 0;
+  letter-spacing: 0.2vw;
+}
+
+main section.main-section div.main-txt .front {
+  font-weight: 500;
+  font-size: 5.625vw;
+  color: #e28f83;
+}
+
+main section.main-section div.main-img {
+  background-color: aqua;
+}
+
+main section.main-section div.main-img div {
+  display: none;
+  position: absolute;
+}
+
+main section.main-section div.main-img div:nth-child(1), main section.main-section div.main-img div:nth-child(2), main section.main-section div.main-img div:nth-child(3), main section.main-section div.main-img div:nth-child(4) {
+  display: block;
+}
+
+main section.main-section div.main-img div:nth-child(1) {
+  bottom: 15%;
+  left: 30%;
+}
+
+main section.main-section div.main-img div:nth-child(2) {
+  bottom: 7%;
+  left: 57%;
+}
+
+main section.main-section div.main-img div:nth-child(3) {
+  bottom: 10%;
+  right: 5%;
+}
+
+main section.main-section div.main-img div:nth-child(4) {
+  left: 5%;
+  bottom: 10%;
+}
+
+main section.about {
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+main section.about div.about-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.about div.about-title h2 {
+  color: #fbeeea;
+  font-size: 35px;
+  font-family: "HSYuJi";
+  margin-right: 5%;
+}
+
+main section.about div.about-title div {
+  padding-top: 3%;
+  display: inline-block;
+}
+
+main section.about div.about-title div img {
+  width: 30px;
+}
+
+main section.about div.line {
+  display: none;
+}
+
+main section.about section.about-top div.about-img {
+  margin: 90px 0;
+}
+
+main section.about section.about-top div.about-img div {
+  width: 90%;
+  margin: auto;
+}
+
+main section.about section.about-top div.about-img div img {
+  width: 100%;
+}
+
+main section.about section.about-top div.about-des h3 {
+  font-family: "HSYuJi";
+  font-size: 21px;
+  color: #e28f83;
+  text-transform: uppercase;
+}
+
+main section.about section.about-top div.about-des h3 span:last-child {
+  text-indent: 10px;
+}
+
+main section.about section.about-top div.about-des p {
+  width: 95%;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+main section.about section.about-btm {
+  margin-top: 60px;
+}
+
+main section.about section.about-btm div.img-wrap div {
+  width: 100%;
+}
+
+main section.about section.about-btm div.img-wrap div img {
+  width: 100%;
+}
+
+main section.skills {
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+main section.skills div.skills-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.skills div.skills-title div {
+  padding-top: 3%;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+main section.skills div.skills-title div img {
+  width: 30px;
+}
+
+main section.skills div.skills-title h2 {
+  color: #fbeeea;
+  font-size: 35px;
+  font-family: "HSYuJi";
+}
+
+main section.skills div.license {
+  display: none;
+}
+
+main section.skills div.skills-des {
+  margin-top: 80px;
+}
+
+main section.skills div.skills-des div.skills-img-wrap {
+  position: relative;
+  width: 100%;
+}
+
+main section.skills div.skills-des div.skills-img-wrap img {
+  width: 100%;
+}
+
+main section.skills div.skills-des div.skills-img-wrap h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fbeeea;
+  font-weight: 900;
+}
+
+main section.skills div.skills-des ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+main section.skills div.skills-des ul li {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid white;
+  text-align: center;
+}
+
+main section.skills div.skills-des ul li .s-text-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main section.skills div.line {
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */
