@@ -4,43 +4,89 @@
 
 header {
     width: 100%;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    border-bottom: 1px solid $font-color;
     background-color: $bg-color;
+
+    @include responsive(tablet-size) {
+        height: 90px;
+    }
 
     div.h-wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 76px;
-        padding: 0 20px;
+        height: 100%;
+        padding: 0 4%;
+        // background-color: pink;
 
         h1 {
             a {
+
                 &:first-child {
                     display: none;
+
+                    @include responsive(pc-size) {
+                        display: block;
+                    }
+
+                    img {
+                        width: 350px;
+                    }
                 }
 
-                img {
-
+                &:last-child {
+                    @include responsive(pc-size) {
+                        display: none;
+                    }
                 }
             }
         }
 
         ul.gnb {
+            @include responsive(tablet-size) {
+                display: flex;
+                justify-content: space-between;
+                width: 500px;
+                font-family: $point-font;
+            }
+
+            @include responsive(pc-size) {
+                width: 550px;
+            }
+
             li {
                 display: none;
 
                 &:first-child {
                     display: block;
-                }
-                a {
-                    img {
 
+                    @include responsive(tablet-size) {
+                        display: none;
+                    }
+                }
+
+                @include responsive(tablet-size) {
+                    display: block;
+                }
+
+                a {
+                    font-size: 20px;
+
+                    &:hover {
+                        color: $point-color;
+                    }
+
+                    @include responsive(pc-size) {
+                        font-size: 22px;
+                    }
+
+                    img {
+                        width: 36px;
                     }
                 }
             }
@@ -53,75 +99,222 @@ main {
     width: 100%;
 
     section.main-section {
-        display: flex;
         position: relative;
-        align-items: center;
         width: 100%;
         height: 100vh;
-        padding: 80px 20px 0 20px; // body에 태그 걸어주면 vh가 밀림
         // background-color: aquamarine;
 
         div.main-txt {
-            // margin-top: 100px;
-            height: 70%;
-            margin: auto;
-            // backgrounds-color: pink;
+            position: absolute;
+            top: 25%;
+            margin-left: 8%;
+            // background-color: pink;
+            z-index: 10;
+
+            @include responsive(tablet-size) {
+                margin-left: 10%;
+                top: 20%;
+            }
+
+            @include responsive(pc-size) {
+                margin-left: 50%;
+                transform: translateX(-50%);
+                width: 700px;
+                // width: 100%;
+            }
 
             .wel {
                 font-weight: 600;
                 font-size: 6.25vw;
-                // font-size: 20px;
                 color: #777;
+
+                @media screen and (min-width: 425px) {
+                    font-size: 1.8rem;
+                }
+
+                @include responsive(tablet-size) {
+                    font-size: 2.5rem;
+                }
+
+                @include responsive(pc-size) {
+                    font-size: 2.8rem;
+                }
             }
 
             h2 {
                 font-weight: 600;
                 font-size: 11.875vw;
                 // font-size: 38px;
-                margin: 10px 0;
-                letter-spacing: 0.2vw;
+                margin: 3% 0;
+
+                @media screen and (min-width: 425px) {
+                    font-size: 3.5rem;
+                }
+
+                @include responsive(tablet-size) {
+                    font-size: 5.2rem;
+                }
+
+                @include responsive(pc-size) {
+                    font-size: 6.2rem;
+                }
             }
 
             .front {
                 font-weight: 500;
                 font-size: 5.625vw;
-                // font-size: 18px;
                 color: $point-color;
+
+                @media screen and (min-width: 425px) {
+                    font-size: 1.5rem;
+                    // font-size: 23px;
+                }
+
+                @include responsive(tablet-size) {
+                    font-size: 2.2rem;
+                }
+
+                @include responsive(pc-size) {
+                    font-size: 2.5rem;
+                }
             }
         }
 
         div.main-img {
             background-color: aqua;
 
-            div {
-                display: none;
-                position: absolute;
+            .main-img-m {
+                @include responsive(tablet-size) {
+                    display: none;
+                }
 
-                &:nth-child(1),
-                &:nth-child(2),
-                &:nth-child(3),
-                &:nth-child(4) {
+                div {
+                    position: absolute;
+    
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        display: block;
+                    }
+                    
+                    &:nth-child(1) {
+                        bottom: 13%;
+                        left: 30%;
+                    }
+    
+                    &:nth-child(2) {
+                        bottom: 5%;
+                        left: 57%;
+                    }
+    
+                    &:nth-child(3) {
+                        bottom: 8%;
+                        right: 4%;
+                    }
+    
+                    &:nth-child(4) {
+                        left: 4%;
+                        bottom: 7%;
+                    }
+                }
+            }
+
+            .main-img-t {
+                display: none;
+
+                @include responsive(tablet-size) {
                     display: block;
                 }
-                
-                &:nth-child(1) {
-                    bottom: 15%;
-                    left: 30%;
+
+                @include responsive(pc-size) {
+                    display: none;
                 }
 
-                &:nth-child(2) {
-                    bottom: 7%;
-                    left: 57%;
+                div {
+                    position: absolute;
+                    
+                    &:nth-child(1) {
+                        bottom: 8%;
+                        left: 4%;
+                    }
+    
+                    &:nth-child(2) {
+                        bottom: 4%;
+                        left: 22%;
+                    }
+    
+                    &:nth-child(3) {
+                        bottom: 8%;
+                        left: 38%;
+                    }
+    
+                    &:nth-child(4) {
+                        bottom: 6%;
+                        left: 58%;
+                    }
+
+                    &:nth-child(5) {
+                        bottom: 8%;
+                        left: 75%;
+                    }
+
+                    &:nth-child(6) {
+                        bottom: 7%;
+                        right: 4%;
+                    }
+                }
+            }
+
+            .main-img-p {
+                display: none;
+
+                @include responsive(pc-size) {
+                    display: block;
                 }
 
-                &:nth-child(3) {
-                    bottom: 10%;
-                    right: 5%;
-                }
+                div {
+                    position: absolute;
+                    
+                    &:nth-child(1) {
+                        bottom: 8%;
+                        left: 4%;
+                    }
+    
+                    &:nth-child(2) {
+                        bottom: 4%;
+                        left: 15%;
+                    }
+    
+                    &:nth-child(3) {
+                        bottom: 8%;
+                        left: 25%;
+                    }
+    
+                    &:nth-child(4) {
+                        bottom: 6%;
+                        left: 39%;
+                    }
 
-                &:nth-child(4) {
-                    left: 5%;
-                    bottom: 10%;
+                    &:nth-child(5) {
+                        bottom: 8%;
+                        left: 52%;
+                    }
+
+                    &:nth-child(6) {
+                        bottom: 6%;
+                        left: 66%;
+                    }
+
+                    &:nth-child(7) {
+                        bottom: 9%;
+                        left: 78%;
+                    }
+
+                    &:nth-child(8) {
+                        bottom: 6%;
+                        right: 4%;
+                    }
                 }
             }
         }
