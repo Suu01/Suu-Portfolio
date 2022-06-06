@@ -66,7 +66,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   background-color: #333;
 }
 
@@ -363,6 +363,7 @@ main section.main-section div.main-img .main-img-t div:nth-child(6) {
 
 main section.main-section div.main-img .main-img-p {
   display: none;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 1024px) {
@@ -416,8 +417,19 @@ main section.main-section div.main-img .main-img-p div:nth-child(8) {
 }
 
 main section.about {
-  margin-top: 100px;
-  padding: 0 20px;
+  position: relative;
+  margin-top: 30%;
+  padding: 0 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about {
+    width: 100%;
+    max-width: 1720px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 0 70px;
+  }
 }
 
 main section.about div.about-title {
@@ -431,46 +443,149 @@ main section.about div.about-title {
 
 main section.about div.about-title h2 {
   color: #fbeeea;
-  font-size: 35px;
+  font-size: 9vw;
   font-family: "HSYuJi";
-  margin-right: 5%;
+  margin-right: 6%;
+}
+
+@media screen and (min-width: 768px) {
+  main section.about div.about-title h2 {
+    font-size: 8vw;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about div.about-title h2 {
+    font-size: 80px;
+    margin-right: 45px;
+  }
 }
 
 main section.about div.about-title div {
   padding-top: 3%;
   display: inline-block;
+  width: 9%;
+}
+
+@media screen and (min-width: 768px) {
+  main section.about div.about-title div {
+    width: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about div.about-title div {
+    padding-top: 2%;
+    width: auto;
+  }
 }
 
 main section.about div.about-title div img {
-  width: 30px;
-}
-
-main section.about div.line {
-  display: none;
-}
-
-main section.about section.about-top div.about-img {
-  margin: 90px 0;
-}
-
-main section.about section.about-top div.about-img div {
-  width: 90%;
-  margin: auto;
-}
-
-main section.about section.about-top div.about-img div img {
   width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  main section.about section.about-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 100px;
+  }
+}
+
+main section.about section.about-top div.about-img {
+  margin: 15% 0;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  main section.about section.about-top div.about-img {
+    margin: 10% 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about section.about-top div.about-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+    width: 26%;
+  }
+}
+
+main section.about section.about-top div.about-img div img {
+  width: 85%;
+  margin: auto;
+}
+
+@media screen and (min-width: 425px) {
+  main section.about section.about-top div.about-img div img {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main section.about section.about-top div.about-img div img {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about section.about-top div.about-img div img {
+    width: 100%;
+  }
+}
+
+main section.about section.about-top div.about-img .photo-txt {
+  display: none;
+  position: absolute;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about section.about-top div.about-des {
+    width: 70%;
+  }
+}
+
 main section.about section.about-top div.about-des h3 {
+  text-align: center;
   font-family: "HSYuJi";
-  font-size: 21px;
+  font-size: 23px;
   color: #e28f83;
   text-transform: uppercase;
 }
 
-main section.about section.about-top div.about-des h3 span:last-child {
-  text-indent: 10px;
+@media screen and (min-width: 425px) {
+  main section.about section.about-top div.about-des h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main section.about section.about-top div.about-des h3 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about section.about-top div.about-des h3 {
+    text-align: left;
+    font-size: 37px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about section.about-top div.about-des h3 span {
+    display: inline-block;
+  }
 }
 
 main section.about section.about-top div.about-des p {
@@ -481,15 +596,67 @@ main section.about section.about-top div.about-des p {
   text-align: justify;
 }
 
-main section.about section.about-btm {
-  margin-top: 60px;
+@media screen and (min-width: 425px) {
+  main section.about section.about-top div.about-des p {
+    font-size: 20px;
+  }
 }
 
-main section.about section.about-btm div.img-wrap div {
+@media screen and (min-width: 768px) {
+  main section.about section.about-top div.about-des p {
+    font-size: 26px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about section.about-top div.about-des p {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+main section.about section.about-btm {
+  margin-top: 20%;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about section.about-btm {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.about section.about-btm div.moveMent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+main section.about section.about-btm div.moveMent div.pic {
+  display: none;
   width: 100%;
 }
 
-main section.about section.about-btm div.img-wrap div img {
+@media screen and (min-width: 1024px) {
+  main section.about section.about-btm div.moveMent div.pic {
+    display: block;
+    width: 15%;
+  }
+}
+
+main section.about section.about-btm div.moveMent div.pic:first-child {
+  display: block;
+}
+
+main section.about section.about-btm div.moveMent div.pic img {
   width: 100%;
 }
 

@@ -8,7 +8,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     background-color: $bg-color;
 
     @include responsive(tablet-size) {
@@ -268,6 +268,7 @@ main {
 
             .main-img-p {
                 display: none;
+                opacity: 0.7;
 
                 @include responsive(pc-size) {
                     display: block;
@@ -321,8 +322,17 @@ main {
     }
 
     section.about {
-        margin-top: 100px;
-        padding: 0 20px;
+        position: relative;
+        margin-top: 30%;
+        padding: 0 4%;
+
+        @include responsive(pc-size) {
+            width: 100%;
+            max-width: 1720px;
+            margin: auto;
+            margin-top: 200px;
+            padding: 0 70px;
+        }
 
         div.about-title {
             display: flex;
@@ -330,50 +340,116 @@ main {
 
             h2 {
                 color: $font-color;
-                font-size: 35px;
+                font-size: 9vw;
                 font-family: $point-font;
-                margin-right: 5%;
+                margin-right: 6%;
+
+                @include responsive(tablet-size) {
+                    font-size: 8vw;
+                    margin-right: 5%;
+                }
+
+                @include responsive(pc-size) {
+                    font-size: 80px;
+                    margin-right: 45px;
+                }
             }
 
             div {
                 padding-top: 3%;
                 display: inline-block;
+                width: 9%;
+
+                @include responsive(tablet-size) {
+                    width: 7%;
+                }
+
+                @include responsive(pc-size) {
+                    padding-top: 2%;
+                    width: auto;
+                }
 
                 img {
-                    width: 30px;
+                    width: 100%;
                 }
             }
         }
 
-        div.line {
-            display: none;
-        }
-
         section.about-top {
+            @include responsive(pc-size) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 100px;
+            }
+
             div.about-img {
-                margin: 90px 0;
+                margin: 15% 0;
+                position: relative;
+                
+                @include responsive(tablet-size) {
+                    margin: 10% 0;
+                }
+
+                @include responsive(pc-size) {
+                    order: 2;
+                    margin: 0;
+                    width: 26%;
+                }
 
                 div {
-                    width: 90%;
-                    margin: auto;
-
                     img {
-                        width: 100%;
+                        width: 85%;
+                        margin: auto;
+
+                        @media screen and (min-width: 425px) {
+                            width: 360px;
+                        }
+
+                        @include responsive(tablet-size) {
+                            width: auto;
+                        }
+
+                        @include responsive(pc-size) {
+                            width: 100%;
+                        }
                     }
+                }
+
+                .photo-txt {
+                    display: none;
+                    position: absolute;
                 }
             }
 
             div.about-des {
+                @include responsive(pc-size) {
+                    width: 70%;
+                }
 
                 h3 {
+                    text-align: center;
                     font-family: $point-font;
-                    font-size: 21px;
+                    font-size: 23px;
                     color: $point-color;
                     text-transform: uppercase;
 
+                    @media screen and (min-width: 425px) {
+                        font-size: 30px;
+                    }
+
+                    @include responsive(tablet-size) {
+                        font-size: 45px;
+                    }
+
+                    @include responsive(pc-size) {
+                        text-align: left;
+                        font-size: 37px;
+                    }
+
                     span {
-                        &:last-child {
-                            text-indent: 10px;
+                        @include responsive(pc-size) {
+                            display: inline-block;
                         }
                     }
                 }
@@ -384,16 +460,51 @@ main {
                     margin-top: 40px;
                     font-size: 16px;
                     text-align: justify;
+
+                    @media screen and (min-width: 425px) {
+                        font-size: 20px;
+                    }
+
+                    @include responsive(tablet-size) {
+                        font-size: 26px;
+                        margin-top: 50px;
+                    }
+
+                    @include responsive(pc-size) {
+                        width: 100%;
+                        text-align: left;
+                        font-size: 20px;
+                    }
                 }
             }
         }
 
         section.about-btm {
-            margin-top: 60px;
+            margin-top: 20%;
 
-            div.img-wrap {
-                div {
+            @include responsive(pc-size) {
+                margin-top: 15%;
+            }
+
+            div.moveMent {
+                @include responsive(pc-size) {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                }
+
+                div.pic {
+                    display: none;
                     width: 100%;
+
+                    @include responsive(pc-size) {
+                        display: block;
+                        width: 15%;
+                    }
+
+                    &:first-child {
+                        display: block;
+                    }
 
                     img {
                         width: 100%;
