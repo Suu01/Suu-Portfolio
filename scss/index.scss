@@ -552,6 +552,20 @@ main {
 
                 img {
                     width: 100%;
+
+                    &:first-child {
+                        display: none;
+
+                        @include responsive(pc-size) {
+                            display: block;
+                        }
+                    }
+
+                    &:last-child {
+                        @include responsive(pc-size) {
+                            display: none;
+                        }
+                    }
                 }
 
                 h2 {
@@ -567,18 +581,18 @@ main {
 
             ul {
                 display: flex;
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
+                justify-content: space-between;
 
                 li {
                     position: relative;
                     width: 130px;
                     height: 130px;
                     border-radius: 50%;
-                    border: 3px solid white;
-                    text-align: center;
 
                     .s-text-wrap {
                         position: absolute;
+                        text-align: center;
                         left: 50%;
                         top: 50%;
                         transform: translate(-50%, -50%);
