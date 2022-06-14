@@ -564,6 +564,8 @@ main {
                     &:last-child {
                         @include responsive(pc-size) {
                             display: none;
+                            width: auto;
+                            height: auto;
                         }
                     }
                 }
