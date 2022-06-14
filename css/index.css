@@ -135,6 +135,16 @@ header div.h-wrap ul.gnb li {
 }
 
 header div.h-wrap ul.gnb li:first-child {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  header div.h-wrap ul.gnb li:first-child {
+    display: none;
+  }
+}
+
+header div.h-wrap ul.gnb li .burger {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,24 +158,30 @@ header div.h-wrap ul.gnb li:first-child {
           justify-content: space-between;
   width: 100%;
   height: 31px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-header div.h-wrap ul.gnb li:first-child span {
+header div.h-wrap ul.gnb li .burger span {
   display: inline-block;
   width: 35px;
   height: 5px;
   border-radius: 10px;
   background-color: #fbeeea;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-@media screen and (min-width: 768px) {
-  header div.h-wrap ul.gnb li:first-child {
-    display: none;
-  }
+header div.h-wrap ul.gnb li .burger .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 10px);
+          transform: rotate(-45deg) translate(-8px, 10px);
+}
+
+header div.h-wrap ul.gnb li .burger .toggle .line2 {
+  opacity: 0;
+}
+
+header div.h-wrap ul.gnb li .burger .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -10px);
+          transform: rotate(45deg) translate(-8px, -10px);
 }
 
 @media screen and (min-width: 768px) {
