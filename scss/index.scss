@@ -556,16 +556,17 @@ main {
                     &:first-child {
                         display: none;
 
+                        // 스크립트로 img 태그 내부의 src 값 변경하기
                         @include responsive(pc-size) {
                             display: block;
+                            width: auto;
+                            height: auto;
                         }
                     }
 
-                    &:last-child {
+                    &:nth-child(2) {
                         @include responsive(pc-size) {
                             display: none;
-                            width: auto;
-                            height: auto;
                         }
                     }
                 }
