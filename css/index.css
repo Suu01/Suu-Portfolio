@@ -720,6 +720,8 @@ main section.skills div.skills-des div.skills-img-wrap img:first-child {
 @media screen and (min-width: 1024px) {
   main section.skills div.skills-des div.skills-img-wrap img:last-child {
     display: none;
+    width: auto;
+    height: auto;
   }
 }
 
