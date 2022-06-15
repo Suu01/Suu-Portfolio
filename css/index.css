@@ -204,6 +204,38 @@ header div.h-wrap ul.gnb li a:hover {
   }
 }
 
+header .sub-menu {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  margin-top: 80px;
+  padding: 30px 0;
+  background-color: #333;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+header .sub-menu li {
+  margin-bottom: 20px;
+  font-family: "HSYuJi";
+  font-size: 1.8rem;
+}
+
+header .sub-menu li:last-child {
+  margin-bottom: 0;
+}
+
+header .sub-menu li a:hover {
+  color: #e28f83;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
 main {
   width: 100%;
 }
