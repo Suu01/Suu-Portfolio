@@ -130,8 +130,28 @@ header div.h-wrap h1 a:first-child img {
   }
 }
 
+header div.h-wrap ul.gnb .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 10px);
+          transform: rotate(-45deg) translate(-8px, 10px);
+}
+
+header div.h-wrap ul.gnb .toggle .line2 {
+  opacity: 0;
+}
+
+header div.h-wrap ul.gnb .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -10px);
+          transform: rotate(45deg) translate(-8px, -10px);
+}
+
 header div.h-wrap ul.gnb li {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header div.h-wrap ul.gnb li {
+    display: block;
+  }
 }
 
 header div.h-wrap ul.gnb li:first-child {
@@ -145,7 +165,6 @@ header div.h-wrap ul.gnb li:first-child {
 }
 
 header div.h-wrap ul.gnb li .burger {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,12 +175,11 @@ header div.h-wrap ul.gnb li .burger {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
   height: 31px;
+  cursor: pointer;
 }
 
-header div.h-wrap ul.gnb li .burger span {
-  display: inline-block;
+header div.h-wrap ul.gnb li .burger div {
   width: 35px;
   height: 5px;
   border-radius: 10px;
@@ -170,28 +188,10 @@ header div.h-wrap ul.gnb li .burger span {
   transition: all 0.5s;
 }
 
-header div.h-wrap ul.gnb li .burger .toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-8px, 10px);
-          transform: rotate(-45deg) translate(-8px, 10px);
-}
-
-header div.h-wrap ul.gnb li .burger .toggle .line2 {
-  opacity: 0;
-}
-
-header div.h-wrap ul.gnb li .burger .toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -10px);
-          transform: rotate(45deg) translate(-8px, -10px);
-}
-
-@media screen and (min-width: 768px) {
-  header div.h-wrap ul.gnb li {
-    display: block;
-  }
-}
-
 header div.h-wrap ul.gnb li a {
   font-size: 20px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 header div.h-wrap ul.gnb li a:hover {
@@ -204,24 +204,25 @@ header div.h-wrap ul.gnb li a:hover {
   }
 }
 
-header .sub-menu {
+header .title-none {
   display: none;
+}
+
+header .sub-menu {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   text-align: center;
   margin-top: 80px;
-  padding: 30px 0;
+  padding: 45px 0;
   background-color: #333;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  border-top: 1px solid #fbeeea;
+  border-bottom: 1px solid #fbeeea;
 }
 
 header .sub-menu li {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   font-family: "HSYuJi";
   font-size: 1.8rem;
 }
@@ -232,8 +233,8 @@ header .sub-menu li:last-child {
 
 header .sub-menu li a:hover {
   color: #e28f83;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 main {
@@ -297,6 +298,10 @@ main section.main-section div.main-txt h2 {
   font-weight: 600;
   font-size: 11.875vw;
   margin: 3% 0;
+}
+
+main section.main-section div.main-txt h2 span {
+  display: inline-block;
 }
 
 @media screen and (min-width: 425px) {
