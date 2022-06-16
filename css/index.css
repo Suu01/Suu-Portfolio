@@ -501,7 +501,7 @@ main section.about {
     max-width: 1720px;
     margin: auto;
     margin-top: 200px;
-    padding: 0 70px;
+    padding: 80px 70px 0 70px;
   }
 }
 
