@@ -492,7 +492,7 @@ main section.main-section div.main-img .main-img-p div:nth-child(8) {
 main section.about {
   position: relative;
   margin-top: 30%;
-  padding: 0 4%;
+  padding: 80px 4% 0 4%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -735,7 +735,7 @@ main section.about section.about-btm div.moveMent div.pic img {
 
 main section.skills {
   margin-top: 100px;
-  padding: 0 20px;
+  padding: 80px 4% 0 4%;
 }
 
 main section.skills div.skills-title {
@@ -798,17 +798,6 @@ main section.skills div.skills-des div.skills-img-wrap img:first-child {
   }
 }
 
-main section.skills div.skills-des div.skills-img-wrap h2 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: #fbeeea;
-  font-weight: 900;
-}
-
 main section.skills div.skills-des ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -822,8 +811,8 @@ main section.skills div.skills-des ul {
 
 main section.skills div.skills-des ul li {
   position: relative;
-  width: 130px;
-  height: 130px;
+  width: 50%;
+  height: 300px;
   border-radius: 50%;
 }
 
