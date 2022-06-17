@@ -739,6 +739,16 @@ main section.skills {
   padding: 80px 4% 0 4%;
 }
 
+@media screen and (min-width: 1024px) {
+  main section.skills {
+    width: 100%;
+    max-width: 1720px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 80px 70px 0 70px;
+  }
+}
+
 main section.skills div.skills-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,7 +823,7 @@ main section.skills div.skills-des {
 @media screen and (min-width: 1024px) {
   main section.skills div.skills-des {
     width: 750px;
-    margin: 15% auto;
+    margin: 20% auto;
   }
 }
 
@@ -1029,7 +1039,218 @@ main section.skills div.skills-des ul li .s-text-wrap span {
   }
 }
 
-main section.skills div.line {
+main div.line2 {
   display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main div.line2 {
+    display: block;
+    background-color: #fbeeea;
+    width: 2px;
+    height: 300px;
+    margin: 200px auto;
+  }
+}
+
+main section.portfolio {
+  width: 100%;
+  margin-top: 100px;
+  padding: 80px 4% 80px 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.portfolio {
+    width: 100%;
+    max-width: 1720px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 80px 70px 0 70px;
+  }
+}
+
+main section.portfolio .portfolio-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.portfolio .portfolio-title div {
+  padding-top: 3%;
+  display: inline-block;
+  width: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .portfolio-title div {
+    width: 4%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.portfolio .portfolio-title div {
+    padding-top: 2%;
+    width: auto;
+  }
+}
+
+main section.portfolio .portfolio-title div img {
+  width: 100%;
+}
+
+main section.portfolio .portfolio-title h2 {
+  color: #fbeeea;
+  font-size: 9vw;
+  font-family: "HSYuJi";
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .portfolio-title h2 {
+    font-size: 8vw;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.portfolio .portfolio-title h2 {
+    font-size: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+main section.portfolio .portfolio-title h2 + div {
+  padding-top: 3%;
+  display: inline-block;
+  width: 4.5%;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .portfolio-title h2 + div {
+    width: 3.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main section.portfolio .portfolio-title h2 + div {
+    padding-top: 2%;
+    width: auto;
+  }
+}
+
+main section.portfolio .portfolio-title h2 + div img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background: url("../images/con-bg-m.png") no-repeat;
+  background-size: cover;
+}
+
+footer section.contact {
+  width: 100%;
+  margin-top: 100px;
+  padding: 80px 4% 0 4%;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  footer section.contact {
+    width: 100%;
+    max-width: 1720px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 80px 70px 0 70px;
+  }
+}
+
+footer section.contact .con-title h2 {
+  color: #fff;
+  font-size: 9vw;
+  font-family: "HSYuJi";
+}
+
+@media screen and (min-width: 768px) {
+  footer section.contact .con-title h2 {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer section.contact .con-title h2 {
+    font-size: 80px;
+  }
+}
+
+footer section.contact .con-form {
+  padding: 15% 0;
+}
+
+footer section.contact .con-form form fieldset {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 30px 25px;
+}
+
+footer section.contact .con-form form fieldset input {
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer section.contact .con-form form fieldset textarea {
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+footer section.contact .con-form form .i-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+footer section.contact .con-form form .i-wrap input#sub {
+  width: 40%;
+  font-size: 5vw;
+  font-family: "HSYuJi";
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding-bottom: 1%;
+  background-color: #333;
+}
+
+footer section.contact .footer-bottom {
+  position: absolute;
+  width: 100%;
+  padding: 3% 0;
+  left: 0;
+  bottom: 0;
+  border-top: 2px solid #fff;
+}
+
+footer section.contact .footer-bottom p {
+  text-align: center;
+  color: #fff;
+  font-size: 3.5vw;
 }
 /*# sourceMappingURL=index.css.map */
