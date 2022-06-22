@@ -3,7 +3,7 @@
 @import "mixin.scss";
 
 body {
-    cursor: url('../images/logo_m.png'), auto;
+    cursor: url('../images/mouse-cursor.png'), auto;
 }
 
 body::-webkit-scrollbar {
@@ -39,9 +39,10 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        max-width: 1920px;
+        margin: auto;
         height: 100%;
         padding: 0 4%;
-        // background-color: pink;
 
         h1 {
             a {

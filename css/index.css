@@ -62,7 +62,7 @@ footer {
 }
 
 body {
-  cursor: url("../images/logo_m.png"), auto;
+  cursor: url("../images/mouse-cursor.png"), auto;
 }
 
 body::-webkit-scrollbar {
@@ -112,6 +112,8 @@ header div.h-wrap {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  max-width: 1920px;
+  margin: auto;
   height: 100%;
   padding: 0 4%;
 }
