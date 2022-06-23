@@ -112,10 +112,15 @@ header div.h-wrap {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1920px;
   margin: auto;
   height: 100%;
   padding: 0 4%;
+}
+
+@media screen and (min-width: 1024px) {
+  header div.h-wrap {
+    padding: 0 3%;
+  }
 }
 
 header div.h-wrap h1 a:first-child {
@@ -301,6 +306,8 @@ main section.main-section div.main-txt .wel {
   font-weight: 600;
   font-size: 6.25vw;
   color: #777;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 425px) {
@@ -317,14 +324,16 @@ main section.main-section div.main-txt .wel {
 
 @media screen and (min-width: 1024px) {
   main section.main-section div.main-txt .wel {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 }
 
 main section.main-section div.main-txt h2 {
   font-weight: 600;
   font-size: 11.875vw;
-  margin: 3% 0;
+  margin: 1% 0 3% 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 main section.main-section div.main-txt h2 span {
@@ -345,7 +354,7 @@ main section.main-section div.main-txt h2 span {
 
 @media screen and (min-width: 1024px) {
   main section.main-section div.main-txt h2 {
-    font-size: 6.2rem;
+    font-size: 5.8rem;
   }
 }
 
@@ -353,6 +362,8 @@ main section.main-section div.main-txt .front {
   font-weight: 500;
   font-size: 5.625vw;
   color: #e28f83;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 425px) {
@@ -369,7 +380,7 @@ main section.main-section div.main-txt .front {
 
 @media screen and (min-width: 1024px) {
   main section.main-section div.main-txt .front {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -384,6 +395,7 @@ main section.main-section div.main-img {
 }
 
 main section.main-section div.main-img .main-img-m div {
+  opacity: 0.7;
   position: absolute;
 }
 
@@ -394,21 +406,121 @@ main section.main-section div.main-img .main-img-m div:nth-child(1), main sectio
 main section.main-section div.main-img .main-img-m div:nth-child(1) {
   bottom: 13%;
   left: 30%;
+  -webkit-animation: motion 1s linear 0s infinite alternate;
+          animation: motion 1s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion {
+  0% {
+    bottom: 13%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 20%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion {
+  0% {
+    bottom: 13%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 20%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-m div:nth-child(2) {
   bottom: 5%;
   left: 57%;
+  -webkit-animation: motion2 1.3s linear 0s infinite alternate;
+          animation: motion2 1.3s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion2 {
+  0% {
+    bottom: 5%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 10%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion2 {
+  0% {
+    bottom: 5%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 10%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-m div:nth-child(3) {
   bottom: 8%;
   right: 4%;
+  -webkit-animation: motion3 1.8s linear 0s infinite alternate;
+          animation: motion3 1.8s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion3 {
+  0% {
+    bottom: 8%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 18%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion3 {
+  0% {
+    bottom: 8%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 18%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-m div:nth-child(4) {
   left: 4%;
   bottom: 7%;
+  -webkit-animation: motion4 0.8s linear 0s infinite alternate;
+          animation: motion4 0.8s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion4 {
+  0% {
+    bottom: 7%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 15%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion4 {
+  0% {
+    bottom: 7%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 15%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-t {
@@ -429,51 +541,185 @@ main section.main-section div.main-img .main-img-t {
 
 main section.main-section div.main-img .main-img-t div {
   position: absolute;
+  opacity: 0.7;
 }
 
 main section.main-section div.main-img .main-img-t div:nth-child(1) {
   bottom: 8%;
   left: 4%;
+  -webkit-animation: motion01 1s linear 0s infinite alternate;
+          animation: motion01 1s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion01 {
+  0% {
+    bottom: 8%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 15%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion01 {
+  0% {
+    bottom: 8%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 15%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-t div:nth-child(2) {
   bottom: 4%;
-  left: 22%;
+  left: 21%;
+  -webkit-animation: motion02 0.9s linear 0s infinite alternate;
+          animation: motion02 0.9s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion02 {
+  0% {
+    bottom: 4%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 12%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion02 {
+  0% {
+    bottom: 4%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 12%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-t div:nth-child(3) {
   bottom: 8%;
-  left: 38%;
+  left: 36%;
+  -webkit-animation: motion03 1.2s linear 0s infinite alternate;
+          animation: motion03 1.2s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion03 {
+  0% {
+    bottom: 8%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 16%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion03 {
+  0% {
+    bottom: 8%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 16%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-t div:nth-child(4) {
   bottom: 6%;
-  left: 58%;
+  left: 56%;
+  -webkit-animation: motion04 0.9s linear 0s infinite alternate;
+          animation: motion04 0.9s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion04 {
+  0% {
+    bottom: 6%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 13%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion04 {
+  0% {
+    bottom: 6%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 13%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-t div:nth-child(5) {
   bottom: 8%;
-  left: 75%;
+  left: 74%;
+  -webkit-animation: motion01 1s linear 0s infinite alternate;
+          animation: motion01 1s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@keyframes motion01 {
+  0% {
+    bottom: 8%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 15%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-t div:nth-child(6) {
   bottom: 7%;
   right: 4%;
+  -webkit-animation: motion06 1.4s linear 0s infinite alternate;
+          animation: motion06 1.4s linear 0s infinite alternate;
+  /* 무한 반복 */
+}
+
+@-webkit-keyframes motion06 {
+  0% {
+    bottom: 7%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 14%;
+  }
+  /* 마지막 위치 */
+}
+
+@keyframes motion06 {
+  0% {
+    bottom: 7%;
+  }
+  /* 처음 위치 */
+  100% {
+    bottom: 14%;
+  }
+  /* 마지막 위치 */
 }
 
 main section.main-section div.main-img .main-img-p {
   display: none;
-  opacity: 0.7;
-}
-
-@media screen and (min-width: 1024px) {
-  main section.main-section div.main-img .main-img-p {
-    display: block;
-  }
 }
 
 main section.main-section div.main-img .main-img-p div {
   position: absolute;
+  opacity: 0.7;
 }
 
 main section.main-section div.main-img .main-img-p div:nth-child(1) {
@@ -514,6 +760,391 @@ main section.main-section div.main-img .main-img-p div:nth-child(7) {
 main section.main-section div.main-img .main-img-p div:nth-child(8) {
   bottom: 6%;
   right: 4%;
+}
+
+main section.main-section div.piano-wrap {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main section.main-section div.piano-wrap {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: block;
+  }
+}
+
+main section.main-section div.piano-wrap div.piano-white {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main section.main-section div.piano-wrap div.piano-white div {
+  width: 6%;
+  height: 13.5vw;
+  border: 1px solid white;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background: #333;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(1):hover {
+  height: 17.5vw;
+  border: 1px solid #ffebb4;
+  background-color: #ffebb4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(2) {
+  height: 15.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(2):hover {
+  height: 17.5vw;
+  border: 1px solid #a2c1d9;
+  background-color: #a2c1d9;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(3) {
+  height: 14.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(3):hover {
+  height: 17.5vw;
+  border: 1px solid #b4d2c4;
+  background-color: #b4d2c4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(4) {
+  height: 11.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(4):hover {
+  height: 17.5vw;
+  border: 1px solid #ffd0c2;
+  background-color: #ffd0c2;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(5) {
+  height: 13vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(5):hover {
+  height: 17.5vw;
+  border: 1px solid #ffebb4;
+  background-color: #ffebb4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(6) {
+  height: 16.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(6):hover {
+  height: 17.5vw;
+  border: 1px solid #a2c1d9;
+  background-color: #a2c1d9;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(7) {
+  height: 15vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(7):hover {
+  height: 17.5vw;
+  border: 1px solid #b4d2c4;
+  background-color: #b4d2c4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(8) {
+  height: 13.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(8):hover {
+  height: 17.5vw;
+  border: 1px solid #ffd0c2;
+  background-color: #ffd0c2;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(9) {
+  height: 15.1vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(9):hover {
+  height: 17.5vw;
+  border: 1px solid #ffebb4;
+  background-color: #ffebb4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(10) {
+  height: 14.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(10):hover {
+  height: 17.5vw;
+  border: 1px solid #a2c1d9;
+  background-color: #a2c1d9;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(11) {
+  height: 11.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(11):hover {
+  height: 17.5vw;
+  border: 1px solid #b4d2c4;
+  background-color: #b4d2c4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(12) {
+  height: 13vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(12):hover {
+  height: 17.5vw;
+  border: 1px solid #ffd0c2;
+  background-color: #ffd0c2;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(13) {
+  height: 16.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(13):hover {
+  height: 17.5vw;
+  border: 1px solid #ffebb4;
+  background-color: #ffebb4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(14) {
+  height: 15.1vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(14):hover {
+  height: 17.5vw;
+  border: 1px solid #a2c1d9;
+  background-color: #a2c1d9;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(15) {
+  height: 13vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(15):hover {
+  height: 17.5vw;
+  border: 1px solid #b4d2c4;
+  background-color: #b4d2c4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(16) {
+  height: 15.1vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(16):hover {
+  height: 17.5vw;
+  border: 1px solid #ffd0c2;
+  background-color: #ffd0c2;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(17) {
+  height: 14.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(17):hover {
+  height: 17.5vw;
+  border: 1px solid #ffebb4;
+  background-color: #ffebb4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(18) {
+  height: 11.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(18):hover {
+  height: 17.5vw;
+  border: 1px solid #a2c1d9;
+  background-color: #a2c1d9;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(19) {
+  height: 13vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(19):hover {
+  height: 17.5vw;
+  border: 1px solid #b4d2c4;
+  background-color: #b4d2c4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(20) {
+  height: 16.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(20):hover {
+  height: 17.5vw;
+  border: 1px solid #ffd0c2;
+  background-color: #ffd0c2;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(21) {
+  height: 13vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(21):hover {
+  height: 17.5vw;
+  border: 1px solid #ffebb4;
+  background-color: #ffebb4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(22) {
+  height: 15.1vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(22):hover {
+  height: 17.5vw;
+  border: 1px solid #a2c1d9;
+  background-color: #a2c1d9;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(23) {
+  height: 11.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(23):hover {
+  height: 17.5vw;
+  border: 1px solid #b4d2c4;
+  background-color: #b4d2c4;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(24) {
+  height: 16.5vw;
+}
+
+main section.main-section div.piano-wrap div.piano-white div:nth-child(24):hover {
+  height: 17.5vw;
+  border: 1px solid #ffd0c2;
+  background-color: #ffd0c2;
+}
+
+main section.main-section div.piano-wrap div.piano-black {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+main section.main-section div.piano-wrap div.piano-black div {
+  position: absolute;
+  width: 2%;
+  height: 6.2vw;
+  background: #fbeeea;
+  border-radius: 7px 7px 0 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.45), 2px 2px 9px rgba(255, 255, 255, 0.3);
+          box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.45), 2px 2px 9px rgba(255, 255, 255, 0.3);
+}
+
+main section.main-section div.piano-wrap div.piano-black div:hover {
+  -webkit-box-shadow: inset -2px -2px 10px rgba(0, 0, 0, 0.45), inset 2px 2px 9px rgba(255, 255, 255, 0.3);
+          box-shadow: inset -2px -2px 10px rgba(0, 0, 0, 0.45), inset 2px 2px 9px rgba(255, 255, 255, 0.3);
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(1) {
+  bottom: 0;
+  left: 3.2%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(2) {
+  bottom: 0;
+  left: 7.4%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(3) {
+  bottom: 0;
+  left: 15.7%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(4) {
+  bottom: 0;
+  left: 19.8%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(5) {
+  bottom: 0;
+  left: 24%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(6) {
+  bottom: 0;
+  left: 32.4%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(7) {
+  bottom: 0;
+  left: 36.5%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(8) {
+  bottom: 0;
+  left: 44.8%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(9) {
+  bottom: 0;
+  left: 49%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(10) {
+  bottom: 0;
+  left: 53.2%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(11) {
+  bottom: 0;
+  left: 61.5%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(12) {
+  bottom: 0;
+  left: 65.7%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(13) {
+  bottom: 0;
+  left: 74%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(14) {
+  bottom: 0;
+  left: 78.2%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(15) {
+  bottom: 0;
+  left: 82.4%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(16) {
+  bottom: 0;
+  left: 90.7%;
+}
+
+main section.main-section div.piano-wrap div.piano-black div:nth-child(17) {
+  bottom: 0;
+  left: 94.9%;
 }
 
 main section.about {

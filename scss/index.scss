@@ -39,10 +39,14 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        max-width: 1920px;
+        // max-width: 1920px;
         margin: auto;
         height: 100%;
         padding: 0 4%;
+
+        @include responsive(pc-size) {
+            padding: 0 3%;
+        }
 
         h1 {
             a {
@@ -206,6 +210,7 @@ main {
                 font-weight: 600;
                 font-size: 6.25vw;
                 color: #777;
+                transition: all 0.3s ease-in;
 
                 @media screen and (min-width: 425px) {
                     font-size: 1.8rem;
@@ -216,14 +221,15 @@ main {
                 }
 
                 @include responsive(pc-size) {
-                    font-size: 2.8rem;
+                    font-size: 2.5rem;
                 }
             }
 
             h2 {
                 font-weight: 600;
                 font-size: 11.875vw;
-                margin: 3% 0;
+                margin: 1% 0 3% 0;
+                transition: all 0.3s ease-in;
 
                 span {
                     display: inline-block;
@@ -238,7 +244,7 @@ main {
                 }
 
                 @include responsive(pc-size) {
-                    font-size: 6.2rem;
+                    font-size: 5.8rem;
                 }
             }
 
@@ -246,6 +252,7 @@ main {
                 font-weight: 500;
                 font-size: 5.625vw;
                 color: $point-color;
+                transition: all 0.3s ease-in;
 
                 @media screen and (min-width: 425px) {
                     font-size: 1.5rem;
@@ -257,7 +264,7 @@ main {
                 }
 
                 @include responsive(pc-size) {
-                    font-size: 2.5rem;
+                    font-size: 2.3rem;
                 }
             }
         }
@@ -266,11 +273,13 @@ main {
             background-color: aqua;
 
             .main-img-m {
+
                 @include responsive(tablet-size) {
                     display: none;
                 }
 
                 div {
+                    opacity: 0.7;
                     position: absolute;
     
                     &:nth-child(1),
@@ -283,21 +292,57 @@ main {
                     &:nth-child(1) {
                         bottom: 13%;
                         left: 30%;
+
+                        animation: motion 1s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion {
+                        0% {bottom: 13%;} /* 처음 위치 */
+                        100% {bottom: 20%;} /* 마지막 위치 */
+                        }
                     }
     
                     &:nth-child(2) {
                         bottom: 5%;
                         left: 57%;
+
+                        animation: motion2 1.3s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion2 {
+                        0% {bottom: 5%;} /* 처음 위치 */
+                        100% {bottom: 10%;} /* 마지막 위치 */
+                        }
                     }
     
                     &:nth-child(3) {
                         bottom: 8%;
                         right: 4%;
+
+                        animation: motion3 1.8s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion3 {
+                        0% {bottom: 8%;} /* 처음 위치 */
+                        100% {bottom: 18%;} /* 마지막 위치 */
+                        }
                     }
     
                     &:nth-child(4) {
                         left: 4%;
                         bottom: 7%;
+
+                        animation: motion4 0.8s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion4 {
+                        0% {bottom: 7%;} /* 처음 위치 */
+                        100% {bottom: 15%;} /* 마지막 위치 */
+                        }
                     }
                 }
             }
@@ -315,49 +360,104 @@ main {
 
                 div {
                     position: absolute;
+                    opacity: 0.7;
                     
                     &:nth-child(1) {
                         bottom: 8%;
                         left: 4%;
+
+                        animation: motion01 1s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion01 {
+                        0% {bottom: 8%;} /* 처음 위치 */
+                        100% {bottom: 15%;} /* 마지막 위치 */
+                        }
                     }
     
                     &:nth-child(2) {
                         bottom: 4%;
-                        left: 22%;
+                        left: 21%;
+
+                        animation: motion02 0.9s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion02 {
+                        0% {bottom: 4%;} /* 처음 위치 */
+                        100% {bottom: 12%;} /* 마지막 위치 */
+                        }
                     }
     
                     &:nth-child(3) {
                         bottom: 8%;
-                        left: 38%;
+                        left: 36%;
+
+                        animation: motion03 1.2s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion03 {
+                        0% {bottom: 8%;} /* 처음 위치 */
+                        100% {bottom: 16%;} /* 마지막 위치 */
+                        }
                     }
     
                     &:nth-child(4) {
                         bottom: 6%;
-                        left: 58%;
+                        left: 56%;
+
+                        animation: motion04 0.9s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion04 {
+                        0% {bottom: 6%;} /* 처음 위치 */
+                        100% {bottom: 13%;} /* 마지막 위치 */
+                        }
                     }
 
                     &:nth-child(5) {
                         bottom: 8%;
-                        left: 75%;
+                        left: 74%;
+
+                        animation: motion01 1s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion01 {
+                        0% {bottom: 8%;} /* 처음 위치 */
+                        100% {bottom: 15%;} /* 마지막 위치 */
+                        }
                     }
 
                     &:nth-child(6) {
                         bottom: 7%;
                         right: 4%;
+
+                        animation: motion06 1.4s /* 속도 */
+                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
+                                infinite alternate; /* 무한 반복 */
+
+                        @keyframes motion06 {
+                        0% {bottom: 7%;} /* 처음 위치 */
+                        100% {bottom: 14%;} /* 마지막 위치 */
+                        }
                     }
                 }
             }
 
             .main-img-p {
                 display: none;
-                opacity: 0.7;
 
                 @include responsive(pc-size) {
-                    display: block;
+                    // display: block;
                 }
 
                 div {
                     position: absolute;
+                    opacity: 0.7;
                     
                     &:nth-child(1) {
                         bottom: 8%;
@@ -397,6 +497,356 @@ main {
                     &:nth-child(8) {
                         bottom: 6%;
                         right: 4%;
+                    }
+                }
+            }
+        }
+
+        div.piano-wrap {
+            display: none;
+    
+            @include responsive(pc-size) {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                display: block;
+            }
+            
+            div.piano-white {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+    
+                div {
+                    width: 6%;
+                    height: 13.5vw;
+                    border: 1px solid white;
+                    border-collapse: collapse;
+                    border-radius: 5px 5px 0 0;
+                    transition: all 0.3s ease-in;
+                    background: $bg-color;
+    
+                    &:nth-child(1) { 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-yellow;
+                            background-color: $color-yellow;
+                        }
+                    }
+    
+                    &:nth-child(2) { 
+                        height: 15.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-blue;
+                            background-color: $color-blue;
+                        }
+                    }
+                    
+                    &:nth-child(3) { 
+                        height: 14.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-green;
+                            background-color: $color-green;
+                        }
+                    }
+    
+                    &:nth-child(4) { 
+                        height: 11.5vw;
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-pink;
+                            background-color: $color-pink;
+                        }
+                    }
+    
+                    &:nth-child(5) { 
+                        height: 13vw;
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-yellow;
+                            background-color: $color-yellow;
+                        }
+                    }
+    
+                    &:nth-child(6) { 
+                        height: 16.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-blue;
+                            background-color: $color-blue;
+                        }
+                    }
+    
+                    &:nth-child(7) { 
+                        height: 15vw;
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-green;
+                            background-color: $color-green;
+                        } 
+                    }
+    
+                    &:nth-child(8) { 
+                        height: 13.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-pink;
+                            background-color: $color-pink;
+                        }
+                    }
+    
+                    &:nth-child(9) { 
+                        height: 15.1vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-yellow;
+                            background-color: $color-yellow;
+                        }
+                    }
+    
+                    &:nth-child(10) { 
+                        height: 14.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-blue;
+                            background-color: $color-blue;
+                        }
+                    }
+    
+                    &:nth-child(11) { 
+                        height: 11.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-green;
+                            background-color: $color-green;
+                        } 
+                    }
+    
+                    &:nth-child(12) { 
+                        height: 13vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-pink;
+                            background-color: $color-pink;
+                        }
+                    }
+    
+                    &:nth-child(13) { 
+                        height: 16.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-yellow;
+                            background-color: $color-yellow;
+                        }
+                    }
+    
+                    &:nth-child(14) { 
+                        height: 15.1vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-blue;
+                            background-color: $color-blue;
+                        }
+                    }
+    
+                    &:nth-child(15) { 
+                        height: 13vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-green;
+                            background-color: $color-green;
+                        } 
+                    }
+    
+                    &:nth-child(16) { 
+                        height: 15.1vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-pink;
+                            background-color: $color-pink;
+                        }
+                    }
+    
+                    &:nth-child(17) { 
+                        height: 14.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-yellow;
+                            background-color: $color-yellow;
+                        }
+                    }
+    
+                    &:nth-child(18) { 
+                        height: 11.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-blue;
+                            background-color: $color-blue;
+                        }
+                    }
+    
+                    &:nth-child(19) { 
+                        height: 13vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-green;
+                            background-color: $color-green;
+                        }
+                    }
+    
+                    &:nth-child(20) { 
+                        height: 16.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-pink;
+                            background-color: $color-pink;
+                        }
+                    }
+    
+                    &:nth-child(21) { 
+                        height: 13vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-yellow;
+                            background-color: $color-yellow;
+                        }
+                    }
+    
+                    &:nth-child(22) { 
+                        height: 15.1vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-blue;
+                            background-color: $color-blue;
+                        }
+                    }
+    
+                    &:nth-child(23) { 
+                        height: 11.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-green;
+                            background-color: $color-green;
+                        }
+                    }
+    
+                    &:nth-child(24) { 
+                        height: 16.5vw; 
+                        &:hover {
+                            height: 17.5vw;
+                            border: 1px solid $color-pink;
+                            background-color: $color-pink;
+                        }
+                    }
+                }
+            }
+    
+            div.piano-black {
+                display: flex;
+                transition: all 0.2s ease-in;
+    
+                div {
+                    position: absolute;
+                    width: 2%;
+                    height: 6.2vw;
+                    // background: $bg-color;
+                    background: $font-color;
+                    border-radius: 7px 7px 0 0;
+                    transition: all 0.3s ease-in;
+                    box-shadow: -2px -2px 10px rgba(0,0,0,0.45), 2px 2px 9px rgba(255,255,255,0.3);
+    
+                    &:hover {
+                        box-shadow: inset -2px -2px 10px rgba(0,0,0,0.45), inset 2px 2px 9px rgba(255,255,255,0.3);
+                    }
+    
+                    &:nth-child(1) {
+                        bottom: 0;
+                        left: 3.2%;
+                    }
+    
+                    &:nth-child(2) {
+                        bottom: 0;
+                        left: 7.4%;
+                    }
+    
+                    &:nth-child(3) {
+                        bottom: 0;
+                        left: 15.7%;
+                    }
+    
+                    &:nth-child(4) {
+                        bottom: 0;
+                        left: 19.8%;
+                    }
+    
+                    &:nth-child(5) {
+                        bottom: 0;
+                        left: 24%;
+                    }
+    
+                    &:nth-child(6) {
+                        bottom: 0;
+                        left: 32.4%;
+                    }
+    
+                    &:nth-child(7) {
+                        bottom: 0;
+                        left: 36.5%;
+                    }
+    
+                    &:nth-child(8) {
+                        bottom: 0;
+                        left: 44.8%;
+                    }
+    
+                    &:nth-child(9) {
+                        bottom: 0;
+                        left: 49%;
+                    }
+    
+                    &:nth-child(10) {
+                        bottom: 0;
+                        left: 53.2%;
+                    }
+    
+                    &:nth-child(11) {
+                        bottom: 0;
+                        left: 61.5%;
+                    }
+    
+                    &:nth-child(12) {
+                        bottom: 0;
+                        left: 65.7%;
+                    }
+    
+                    &:nth-child(13) {
+                        bottom: 0;
+                        left: 74%;
+                    }
+    
+                    &:nth-child(14) {
+                        bottom: 0;
+                        left: 78.2%;
+                    }
+    
+                    &:nth-child(15) {
+                        bottom: 0;
+                        left: 82.4%;
+                    }
+    
+                    &:nth-child(16) {
+                        bottom: 0;
+                        left: 90.7%;
+                    }
+    
+                    &:nth-child(17) {
+                        bottom: 0;
+                        left: 94.9%;
                     }
                 }
             }
