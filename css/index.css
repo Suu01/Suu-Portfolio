@@ -1819,7 +1819,7 @@ footer {
 footer section.contact {
   width: 100%;
   margin-top: 100px;
-  padding: 80px 4% 0 4%;
+  padding: 23% 4% 0 4%;
   position: relative;
 }
 
@@ -1851,14 +1851,15 @@ footer section.contact .con-title h2 {
   }
 }
 
-footer section.contact .con-form {
-  padding: 15% 0;
+footer section.contact .con-form form {
+  width: 100%;
 }
 
 footer section.contact .con-form form fieldset {
   border: 2px solid #fff;
   border-radius: 20px;
   padding: 30px 25px;
+  margin: 10% 0 5% 0;
 }
 
 footer section.contact .con-form form fieldset input {
@@ -1897,16 +1898,14 @@ footer section.contact .con-form form .i-wrap input#sub {
   background-color: #333;
 }
 
-footer section.contact .footer-bottom {
-  position: absolute;
+footer .footer-bottom {
   width: 100%;
   padding: 3% 0;
-  left: 0;
-  bottom: 0;
   border-top: 2px solid #fff;
+  margin-top: 8%;
 }
 
-footer section.contact .footer-bottom p {
+footer .footer-bottom p {
   text-align: center;
   color: #fff;
   font-size: 3.5vw;

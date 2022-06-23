@@ -1398,7 +1398,7 @@ footer {
     section.contact {
         width: 100%;
         margin-top: 100px;
-        padding: 80px 4% 0 4%;
+        padding: 23% 4% 0 4%;
         position: relative;
 
         @include responsive(pc-size) {
@@ -1426,13 +1426,13 @@ footer {
         }
 
         .con-form {
-            padding: 15% 0;
             form {
-                
+                width: 100%;
                 fieldset {
                     border: 2px solid #fff;
                     border-radius: 20px;
                     padding: 30px 25px;
+                    margin: 10% 0 5% 0;
 
                     input {
                         border: none;
@@ -1467,20 +1467,18 @@ footer {
                 }
             }
         }
+    }
 
-        .footer-bottom {
-            position: absolute;
-            width: 100%;
-            padding: 3% 0;
-            left: 0;
-            bottom: 0;
-            border-top: 2px solid #fff;
+    .footer-bottom {
+        width: 100%;
+        padding: 3% 0;
+        border-top: 2px solid #fff;
+        margin-top: 8%;
 
-            p {
-                text-align: center;
-                color: #fff;
-                font-size: 3.5vw;
-            }
+        p {
+            text-align: center;
+            color: #fff;
+            font-size: 3.5vw;
         }
     }
 }
