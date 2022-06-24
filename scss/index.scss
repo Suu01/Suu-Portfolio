@@ -1355,8 +1355,9 @@ main {
 
         .pf-wrap {
             margin: 30% 0;
+
             .pf {
-                margin-bottom: 25%;
+                margin-bottom: 40%;
                 width: 100%;
                 // background-color: pink;
     
@@ -1365,6 +1366,49 @@ main {
     
                     img {
                         width: 100%;
+                    }
+                }
+
+                .pf-txt {
+                    position: relative;
+                    text-align: center;
+                    // background-color: pink;
+                    margin-top: 15%;
+
+                    span.pf-num {
+                        position: absolute;
+                        font-size: 4vw;
+                    }
+
+                    .pf-num1 {
+                        left: 28%;
+                        top: -10%;
+                    }
+
+                    .pf-num2 {
+                        left: 20%;
+                        top: -10%;
+                    }
+
+                    .pf-num3 {
+                        left: 21%;
+                        top: -10%;
+                    }
+
+                    h2 {
+                        font-size: 9vw;
+                    }
+
+                    p {
+                        margin-top: 5%;
+
+                        span {
+                            font-size: 4.5vw;
+
+                            &:last-child {
+                                margin-top: 2%;
+                            }
+                        }
                     }
                 }
             }

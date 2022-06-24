@@ -1771,7 +1771,7 @@ main section.portfolio .pf-wrap {
 }
 
 main section.portfolio .pf-wrap .pf {
-  margin-bottom: 25%;
+  margin-bottom: 40%;
   width: 100%;
 }
 
@@ -1781,6 +1781,48 @@ main section.portfolio .pf-wrap .pf .portfolio-mokup {
 
 main section.portfolio .pf-wrap .pf .portfolio-mokup img {
   width: 100%;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt {
+  position: relative;
+  text-align: center;
+  margin-top: 15%;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt span.pf-num {
+  position: absolute;
+  font-size: 4vw;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-num1 {
+  left: 28%;
+  top: -10%;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-num2 {
+  left: 20%;
+  top: -10%;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-num3 {
+  left: 21%;
+  top: -10%;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt h2 {
+  font-size: 9vw;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt p {
+  margin-top: 5%;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt p span {
+  font-size: 4.5vw;
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt p span:last-child {
+  margin-top: 2%;
 }
 
 footer {
