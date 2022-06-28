@@ -20,7 +20,7 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        // max-width: 1920px;
+        max-width: 1720px;
         margin: auto;
         height: 100%;
         padding: 0 4%;
@@ -169,13 +169,11 @@ main {
         position: relative;
         width: 100%;
         height: 100vh;
-        // background-color: aquamarine;
 
         div.main-txt {
             position: absolute;
             top: 25%;
             margin-left: 8%;
-            // background-color: pink;
             z-index: 10;
 
             @include responsive(tablet-size) {
@@ -187,7 +185,6 @@ main {
                 margin-left: 50%;
                 transform: translateX(-50%);
                 width: 700px;
-                // width: 100%;
             }
 
             .wel {
@@ -196,17 +193,13 @@ main {
                 color: #777;
                 transition: all 0.3s ease-in;
 
-                // @media screen and (min-width: 425px) {
-                //     font-size: 1.8rem;
-                // }
+                @include responsive(tablet-size) {
+                    font-size: 2.1rem;
+                }
 
-                // @include responsive(tablet-size) {
-                //     font-size: 2.5rem;
-                // }
-
-                // @include responsive(pc-size) {
-                //     font-size: 2.5rem;
-                // }
+                @include responsive(pc-size) {
+                    font-size: 2.5rem;
+                }
             }
 
             h2 {
@@ -219,17 +212,13 @@ main {
                     display: inline-block;
                 }
 
-                // @media screen and (min-width: 425px) {
-                //     font-size: 3.5rem;
-                // }
+                @include responsive(tablet-size) {
+                    font-size: 4.9rem;
+                }
 
-                // @include responsive(tablet-size) {
-                //     font-size: 5.2rem;
-                // }
-
-                // @include responsive(pc-size) {
-                //     font-size: 5.8rem;
-                // }
+                @include responsive(pc-size) {
+                    font-size: 5.8rem;
+                }
             }
 
             .front {
@@ -238,17 +227,13 @@ main {
                 color: $point-color;
                 transition: all 0.3s ease-in;
 
-                // @media screen and (min-width: 425px) {
-                //     font-size: 1.5rem;
-                // }
+                @include responsive(tablet-size) {
+                    font-size: 2.1rem;
+                }
 
-                // @include responsive(tablet-size) {
-                //     font-size: 2.2rem;
-                // }
-
-                // @include responsive(pc-size) {
-                //     font-size: 2.3rem;
-                // }
+                @include responsive(pc-size) {
+                    font-size: 2.3rem;
+                }
             }
         }
 
@@ -256,7 +241,6 @@ main {
             background-color: aqua;
 
             .main-img-m {
-
                 @include responsive(tablet-size) {
                     display: none;
                 }
@@ -276,13 +260,13 @@ main {
                         bottom: 13%;
                         left: 30%;
 
-                        animation: motion 1s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion 1s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion {
-                        0% {bottom: 13%;} /* 처음 위치 */
-                        100% {bottom: 20%;} /* 마지막 위치 */
+                        0% {bottom: 13%;}
+                        100% {bottom: 20%;}
                         }
                     }
     
@@ -290,13 +274,13 @@ main {
                         bottom: 5%;
                         left: 57%;
 
-                        animation: motion2 1.3s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion2 1.3s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion2 {
-                        0% {bottom: 5%;} /* 처음 위치 */
-                        100% {bottom: 10%;} /* 마지막 위치 */
+                        0% {bottom: 5%;}
+                        100% {bottom: 10%;}
                         }
                     }
     
@@ -304,13 +288,13 @@ main {
                         bottom: 8%;
                         right: 4%;
 
-                        animation: motion3 1.8s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion3 1.8s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion3 {
-                        0% {bottom: 8%;} /* 처음 위치 */
-                        100% {bottom: 18%;} /* 마지막 위치 */
+                        0% {bottom: 8%;}
+                        100% {bottom: 18%;}
                         }
                     }
     
@@ -318,13 +302,13 @@ main {
                         left: 4%;
                         bottom: 7%;
 
-                        animation: motion4 0.8s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion4 0.8s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion4 {
-                        0% {bottom: 7%;} /* 처음 위치 */
-                        100% {bottom: 15%;} /* 마지막 위치 */
+                        0% {bottom: 7%;}
+                        100% {bottom: 15%;}
                         }
                     }
                 }
@@ -349,13 +333,13 @@ main {
                         bottom: 8%;
                         left: 4%;
 
-                        animation: motion01 1s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motionn 2.5s
+                                linear 0s
+                                infinite alternate;
 
-                        @keyframes motion01 {
-                        0% {bottom: 8%;} /* 처음 위치 */
-                        100% {bottom: 15%;} /* 마지막 위치 */
+                        @keyframes motionn {
+                        0% {bottom: 4%;}
+                        100% {bottom: 30%;}
                         }
                     }
     
@@ -363,13 +347,13 @@ main {
                         bottom: 4%;
                         left: 21%;
 
-                        animation: motion02 0.9s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion02 1.5s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion02 {
-                        0% {bottom: 4%;} /* 처음 위치 */
-                        100% {bottom: 12%;} /* 마지막 위치 */
+                        0% {bottom: 4%;}
+                        100% {bottom: 20%;}
                         }
                     }
     
@@ -377,13 +361,13 @@ main {
                         bottom: 8%;
                         left: 36%;
 
-                        animation: motion03 1.2s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion03 2s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion03 {
-                        0% {bottom: 8%;} /* 처음 위치 */
-                        100% {bottom: 16%;} /* 마지막 위치 */
+                        0% {bottom: 8%;}
+                        100% {bottom: 23%;}
                         }
                     }
     
@@ -391,13 +375,13 @@ main {
                         bottom: 6%;
                         left: 56%;
 
-                        animation: motion04 0.9s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion04 1.8s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion04 {
-                        0% {bottom: 6%;} /* 처음 위치 */
-                        100% {bottom: 13%;} /* 마지막 위치 */
+                        0% {bottom: 6%;}
+                        100% {bottom: 20%;}
                         }
                     }
 
@@ -405,13 +389,13 @@ main {
                         bottom: 8%;
                         left: 74%;
 
-                        animation: motion01 1s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion01 2s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion01 {
-                        0% {bottom: 8%;} /* 처음 위치 */
-                        100% {bottom: 15%;} /* 마지막 위치 */
+                        0% {bottom: 8%;}
+                        100% {bottom: 23%;}
                         }
                     }
 
@@ -419,13 +403,13 @@ main {
                         bottom: 7%;
                         right: 4%;
 
-                        animation: motion06 1.4s /* 속도 */
-                                linear 0s   /* 처음부터 끝까지 일정 속도로 진행 */
-                                infinite alternate; /* 무한 반복 */
+                        animation: motion06 1.9s
+                                linear 0s
+                                infinite alternate;
 
                         @keyframes motion06 {
-                        0% {bottom: 7%;} /* 처음 위치 */
-                        100% {bottom: 14%;} /* 마지막 위치 */
+                        0% {bottom: 7%;}
+                        100% {bottom: 21%;}
                         }
                     }
                 }
@@ -435,51 +419,80 @@ main {
                 display: none;
 
                 @include responsive(pc-size) {
-                    // display: block;
+                    display: block;
                 }
 
                 div {
                     position: absolute;
-                    opacity: 0.7;
+                    opacity: 0.5;
+
+                    @keyframes music {
+                        from { opacity: 0; }
+                        to { opacity: 0.5; }
+                    }
                     
                     &:nth-child(1) {
-                        bottom: 8%;
-                        left: 4%;
+                        bottom: 60%;
+                        left: 6%;
+
+                        animation: music 1s infinite;
+                        animation-direction: alternate;
                     }
     
                     &:nth-child(2) {
-                        bottom: 4%;
-                        left: 15%;
+                        bottom: 38%;
+                        left: 13%;
+
+                        animation: music 1.4s infinite;
+                        animation-direction: alternate;
                     }
     
                     &:nth-child(3) {
-                        bottom: 8%;
-                        left: 25%;
+                        bottom: 45%;
+                        left: 24%;
+
+                        animation: music 1s infinite;
+                        animation-direction: alternate;
                     }
     
                     &:nth-child(4) {
-                        bottom: 6%;
-                        left: 39%;
+                        bottom: 72%;
+                        left: 20%;
+
+                        animation: music 1.4s infinite;
+                        animation-direction: alternate;
                     }
 
                     &:nth-child(5) {
-                        bottom: 8%;
-                        left: 52%;
+                        bottom: 80%;
+                        left: 90%;
+
+                        animation: music 1s infinite;
+                        animation-direction: alternate;
                     }
 
                     &:nth-child(6) {
-                        bottom: 6%;
-                        left: 66%;
+                        bottom: 70%;
+                        left: 73%;
+
+                        animation: music 1.4s infinite;
+                        animation-direction: alternate;
                     }
 
                     &:nth-child(7) {
-                        bottom: 9%;
-                        left: 78%;
+                        bottom: 52%;
+                        left: 85%;
+
+                        animation: music 1.4s infinite;
+                        animation-direction: alternate;
                     }
 
                     &:nth-child(8) {
-                        bottom: 6%;
-                        right: 4%;
+                        bottom: 40%;
+                        right: 25%;
+
+                        animation: music 1s infinite;
+                        animation-direction: alternate;
                     }
                 }
             }
@@ -513,6 +526,16 @@ main {
                     background: $bg-color;
     
                     &:nth-child(1) { 
+                        @keyframes piano {
+                            100% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-yellow;
+                                background-color: $color-yellow;
+                            }
+                        }
+                        animation: piano 1s infinite;
+                        animation-direction: alternate;
+                        
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-yellow;
@@ -839,19 +862,20 @@ main {
     section.about {
         position: relative;
         margin-top: 4.5rem;
-        padding: 6rem 4% 0 4%;
+        padding: 7rem 4% 0 4%;
 
-        // @include responsive(pc-size) {
-        //     width: 100%;
-        //     max-width: 1320px;
-        //     margin: auto;
-        //     margin-top: 200px;
-        //     padding: 80px 70px 0 70px;
-        // }
+        @include responsive(pc-size) {
+            width: 100%;
+            max-width: 1720px;
+            margin: auto;
+            margin-top: 200px;
+            padding: 7rem 3% 0 3%;
+        }
 
         div.about-title {
             display: flex;
             align-items: center;
+            position: relative;
 
             h2 {
                 color: $font-color;
@@ -859,79 +883,85 @@ main {
                 font-family: $point-font;
                 margin-right: 1.5rem;
 
-                // @include responsive(tablet-size) {
-                //     font-size: 8vw;
-                //     margin-right: 5%;
-                // }
+                @include responsive(tablet-size) {
+                    font-size: 3.2rem;
+                    margin-right: 2.1rem;
+                }
 
-                // @include responsive(pc-size) {
-                //     font-size: 80px;
-                //     margin-right: 45px;
-                // }
+                @include responsive(pc-size) {
+                    font-size: 4rem;
+                    margin-right: 2.3rem;
+                }
             }
 
-            div {
+            div.about-img {
                 display: inline-block;
                 width: 2.5rem;
                 margin-top: 1rem;
 
-                // @include responsive(tablet-size) {
-                //     width: 7%;
-                // }
+                @include responsive(tablet-size) {
+                    width: 2.6rem;
+                }
 
-                // @include responsive(pc-size) {
-                //     padding-top: 2%;
-                //     width: auto;
-                // }
+                @include responsive(pc-size) {
+                    width: 2.8rem;
+                }
 
                 img {
                     width: 100%;
                     height: auto;
                 }
             }
+
+            div.line {
+                display: none;
+
+                @include responsive(pc-size) {
+                    position: absolute;
+                    display: block;
+                    width: 2px;
+                    height: 37rem;
+                    top: 9rem;
+                    left: 2rem;
+                    background-color: #fbeeea;
+                }
+            }
         }
 
         section.about-top {
-            // @include responsive(pc-size) {
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: space-between;
-            //     margin-top: 100px;
-            // }
+            position: relative;
+
+            &::after {
+                content: '';
+                clear: both;
+                display:block;
+            }
 
             div.about-img {
-                margin: 5rem 0;
+                margin: 7rem 0;
                 position: relative;
-                
-                // @include responsive(tablet-size) {
-                //     margin: 10% 0;
-                // }
 
-                // @include responsive(pc-size) {
-                //     order: 2;
-                //     margin: 0;
-                //     width: 26%;
-                // }
+                @include responsive(pc-size) {
+                    position: absolute;
+                    right: 3rem;
+                    top: -5rem;
+                }
 
                 div {
                     &:first-child img {
                         width: 18rem;
                         margin: auto;
-
-                        // @include responsive(tablet-size) {
-                        //     width: auto;
-                        // }
-
-                        // @include responsive(pc-size) {
-                        //     width: 100%;
-                        // }
                     }
 
                     &:last-child {
                         width: 100%;
                         position: absolute;
                         top: -2rem;
-                        // background-color: pink;
+
+                        @include responsive(pc-size) {
+                            top: -1.9rem;
+                            left: -1.9rem;
+                        }
 
                         img {
                             width: 22rem;
@@ -949,9 +979,12 @@ main {
             }
 
             div.about-des {
-                // @include responsive(pc-size) {
-                //     width: 70%;
-                // }
+                @include responsive(pc-size) {
+                    float: left;
+                    width: 58%;
+                    margin-top: 6rem;
+                    margin-left: 5rem;
+                }
 
                 h3 {
                     margin: 2.5rem 0;
@@ -959,63 +992,58 @@ main {
                     font-size: 1.6rem;
                     color: $point-color;
 
-                    // @media screen and (min-width: 425px) {
-                    //     font-size: 30px;
-                    // }
+                    @include responsive(tablet-size) {
+                        font-size: 1.8rem;
+                    }
 
-                    // @include responsive(tablet-size) {
-                    //     font-size: 45px;
-                    // }
+                    @include responsive(pc-size) {
+                        text-align: left;
+                    }
 
-                    // @include responsive(pc-size) {
-                    //     text-align: left;
-                    //     font-size: 37px;
-                    // }
-
-                    // span {
-                    //     @include responsive(pc-size) {
-                    //         display: inline-block;
-                    //     }
-                    // }
                 }
 
                 p {
                     width: 90%;
                     margin: auto;
                     font-size: 1.2rem;
-                    text-align: justify;
+                    text-align: center;
                     line-height: 1.7;
+                    
+                    span {
+                        display: inline;
 
-                    // @media screen and (min-width: 425px) {
-                    //     font-size: 20px;
-                    // }
+                        @include responsive(pc-size) {
+                            display: inline-block;
+                        }
+                    }
 
-                    // @include responsive(tablet-size) {
-                    //     font-size: 26px;
-                    //     margin-top: 50px;
-                    // }
+                    @include responsive(tablet-size) {
+                        font-size: 1.3rem;
+                    }
 
-                    // @include responsive(pc-size) {
-                    //     width: 100%;
-                    //     text-align: left;
-                    //     font-size: 20px;
-                    // }
+                    @include responsive(pc-size) {
+                        width: 100%;
+                        text-align: left;
+                        margin-left: 0.5rem;
+                    }
                 }
             }
         }
     }
 
+    .w-height { height: 5rem; }
+    
     section.skills {
-        width: 100%;
-        margin-top: 100px;
-        padding: 80px 4% 0 4%;
+        position: relative;
+        margin-top: 4.5rem;
+        padding: 7rem 4% 0 4%;
 
         @include responsive(pc-size) {
             width: 100%;
             max-width: 1720px;
             margin: auto;
             margin-top: 200px;
-            padding: 80px 70px 0 70px;
+            padding: 7rem 3% 0 3%;
         }
 
         div.skills-title {
@@ -1027,39 +1055,38 @@ main {
             }
 
             div {
-                padding-top: 3%;
                 display: inline-block;
-                width: 9%;
+                width: 2.5rem;
+                margin-top: 1rem;
 
                 @include responsive(tablet-size) {
-                    width: 7%;
+                    width: 2.6rem;
                 }
 
                 @include responsive(pc-size) {
-                    padding-top: 2%;
-                    width: auto;
+                    width: 2.8rem;
                 }
 
                 img {
                     width: 100%;
+                    height: auto;
                 }
-
             }
 
             h2 {
                 color: $font-color;
-                font-size: 9vw;
+                font-size: 2.8rem;
                 font-family: $point-font;
-                margin-left: 6%;
+                margin-left: 1.5rem;
 
                 @include responsive(tablet-size) {
-                    font-size: 8vw;
-                    margin-left: 5%;
+                    font-size: 3.2rem;
+                    margin-left: 2.1rem;
                 }
 
                 @include responsive(pc-size) {
-                    font-size: 80px;
-                    margin-left: 45px;
+                    font-size: 4rem;
+                    margin-left: 2.3rem;
                 }
             }
         }
@@ -1111,9 +1138,6 @@ main {
             }
 
             ul {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
                 margin-top: 15%;
                 padding: 0 4%;
 
@@ -1124,21 +1148,21 @@ main {
 
                 li {
                     position: relative;
-                    width: 48%;
-                    height: 39vw;
                     border-radius: 50%;
-                    margin-bottom: 5%;
                     background-color: $bg-color;
+                    margin: 1rem;
 
                     @include responsive(pc-size) {
                         position: absolute;
                         width: 14rem;
                         height: 14rem;
-                        margin-bottom: 0;
+                        margin: 0;
                     }
 
                     &:nth-child(1) {
                         border: 3px solid #f44336;
+                        width: 12rem;
+                        height: 12rem;
 
                         @include responsive(pc-size) {
                             top: -6rem;
@@ -1149,6 +1173,8 @@ main {
 
                     &:nth-child(2) {
                         border: 3px solid #ff9800;
+                        width: 12rem;
+                        height: 12rem;
 
                         @include responsive(pc-size) {
                             top: -6rem;
@@ -1159,6 +1185,8 @@ main {
 
                     &:nth-child(3) {
                         border: 3px solid #d5b71d;
+                        width: 12rem;
+                        height: 12rem;
 
                         @include responsive(pc-size) {
                             top: 7.5rem;
@@ -1169,6 +1197,8 @@ main {
                     }
                     &:nth-child(4) {
                         border: 3px solid #abba19;
+                        width: 12rem;
+                        height: 12rem;
 
                         @include responsive(pc-size) {
                             bottom: 7.5rem;
@@ -1189,6 +1219,8 @@ main {
                     }
                     &:nth-child(5) {
                         border: 3px solid #0c9688;
+                        width: 12rem;
+                        height: 12rem;
 
                         @include responsive(pc-size) {
                             bottom: -6rem;
@@ -1198,6 +1230,8 @@ main {
                     }
                     &:nth-child(6) {
                         border: 3px solid #2196f3;
+                        width: 12rem;
+                        height: 12rem;
 
                         @include responsive(pc-size) {
                             bottom: -6rem;
@@ -1207,6 +1241,8 @@ main {
                     }
                     &:nth-child(7) {
                         border: 3px solid #3f51b5;
+                        width: 12rem;
+                        height: 12rem;
 
                         @include responsive(pc-size) {
                             top: 7.5rem;
@@ -1216,6 +1252,8 @@ main {
                     }
                     &:nth-child(8) {
                         border: 3px solid #673ab7;
+                        width: 12rem;
+                        height: 12rem;
 
                         @include responsive(pc-size) {
                             bottom: 7.5rem;
@@ -1268,18 +1306,16 @@ main {
     }
 
     section.portfolio {
-        width: 100%;
-        margin-top: 100px;
-        // padding: 80px 4% 0 4%;
-        // 임시
-        padding: 80px 4% 80px 4%;
+        position: relative;
+        margin-top: 4.5rem;
+        padding: 7rem 4% 0 4%;
 
         @include responsive(pc-size) {
             width: 100%;
             max-width: 1720px;
             margin: auto;
             margin-top: 200px;
-            padding: 80px 70px 0 70px;
+            padding: 7rem 3% 0 3%;
         }
 
         .portfolio-title {
@@ -1287,42 +1323,17 @@ main {
             align-items: center;
             justify-content: center;
 
-            div {
-                padding-top: 3%;
-                display: inline-block;
-                width: 5%;
-
-                @include responsive(tablet-size) {
-                    width: 4%;
-                }
-
-                @include responsive(pc-size) {
-                    padding-top: 2%;
-                    width: auto;
-                }
-
-                img {
-                    width: 100%;
-                }
-            }
-
             h2 {
                 color: $font-color;
-                font-size: 9vw;
+                font-size: 2.8rem;
                 font-family: $point-font;
-                margin-left: 7%;
-                margin-right: 7%;
 
                 @include responsive(tablet-size) {
-                    font-size: 8vw;
-                    margin-left: 6%;
-                    margin-right: 6%;
+                    font-size: 3.2rem;
                 }
 
                 @include responsive(pc-size) {
-                    font-size: 80px;
-                    margin-left: 50px;
-                    margin-right: 50px;
+                    font-size: 4rem;
                 }
             }
 
@@ -1347,15 +1358,24 @@ main {
         }
 
         .pf-wrap {
-            margin: 30% 0;
+            margin: 7rem 0;
 
             .pf {
-                margin-bottom: 40%;
-                width: 100%;
-                // background-color: pink;
+                margin-bottom: 10rem;
+
+                @include responsive(pc-size) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
     
                 .portfolio-mokup {
-                    width: 100%;
+                    width: 28rem;
+                    margin: auto;
+
+                    @include responsive(pc-size) {
+                        width: 48%;
+                    }
     
                     img {
                         width: 100%;
@@ -1365,12 +1385,13 @@ main {
                 .pf-txt {
                     position: relative;
                     text-align: center;
-                    // background-color: pink;
-                    margin-top: 15%;
+                    margin-top: 5rem;
+                    @include responsive(pc-size) {
+                        width: 52%;
+                    }
 
                     span.pf-num {
-                        position: absolute;
-                        font-size: 4vw;
+                        font-size: 1.3rem;
                     }
 
                     .pf-num1 {
@@ -1389,14 +1410,14 @@ main {
                     }
 
                     h2 {
-                        font-size: 9vw;
+                        font-size: 2.8rem;
                     }
 
                     p {
-                        margin-top: 5%;
+                        margin-top: 1.4rem;
 
                         span {
-                            font-size: 4.5vw;
+                            font-size: 1.45rem;
 
                             &:last-child {
                                 margin-top: 2%;
