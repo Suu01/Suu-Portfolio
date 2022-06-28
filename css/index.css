@@ -8,6 +8,34 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: url("../images/mouse-cursor.png"), auto;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%;
+  /* 스크롤바의 길이 */
+  background: #e28f83;
+  /* 스크롤바의 색상 */
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+          box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(251, 238, 234, 0.8);
+  /*스크롤바 뒷 배경 색상*/
+}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
@@ -61,30 +89,6 @@ footer {
   display: block;
 }
 
-body {
-  cursor: url("../images/mouse-cursor.png"), auto;
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-  /* 스크롤바의 너비 */
-}
-
-body::-webkit-scrollbar-thumb {
-  height: 30%;
-  /* 스크롤바의 길이 */
-  background: #e28f83;
-  /* 스크롤바의 색상 */
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
-          box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
-}
-
-body::-webkit-scrollbar-track {
-  background: rgba(251, 238, 234, 0.8);
-  /*스크롤바 뒷 배경 색상*/
-}
-
 header {
   width: 100%;
   height: 80px;
@@ -92,7 +96,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #333;
+  background-color: lightgreen;
 }
 
 @media screen and (min-width: 768px) {
@@ -304,34 +308,16 @@ main section.main-section div.main-txt {
 
 main section.main-section div.main-txt .wel {
   font-weight: 600;
-  font-size: 6.25vw;
+  font-size: 1.8rem;
   color: #777;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
-@media screen and (min-width: 425px) {
-  main section.main-section div.main-txt .wel {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  main section.main-section div.main-txt .wel {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.main-section div.main-txt .wel {
-    font-size: 2.5rem;
-  }
-}
-
 main section.main-section div.main-txt h2 {
   font-weight: 600;
-  font-size: 11.875vw;
-  margin: 1% 0 3% 0;
+  font-size: 3.7rem;
+  margin: 1rem 0 1.5rem 0;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
@@ -340,48 +326,12 @@ main section.main-section div.main-txt h2 span {
   display: inline-block;
 }
 
-@media screen and (min-width: 425px) {
-  main section.main-section div.main-txt h2 {
-    font-size: 3.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  main section.main-section div.main-txt h2 {
-    font-size: 5.2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.main-section div.main-txt h2 {
-    font-size: 5.8rem;
-  }
-}
-
 main section.main-section div.main-txt .front {
   font-weight: 500;
-  font-size: 5.625vw;
+  font-size: 1.5rem;
   color: #e28f83;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-}
-
-@media screen and (min-width: 425px) {
-  main section.main-section div.main-txt .front {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  main section.main-section div.main-txt .front {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.main-section div.main-txt .front {
-    font-size: 2.3rem;
-  }
 }
 
 main section.main-section div.main-img {
@@ -1149,18 +1099,8 @@ main section.main-section div.piano-wrap div.piano-black div:nth-child(17) {
 
 main section.about {
   position: relative;
-  margin-top: 30%;
-  padding: 80px 4% 0 4%;
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about {
-    width: 100%;
-    max-width: 1720px;
-    margin: auto;
-    margin-top: 200px;
-    padding: 80px 70px 0 70px;
-  }
+  margin-top: 4.5rem;
+  padding: 6rem 4% 0 4%;
 }
 
 main section.about div.about-title {
@@ -1174,178 +1114,72 @@ main section.about div.about-title {
 
 main section.about div.about-title h2 {
   color: #fbeeea;
-  font-size: 9vw;
+  font-size: 2.8rem;
   font-family: "HSYuJi";
-  margin-right: 6%;
-}
-
-@media screen and (min-width: 768px) {
-  main section.about div.about-title h2 {
-    font-size: 8vw;
-    margin-right: 5%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about div.about-title h2 {
-    font-size: 80px;
-    margin-right: 45px;
-  }
+  margin-right: 1.5rem;
 }
 
 main section.about div.about-title div {
-  padding-top: 3%;
   display: inline-block;
-  width: 9%;
-}
-
-@media screen and (min-width: 768px) {
-  main section.about div.about-title div {
-    width: 7%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about div.about-title div {
-    padding-top: 2%;
-    width: auto;
-  }
+  width: 2.5rem;
+  margin-top: 1rem;
 }
 
 main section.about div.about-title div img {
   width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about section.about-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 100px;
-  }
+  height: auto;
 }
 
 main section.about section.about-top div.about-img {
-  margin: 15% 0;
+  margin: 5rem 0;
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
-  main section.about section.about-top div.about-img {
-    margin: 10% 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about section.about-top div.about-img {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin: 0;
-    width: 26%;
-  }
-}
-
-main section.about section.about-top div.about-img div img {
-  width: 85%;
+main section.about section.about-top div.about-img div:first-child img {
+  width: 18rem;
   margin: auto;
 }
 
-@media screen and (min-width: 425px) {
-  main section.about section.about-top div.about-img div img {
-    width: 360px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  main section.about section.about-top div.about-img div img {
-    width: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about section.about-top div.about-img div img {
-    width: 100%;
-  }
-}
-
-main section.about section.about-top div.about-img .photo-txt {
-  display: none;
+main section.about section.about-top div.about-img div:last-child {
+  width: 100%;
   position: absolute;
+  top: -2rem;
 }
 
-@media screen and (min-width: 1024px) {
-  main section.about section.about-top div.about-des {
-    width: 70%;
+main section.about section.about-top div.about-img div:last-child img {
+  width: 22rem;
+  margin: auto;
+  -webkit-animation: rotate 9s linear infinite;
+          animation: rotate 9s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 main section.about section.about-top div.about-des h3 {
+  margin: 2.5rem 0;
   text-align: center;
-  font-family: "HSYuJi";
-  font-size: 23px;
+  font-size: 1.6rem;
   color: #e28f83;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 425px) {
-  main section.about section.about-top div.about-des h3 {
-    font-size: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  main section.about section.about-top div.about-des h3 {
-    font-size: 45px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about section.about-top div.about-des h3 {
-    text-align: left;
-    font-size: 37px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about section.about-top div.about-des h3 span {
-    display: inline-block;
-  }
 }
 
 main section.about section.about-top div.about-des p {
-  width: 95%;
+  width: 90%;
   margin: auto;
-  margin-top: 40px;
-  font-size: 16px;
+  font-size: 1.2rem;
   text-align: justify;
-}
-
-@media screen and (min-width: 425px) {
-  main section.about section.about-top div.about-des p {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  main section.about section.about-top div.about-des p {
-    font-size: 26px;
-    margin-top: 50px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main section.about section.about-top div.about-des p {
-    width: 100%;
-    text-align: left;
-    font-size: 20px;
-  }
+  line-height: 1.7;
 }
 
 main section.skills {

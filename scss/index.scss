@@ -2,25 +2,6 @@
 @import "common.scss";
 @import "mixin.scss";
 
-body {
-    cursor: url('../images/mouse-cursor.png'), auto;
-}
-
-body::-webkit-scrollbar {
-    width: 10px;  /* 스크롤바의 너비 */
-}
-
-body::-webkit-scrollbar-thumb {
-    height: 30%; /* 스크롤바의 길이 */
-    background: $point-color; /* 스크롤바의 색상 */
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
-}
-
-body::-webkit-scrollbar-track {
-    background: rgba(251, 238, 234, 0.8); /*스크롤바 뒷 배경 색상*/
-}
-
 header {
     width: 100%;
     height: 80px;
@@ -28,7 +9,7 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: $bg-color;
+    background-color: lightgreen;
 
     @include responsive(tablet-size) {
         height: 90px;
@@ -208,64 +189,63 @@ main {
 
             .wel {
                 font-weight: 600;
-                font-size: 6.25vw;
+                font-size: 1.8rem;
                 color: #777;
                 transition: all 0.3s ease-in;
 
-                @media screen and (min-width: 425px) {
-                    font-size: 1.8rem;
-                }
+                // @media screen and (min-width: 425px) {
+                //     font-size: 1.8rem;
+                // }
 
-                @include responsive(tablet-size) {
-                    font-size: 2.5rem;
-                }
+                // @include responsive(tablet-size) {
+                //     font-size: 2.5rem;
+                // }
 
-                @include responsive(pc-size) {
-                    font-size: 2.5rem;
-                }
+                // @include responsive(pc-size) {
+                //     font-size: 2.5rem;
+                // }
             }
 
             h2 {
                 font-weight: 600;
-                font-size: 11.875vw;
-                margin: 1% 0 3% 0;
+                font-size: 3.7rem;
+                margin: 1rem 0 1.5rem 0;
                 transition: all 0.3s ease-in;
 
                 span {
                     display: inline-block;
                 }
 
-                @media screen and (min-width: 425px) {
-                    font-size: 3.5rem;
-                }
+                // @media screen and (min-width: 425px) {
+                //     font-size: 3.5rem;
+                // }
 
-                @include responsive(tablet-size) {
-                    font-size: 5.2rem;
-                }
+                // @include responsive(tablet-size) {
+                //     font-size: 5.2rem;
+                // }
 
-                @include responsive(pc-size) {
-                    font-size: 5.8rem;
-                }
+                // @include responsive(pc-size) {
+                //     font-size: 5.8rem;
+                // }
             }
 
             .front {
                 font-weight: 500;
-                font-size: 5.625vw;
+                font-size: 1.5rem;
                 color: $point-color;
                 transition: all 0.3s ease-in;
 
-                @media screen and (min-width: 425px) {
-                    font-size: 1.5rem;
-                    // font-size: 23px;
-                }
+                // @media screen and (min-width: 425px) {
+                //     font-size: 1.5rem;
+                // }
 
-                @include responsive(tablet-size) {
-                    font-size: 2.2rem;
-                }
+                // @include responsive(tablet-size) {
+                //     font-size: 2.2rem;
+                // }
 
-                @include responsive(pc-size) {
-                    font-size: 2.3rem;
-                }
+                // @include responsive(pc-size) {
+                //     font-size: 2.3rem;
+                // }
             }
         }
 
@@ -855,16 +835,16 @@ main {
 
     section.about {
         position: relative;
-        margin-top: 30%;
-        padding: 80px 4% 0 4%;
+        margin-top: 4.5rem;
+        padding: 6rem 4% 0 4%;
 
-        @include responsive(pc-size) {
-            width: 100%;
-            max-width: 1720px;
-            margin: auto;
-            margin-top: 200px;
-            padding: 80px 70px 0 70px;
-        }
+        // @include responsive(pc-size) {
+        //     width: 100%;
+        //     max-width: 1320px;
+        //     margin: auto;
+        //     margin-top: 200px;
+        //     padding: 80px 70px 0 70px;
+        // }
 
         div.about-title {
             display: flex;
@@ -872,141 +852,151 @@ main {
 
             h2 {
                 color: $font-color;
-                font-size: 9vw;
+                font-size: 2.8rem;
                 font-family: $point-font;
-                margin-right: 6%;
+                margin-right: 1.5rem;
 
-                @include responsive(tablet-size) {
-                    font-size: 8vw;
-                    margin-right: 5%;
-                }
+                // @include responsive(tablet-size) {
+                //     font-size: 8vw;
+                //     margin-right: 5%;
+                // }
 
-                @include responsive(pc-size) {
-                    font-size: 80px;
-                    margin-right: 45px;
-                }
+                // @include responsive(pc-size) {
+                //     font-size: 80px;
+                //     margin-right: 45px;
+                // }
             }
 
             div {
-                padding-top: 3%;
                 display: inline-block;
-                width: 9%;
+                width: 2.5rem;
+                margin-top: 1rem;
 
-                @include responsive(tablet-size) {
-                    width: 7%;
-                }
+                // @include responsive(tablet-size) {
+                //     width: 7%;
+                // }
 
-                @include responsive(pc-size) {
-                    padding-top: 2%;
-                    width: auto;
-                }
+                // @include responsive(pc-size) {
+                //     padding-top: 2%;
+                //     width: auto;
+                // }
 
                 img {
                     width: 100%;
+                    height: auto;
                 }
             }
         }
 
         section.about-top {
-            @include responsive(pc-size) {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-top: 100px;
-            }
+            // @include responsive(pc-size) {
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: space-between;
+            //     margin-top: 100px;
+            // }
 
             div.about-img {
-                margin: 15% 0;
+                margin: 5rem 0;
                 position: relative;
                 
-                @include responsive(tablet-size) {
-                    margin: 10% 0;
-                }
+                // @include responsive(tablet-size) {
+                //     margin: 10% 0;
+                // }
 
-                @include responsive(pc-size) {
-                    order: 2;
-                    margin: 0;
-                    width: 26%;
-                }
+                // @include responsive(pc-size) {
+                //     order: 2;
+                //     margin: 0;
+                //     width: 26%;
+                // }
 
                 div {
-                    img {
-                        width: 85%;
+                    &:first-child img {
+                        width: 18rem;
                         margin: auto;
 
-                        @media screen and (min-width: 425px) {
-                            width: 360px;
-                        }
+                        // @include responsive(tablet-size) {
+                        //     width: auto;
+                        // }
 
-                        @include responsive(tablet-size) {
-                            width: auto;
-                        }
+                        // @include responsive(pc-size) {
+                        //     width: 100%;
+                        // }
+                    }
 
-                        @include responsive(pc-size) {
-                            width: 100%;
+                    &:last-child {
+                        width: 100%;
+                        position: absolute;
+                        top: -2rem;
+                        // background-color: pink;
+
+                        img {
+                            width: 22rem;
+                            margin: auto;
+                            animation: rotate 9s linear infinite;
                         }
                     }
-                }
 
-                .photo-txt {
-                    display: none;
-                    position: absolute;
+                    @keyframes rotate{
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
                 }
             }
 
             div.about-des {
-                @include responsive(pc-size) {
-                    width: 70%;
-                }
+                // @include responsive(pc-size) {
+                //     width: 70%;
+                // }
 
                 h3 {
+                    margin: 2.5rem 0;
                     text-align: center;
-                    font-family: $point-font;
-                    font-size: 23px;
+                    font-size: 1.6rem;
                     color: $point-color;
-                    text-transform: uppercase;
 
-                    @media screen and (min-width: 425px) {
-                        font-size: 30px;
-                    }
+                    // @media screen and (min-width: 425px) {
+                    //     font-size: 30px;
+                    // }
 
-                    @include responsive(tablet-size) {
-                        font-size: 45px;
-                    }
+                    // @include responsive(tablet-size) {
+                    //     font-size: 45px;
+                    // }
 
-                    @include responsive(pc-size) {
-                        text-align: left;
-                        font-size: 37px;
-                    }
+                    // @include responsive(pc-size) {
+                    //     text-align: left;
+                    //     font-size: 37px;
+                    // }
 
-                    span {
-                        @include responsive(pc-size) {
-                            display: inline-block;
-                        }
-                    }
+                    // span {
+                    //     @include responsive(pc-size) {
+                    //         display: inline-block;
+                    //     }
+                    // }
                 }
 
                 p {
-                    width: 95%;
+                    width: 90%;
                     margin: auto;
-                    margin-top: 40px;
-                    font-size: 16px;
+                    font-size: 1.2rem;
                     text-align: justify;
+                    line-height: 1.7;
 
-                    @media screen and (min-width: 425px) {
-                        font-size: 20px;
-                    }
+                    // @media screen and (min-width: 425px) {
+                    //     font-size: 20px;
+                    // }
 
-                    @include responsive(tablet-size) {
-                        font-size: 26px;
-                        margin-top: 50px;
-                    }
+                    // @include responsive(tablet-size) {
+                    //     font-size: 26px;
+                    //     margin-top: 50px;
+                    // }
 
-                    @include responsive(pc-size) {
-                        width: 100%;
-                        text-align: left;
-                        font-size: 20px;
-                    }
+                    // @include responsive(pc-size) {
+                    //     width: 100%;
+                    //     text-align: left;
+                    //     font-size: 20px;
+                    // }
                 }
             }
         }
