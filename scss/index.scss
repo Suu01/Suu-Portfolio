@@ -1049,10 +1049,7 @@ main {
         div.skills-title {
             display: flex;
             align-items: center;
-
-            @include responsive(pc-size) {
-                justify-content: end;
-            }
+            justify-content: end;
 
             div {
                 display: inline-block;
@@ -1294,21 +1291,22 @@ main {
     }
 
     div.line2 {
-        display: none;
+        background-color: $font-color;
+        width: 2px;
+        height: 15rem;
+        margin: auto;
+        margin-top: 10rem;
 
         @include responsive(pc-size) {
-            display: block;
-            background-color: $font-color;
-            width: 2px;
-            height: 300px;
-            margin: 200px auto;
+            height: 19rem;
+            margin: auto;
+            margin-top: 10rem;
         }
     }
 
     section.portfolio {
         position: relative;
-        margin-top: 4.5rem;
-        padding: 7rem 4% 0 4%;
+        padding: 10rem 4% 0 4%;
 
         @include responsive(pc-size) {
             width: 100%;
@@ -1358,14 +1356,14 @@ main {
         }
 
         .pf-wrap {
-            margin: 7rem 0;
+            margin: 10rem 0;
 
             .pf {
                 margin-bottom: 10rem;
 
                 @include responsive(pc-size) {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     align-items: center;
                 }
     
@@ -1373,8 +1371,12 @@ main {
                     width: 28rem;
                     margin: auto;
 
+                    @include responsive(tablet-size) {
+                        width: 40rem;
+                    }
+
                     @include responsive(pc-size) {
-                        width: 48%;
+                        width: 45%;
                     }
     
                     img {
@@ -1386,41 +1388,94 @@ main {
                     position: relative;
                     text-align: center;
                     margin-top: 5rem;
+
+                    @include responsive(tablet-size) {
+                        margin-top: 8rem;
+                    }
+
                     @include responsive(pc-size) {
-                        width: 52%;
+                        width: 50%;
                     }
 
                     span.pf-num {
                         font-size: 1.3rem;
-                    }
 
-                    .pf-num1 {
-                        left: 28%;
-                        top: -10%;
-                    }
-
-                    .pf-num2 {
-                        left: 20%;
-                        top: -10%;
-                    }
-
-                    .pf-num3 {
-                        left: 21%;
-                        top: -10%;
+                        @include responsive(tablet-size) {
+                            font-size: 1.7rem;
+                        }
                     }
 
                     h2 {
                         font-size: 2.8rem;
+
+                        @include responsive(tablet-size) {
+                            font-size: 3.7rem;
+                        }
                     }
 
                     p {
                         margin-top: 1.4rem;
 
+                        @include responsive(tablet-size) {
+                            margin-top: 1.7rem;
+                        }
+
                         span {
                             font-size: 1.45rem;
 
+                            @include responsive(tablet-size) {
+                                font-size: 1.8rem;
+                            }
+
+                            @include responsive(tablet-size) {
+                                font-size: 1.7rem;
+                            }
+
                             &:last-child {
-                                margin-top: 2%;
+                                margin-top: 0.1em;
+
+                                @include responsive(tablet-size) {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    p.pf-txt-add {
+                        display: none;
+
+                        @include responsive(pc-size) {
+                            width: 70%;
+                            margin: auto;
+                            margin-top: 2rem;
+                            display: block;
+                            color: #777;
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .pf-btn {
+                        position: relative;
+                        margin-top: 2.5rem;
+
+                        @include responsive(tablet-size) {
+                        margin-top: 3rem;
+                        }
+
+                        .btn-wrap {
+                            a {
+                                svg.po-btn1 {
+                                    width: 18rem;
+
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: $color-pink;
+
+                                        &:hover {
+                                            fill: $color-pink;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
