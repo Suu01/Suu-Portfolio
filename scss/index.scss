@@ -20,18 +20,17 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        max-width: 1720px;
+        max-width: 1440px;
         margin: auto;
         height: 100%;
         padding: 0 4%;
 
         @include responsive(pc-size) {
-            padding: 0 3%;
+            padding: 0 30px;
         }
 
         h1 {
             a {
-
                 &:first-child {
                     display: none;
 
@@ -187,11 +186,32 @@ main {
                 width: 700px;
             }
 
+            @keyframes anim-lineUp {
+                0% {
+                    opacity: 0;
+                    transform: translateY(80%);
+                }
+                20% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+            }
+
             .wel {
                 font-weight: 600;
                 font-size: 1.8rem;
                 color: #777;
+                opacity: 0;
                 transition: all 0.3s ease-in;
+                animation: 3s anim-lineUp forwards;
+                animation-delay: 2s;
 
                 @include responsive(tablet-size) {
                     font-size: 2.1rem;
@@ -200,16 +220,93 @@ main {
                 @include responsive(pc-size) {
                     font-size: 2.5rem;
                 }
-            }
+            } 
 
             h2 {
                 font-weight: 600;
                 font-size: 3.7rem;
                 margin: 1rem 0 1.5rem 0;
-                transition: all 0.3s ease-in;
+                transition: all 0.5s ease-in;
 
+                @keyframes sideSlide {
+                    60% {
+                        transform: translate(20px, 0) scale(1);
+                    }
+                    80% {
+                        transform: translate(20px, 0) scale(1);
+                    }
+                    99% {
+                        transform: translate(0) scale(1.2);
+                    }
+                    100% {
+                        transform: translate(0) scale(1);
+                        opacity: 1;
+                    }
+                }
+                
                 span {
                     display: inline-block;
+                    opacity: 0;
+                    transform: translate(-300px, 0) scale(0);
+                    animation: sideSlide 1.2s forwards;            
+
+                    &:nth-of-type(2) {
+                        animation-delay: .05s;
+                    }
+                    &:nth-of-type(3) {
+                        animation-delay: .1s;
+                    }
+                    &:nth-of-type(4) {
+                        animation-delay: .15s;
+                    }
+                    &:nth-of-type(5) {
+                        animation-delay: .2s;
+                    }
+                    &:nth-of-type(6) {
+                        animation-delay: .25s;
+                    }
+                    &:nth-of-type(7) {
+                        animation-delay: .3s;
+                    }
+                    &:nth-of-type(8) {
+                        animation-delay: .35s;
+                    }
+                    &:nth-of-type(9) {
+                        animation-delay: .4s;
+                    }
+                    &:nth-of-type(10) {
+                        animation-delay: .45s;
+                    }
+                    &:nth-of-type(11) {
+                        animation-delay: .5s;
+                    }
+                    &:nth-of-type(12) {
+                        animation-delay: .55s;
+                    }
+                    &:nth-of-type(13) {
+                        animation-delay: .6s;
+                    }
+                    &:nth-of-type(14) {
+                        animation-delay: .65s;
+                    }
+                    &:nth-of-type(15) {
+                        animation-delay: .7s;
+                    }
+                    &:nth-of-type(16) {
+                        animation-delay: .75s;
+                    }
+                    &:nth-of-type(17) {
+                        animation-delay: .8s;
+                    }
+                    &:nth-of-type(18) {
+                        animation-delay: .85s;
+                    }
+                    &:nth-of-type(19) {
+                        animation-delay: .9s;
+                        }
+                    &:nth-of-type(20) {
+                        animation-delay: .95s;
+                    }
                 }
 
                 @include responsive(tablet-size) {
@@ -225,7 +322,10 @@ main {
                 font-weight: 500;
                 font-size: 1.5rem;
                 color: $point-color;
+                opacity: 0;
                 transition: all 0.3s ease-in;
+                animation: 3s anim-lineUp forwards;
+                animation-delay: 2s;
 
                 @include responsive(tablet-size) {
                     font-size: 2.1rem;
@@ -526,14 +626,17 @@ main {
                     background: $bg-color;
     
                     &:nth-child(1) { 
-                        @keyframes piano {
-                            100% { 
+                        @keyframes piano1 {
+                            50% { 
                                 height: 17.5vw; 
                                 border: 1px solid $color-yellow;
                                 background-color: $color-yellow;
                             }
+                            100% { 
+                                height: 13.5vw;
+                            }
                         }
-                        animation: piano 1s infinite;
+                        animation: piano1 1s linear;
                         animation-direction: alternate;
                         
                         &:hover {
@@ -545,6 +648,20 @@ main {
     
                     &:nth-child(2) { 
                         height: 15.5vw; 
+
+                        @keyframes piano2-1 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-blue;
+                                background-color: $color-blue;
+                            }
+                            100% { 
+                                height: 15.5vw; 
+                            }
+                        }
+                        animation: piano2-1 1s linear;
+                        animation-delay: 2s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-blue;
@@ -554,6 +671,19 @@ main {
                     
                     &:nth-child(3) { 
                         height: 14.5vw; 
+                        @keyframes piano3-1 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-green;
+                                background-color: $color-green;
+                            }
+                            100% { 
+                                height: 14.5vw; 
+                            }
+                        }
+                        animation: piano3-1 1s linear;
+                        animation-delay: 4s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-green;
@@ -563,6 +693,19 @@ main {
     
                     &:nth-child(4) { 
                         height: 11.5vw;
+                        @keyframes piano4-1 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-pink;
+                                background-color: $color-pink;
+                            }
+                            100% { 
+                                height: 11.5vw; 
+                            }
+                        }
+                        animation: piano4-1 1s linear;
+                        animation-delay: 6s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-pink;
@@ -572,6 +715,20 @@ main {
     
                     &:nth-child(5) { 
                         height: 13vw;
+
+                        @keyframes piano2 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-yellow;
+                                background-color: $color-yellow;
+                            }
+                            100% { 
+                                height: 13vw; 
+                            }
+                        }
+                        animation: piano2 1s linear;
+                        animation-direction: alternate;
+
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-yellow;
@@ -581,6 +738,19 @@ main {
     
                     &:nth-child(6) { 
                         height: 16.5vw; 
+                        @keyframes piano2-2 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-blue;
+                                background-color: $color-blue;
+                            }
+                            100% { 
+                                height: 16.5vw; 
+                            }
+                        }
+                        animation: piano2-2 1s linear;
+                        animation-delay: 2s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-blue;
@@ -590,6 +760,20 @@ main {
     
                     &:nth-child(7) { 
                         height: 15vw;
+                        @keyframes piano3-2 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-green;
+                                background-color: $color-green;
+                            }
+                            100% { 
+                                height: 15vw; 
+                            }
+                        }
+                        animation: piano3-2 1s linear;
+                        animation-delay: 4s;
+                        animation-direction: alternate;
+
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-green;
@@ -598,7 +782,20 @@ main {
                     }
     
                     &:nth-child(8) { 
-                        height: 13.5vw; 
+                        height: 13.5vw;
+                        @keyframes piano4-2 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-pink;
+                                background-color: $color-pink;
+                            }
+                            100% { 
+                                height: 13.5vw; 
+                            }
+                        }
+                        animation: piano4-2 1s linear;
+                        animation-delay: 6s;
+                        animation-direction: alternate; 
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-pink;
@@ -608,6 +805,18 @@ main {
     
                     &:nth-child(9) { 
                         height: 15.1vw; 
+                        @keyframes piano3 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-yellow;
+                                background-color: $color-yellow;
+                            }
+                            100% { 
+                                height: 14.5vw;
+                            }
+                        }
+                        animation: piano3 1s linear;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-yellow;
@@ -617,6 +826,20 @@ main {
     
                     &:nth-child(10) { 
                         height: 14.5vw; 
+                        @keyframes piano2-3 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-blue;
+                                background-color: $color-blue;
+                            }
+                            100% { 
+                                height: 14.5vw; 
+                            }
+                        }
+                        animation: piano2-3 1s linear;
+                        animation-delay: 2s;
+                        animation-direction: alternate;
+
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-blue;
@@ -626,6 +849,19 @@ main {
     
                     &:nth-child(11) { 
                         height: 11.5vw; 
+                        @keyframes piano3-3 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-green;
+                                background-color: $color-green;
+                            }
+                            100% { 
+                                height: 11.5vw; 
+                            }
+                        }
+                        animation: piano3-3 1s linear;
+                        animation-delay: 4s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-green;
@@ -635,6 +871,19 @@ main {
     
                     &:nth-child(12) { 
                         height: 13vw; 
+                        @keyframes piano4-3 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-pink;
+                                background-color: $color-pink;
+                            }
+                            100% { 
+                                height: 13vw; 
+                            }
+                        }
+                        animation: piano4-3 1s linear;
+                        animation-delay: 6s;
+                        animation-direction: alternate; 
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-pink;
@@ -644,6 +893,18 @@ main {
     
                     &:nth-child(13) { 
                         height: 16.5vw; 
+                        @keyframes piano4 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-yellow;
+                                background-color: $color-yellow;
+                            }
+                            100% { 
+                                height: 16.5vw; 
+                            }
+                        }
+                        animation: piano4 1s linear;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-yellow;
@@ -653,6 +914,19 @@ main {
     
                     &:nth-child(14) { 
                         height: 15.1vw; 
+                        @keyframes piano2-4 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-blue;
+                                background-color: $color-blue;
+                            }
+                            100% { 
+                                height: 15.1vw; 
+                            }
+                        }
+                        animation: piano2-4 1s linear;
+                        animation-delay: 2s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-blue;
@@ -662,6 +936,19 @@ main {
     
                     &:nth-child(15) { 
                         height: 13vw; 
+                        @keyframes piano3-4 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-green;
+                                background-color: $color-green;
+                            }
+                            100% { 
+                                height: 13vw; 
+                            }
+                        }
+                        animation: piano3-4 1s linear;
+                        animation-delay: 4s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-green;
@@ -671,6 +958,19 @@ main {
     
                     &:nth-child(16) { 
                         height: 15.1vw; 
+                        @keyframes piano4-4 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-pink;
+                                background-color: $color-pink;
+                            }
+                            100% { 
+                                height: 15.1vw; 
+                            }
+                        }
+                        animation: piano4-4 1s linear;
+                        animation-delay: 6s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-pink;
@@ -680,6 +980,18 @@ main {
     
                     &:nth-child(17) { 
                         height: 14.5vw; 
+                        @keyframes piano5 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-yellow;
+                                background-color: $color-yellow;
+                            }
+                            100% { 
+                                height: 14.5vw; 
+                            }
+                        }
+                        animation: piano5 1s linear;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-yellow;
@@ -688,7 +1000,20 @@ main {
                     }
     
                     &:nth-child(18) { 
-                        height: 11.5vw; 
+                        height: 11.5vw;
+                        @keyframes piano2-5 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-blue;
+                                background-color: $color-blue;
+                            }
+                            100% { 
+                                height: 11.5vw; 
+                            }
+                        }
+                        animation: piano2-5 1s linear;
+                        animation-delay: 2s;
+                        animation-direction: alternate; 
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-blue;
@@ -698,6 +1023,19 @@ main {
     
                     &:nth-child(19) { 
                         height: 13vw; 
+                        @keyframes piano3-5 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-green;
+                                background-color: $color-green;
+                            }
+                            100% { 
+                                height: 13vw; 
+                            }
+                        }
+                        animation: piano3-5 1s linear;
+                        animation-delay: 4s;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-green;
@@ -706,7 +1044,20 @@ main {
                     }
     
                     &:nth-child(20) { 
-                        height: 16.5vw; 
+                        height: 16.5vw;
+                        @keyframes piano4-5 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-pink;
+                                background-color: $color-pink;
+                            }
+                            100% { 
+                                height: 16.5vw; 
+                            }
+                        }
+                        animation: piano4-5 1s linear;
+                        animation-delay: 6s;
+                        animation-direction: alternate; 
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-pink;
@@ -716,6 +1067,18 @@ main {
     
                     &:nth-child(21) { 
                         height: 13vw; 
+                        @keyframes piano6 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-yellow;
+                                background-color: $color-yellow;
+                            }
+                            100% { 
+                                height: 13vw; 
+                            }
+                        }
+                        animation: piano6 1s linear;
+                        animation-direction: alternate;
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-yellow;
@@ -725,6 +1088,20 @@ main {
     
                     &:nth-child(22) { 
                         height: 15.1vw; 
+                        @keyframes piano2-6 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-blue;
+                                background-color: $color-blue;
+                            }
+                            100% { 
+                                height: 15.1vw; 
+                            }
+                        }
+                        animation: piano2-6 1s linear;
+                        animation-delay: 2s;
+                        animation-direction: alternate; 
+
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-blue;
@@ -733,7 +1110,20 @@ main {
                     }
     
                     &:nth-child(23) { 
-                        height: 11.5vw; 
+                        height: 11.5vw;
+                        @keyframes piano3-6 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-green;
+                                background-color: $color-green;
+                            }
+                            100% { 
+                                height: 11.5vw; 
+                            }
+                        }
+                        animation: piano3-6 1s linear;
+                        animation-delay: 4s;
+                        animation-direction: alternate; 
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-green;
@@ -742,7 +1132,20 @@ main {
                     }
     
                     &:nth-child(24) { 
-                        height: 16.5vw; 
+                        height: 16.5vw;
+                        @keyframes piano4-6 {
+                            50% { 
+                                height: 17.5vw; 
+                                border: 1px solid $color-pink;
+                                background-color: $color-pink;
+                            }
+                            100% { 
+                                height: 16.5vw; 
+                            }
+                        }
+                        animation: piano4-6 1s linear;
+                        animation-delay: 6s;
+                        animation-direction: alternate; 
                         &:hover {
                             height: 17.5vw;
                             border: 1px solid $color-pink;
@@ -866,10 +1269,10 @@ main {
 
         @include responsive(pc-size) {
             width: 100%;
-            max-width: 1720px;
+            max-width: 1440px;
             margin: auto;
             margin-top: 200px;
-            padding: 7rem 3% 0 3%;
+            padding: 7rem 30px 0 30px;
         }
 
         div.about-title {
@@ -981,7 +1384,7 @@ main {
             div.about-des {
                 @include responsive(pc-size) {
                     float: left;
-                    width: 58%;
+                    width: 60%;
                     margin-top: 6rem;
                     margin-left: 5rem;
                 }
@@ -993,10 +1396,12 @@ main {
                     color: $point-color;
 
                     @include responsive(tablet-size) {
+                        margin: 3rem 0;
                         font-size: 1.8rem;
                     }
 
                     @include responsive(pc-size) {
+                        margin: 2.5rem 0;
                         text-align: left;
                     }
 
@@ -1018,10 +1423,11 @@ main {
                     }
 
                     @include responsive(tablet-size) {
-                        font-size: 1.3rem;
+                        font-size: 1.5rem;
                     }
 
                     @include responsive(pc-size) {
+                        font-size: 1.3rem;
                         width: 100%;
                         text-align: left;
                         margin-left: 0.5rem;

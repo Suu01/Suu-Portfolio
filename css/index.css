@@ -116,7 +116,7 @@ header div.h-wrap {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 1720px;
+  max-width: 1440px;
   margin: auto;
   height: 100%;
   padding: 0 4%;
@@ -124,7 +124,7 @@ header div.h-wrap {
 
 @media screen and (min-width: 1320px) {
   header div.h-wrap {
-    padding: 0 3%;
+    padding: 0 30px;
   }
 }
 
@@ -310,12 +310,59 @@ main section.main-section div.main-txt {
   }
 }
 
+@-webkit-keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(80%);
+            transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(80%);
+            transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 main section.main-section div.main-txt .wel {
   font-weight: 600;
   font-size: 1.8rem;
   color: #777;
+  opacity: 0;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  -webkit-animation: 3s anim-lineUp forwards;
+          animation: 3s anim-lineUp forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -334,12 +381,152 @@ main section.main-section div.main-txt h2 {
   font-weight: 600;
   font-size: 3.7rem;
   margin: 1rem 0 1.5rem 0;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+@-webkit-keyframes sideSlide {
+  60% {
+    -webkit-transform: translate(20px, 0) scale(1);
+            transform: translate(20px, 0) scale(1);
+  }
+  80% {
+    -webkit-transform: translate(20px, 0) scale(1);
+            transform: translate(20px, 0) scale(1);
+  }
+  99% {
+    -webkit-transform: translate(0) scale(1.2);
+            transform: translate(0) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translate(0) scale(1);
+            transform: translate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes sideSlide {
+  60% {
+    -webkit-transform: translate(20px, 0) scale(1);
+            transform: translate(20px, 0) scale(1);
+  }
+  80% {
+    -webkit-transform: translate(20px, 0) scale(1);
+            transform: translate(20px, 0) scale(1);
+  }
+  99% {
+    -webkit-transform: translate(0) scale(1.2);
+            transform: translate(0) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translate(0) scale(1);
+            transform: translate(0) scale(1);
+    opacity: 1;
+  }
 }
 
 main section.main-section div.main-txt h2 span {
   display: inline-block;
+  opacity: 0;
+  -webkit-transform: translate(-300px, 0) scale(0);
+          transform: translate(-300px, 0) scale(0);
+  -webkit-animation: sideSlide 1.2s forwards;
+          animation: sideSlide 1.2s forwards;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(2) {
+  -webkit-animation-delay: .05s;
+          animation-delay: .05s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(3) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(4) {
+  -webkit-animation-delay: .15s;
+          animation-delay: .15s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(5) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(6) {
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(7) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(8) {
+  -webkit-animation-delay: .35s;
+          animation-delay: .35s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(9) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(10) {
+  -webkit-animation-delay: .45s;
+          animation-delay: .45s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(11) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(12) {
+  -webkit-animation-delay: .55s;
+          animation-delay: .55s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(13) {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(14) {
+  -webkit-animation-delay: .65s;
+          animation-delay: .65s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(15) {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(16) {
+  -webkit-animation-delay: .75s;
+          animation-delay: .75s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(17) {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(18) {
+  -webkit-animation-delay: .85s;
+          animation-delay: .85s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(19) {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+
+main section.main-section div.main-txt h2 span:nth-of-type(20) {
+  -webkit-animation-delay: .95s;
+          animation-delay: .95s;
 }
 
 @media screen and (min-width: 768px) {
@@ -358,8 +545,13 @@ main section.main-section div.main-txt .front {
   font-weight: 500;
   font-size: 1.5rem;
   color: #e28f83;
+  opacity: 0;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+  -webkit-animation: 3s anim-lineUp forwards;
+          animation: 3s anim-lineUp forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -809,25 +1001,31 @@ main section.main-section div.piano-wrap div.piano-white div {
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(1) {
-  -webkit-animation: piano 1s infinite;
-          animation: piano 1s infinite;
+  -webkit-animation: piano1 1s linear;
+          animation: piano1 1s linear;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
 
-@-webkit-keyframes piano {
-  100% {
+@-webkit-keyframes piano1 {
+  50% {
     height: 17.5vw;
     border: 1px solid #ffebb4;
     background-color: #ffebb4;
   }
+  100% {
+    height: 13.5vw;
+  }
 }
 
-@keyframes piano {
-  100% {
+@keyframes piano1 {
+  50% {
     height: 17.5vw;
     border: 1px solid #ffebb4;
     background-color: #ffebb4;
+  }
+  100% {
+    height: 13.5vw;
   }
 }
 
@@ -839,6 +1037,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(1):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(2) {
   height: 15.5vw;
+  -webkit-animation: piano2-1 1s linear;
+          animation: piano2-1 1s linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano2-1 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 15.5vw;
+  }
+}
+
+@keyframes piano2-1 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 15.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(2):hover {
@@ -849,6 +1075,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(2):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(3) {
   height: 14.5vw;
+  -webkit-animation: piano3-1 1s linear;
+          animation: piano3-1 1s linear;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano3-1 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 14.5vw;
+  }
+}
+
+@keyframes piano3-1 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 14.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(3):hover {
@@ -859,6 +1113,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(3):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(4) {
   height: 11.5vw;
+  -webkit-animation: piano4-1 1s linear;
+          animation: piano4-1 1s linear;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano4-1 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 11.5vw;
+  }
+}
+
+@keyframes piano4-1 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 11.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(4):hover {
@@ -869,6 +1151,32 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(4):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(5) {
   height: 13vw;
+  -webkit-animation: piano2 1s linear;
+          animation: piano2 1s linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano2 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 13vw;
+  }
+}
+
+@keyframes piano2 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 13vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(5):hover {
@@ -879,6 +1187,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(5):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(6) {
   height: 16.5vw;
+  -webkit-animation: piano2-2 1s linear;
+          animation: piano2-2 1s linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano2-2 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 16.5vw;
+  }
+}
+
+@keyframes piano2-2 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 16.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(6):hover {
@@ -889,6 +1225,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(6):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(7) {
   height: 15vw;
+  -webkit-animation: piano3-2 1s linear;
+          animation: piano3-2 1s linear;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano3-2 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 15vw;
+  }
+}
+
+@keyframes piano3-2 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 15vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(7):hover {
@@ -899,6 +1263,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(7):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(8) {
   height: 13.5vw;
+  -webkit-animation: piano4-2 1s linear;
+          animation: piano4-2 1s linear;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano4-2 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 13.5vw;
+  }
+}
+
+@keyframes piano4-2 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 13.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(8):hover {
@@ -909,6 +1301,32 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(8):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(9) {
   height: 15.1vw;
+  -webkit-animation: piano3 1s linear;
+          animation: piano3 1s linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano3 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 14.5vw;
+  }
+}
+
+@keyframes piano3 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 14.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(9):hover {
@@ -919,6 +1337,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(9):hover 
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(10) {
   height: 14.5vw;
+  -webkit-animation: piano2-3 1s linear;
+          animation: piano2-3 1s linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano2-3 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 14.5vw;
+  }
+}
+
+@keyframes piano2-3 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 14.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(10):hover {
@@ -929,6 +1375,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(10):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(11) {
   height: 11.5vw;
+  -webkit-animation: piano3-3 1s linear;
+          animation: piano3-3 1s linear;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano3-3 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 11.5vw;
+  }
+}
+
+@keyframes piano3-3 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 11.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(11):hover {
@@ -939,6 +1413,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(11):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(12) {
   height: 13vw;
+  -webkit-animation: piano4-3 1s linear;
+          animation: piano4-3 1s linear;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano4-3 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 13vw;
+  }
+}
+
+@keyframes piano4-3 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 13vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(12):hover {
@@ -949,6 +1451,32 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(12):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(13) {
   height: 16.5vw;
+  -webkit-animation: piano4 1s linear;
+          animation: piano4 1s linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano4 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 16.5vw;
+  }
+}
+
+@keyframes piano4 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 16.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(13):hover {
@@ -959,6 +1487,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(13):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(14) {
   height: 15.1vw;
+  -webkit-animation: piano2-4 1s linear;
+          animation: piano2-4 1s linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano2-4 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 15.1vw;
+  }
+}
+
+@keyframes piano2-4 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 15.1vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(14):hover {
@@ -969,6 +1525,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(14):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(15) {
   height: 13vw;
+  -webkit-animation: piano3-4 1s linear;
+          animation: piano3-4 1s linear;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano3-4 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 13vw;
+  }
+}
+
+@keyframes piano3-4 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 13vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(15):hover {
@@ -979,6 +1563,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(15):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(16) {
   height: 15.1vw;
+  -webkit-animation: piano4-4 1s linear;
+          animation: piano4-4 1s linear;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano4-4 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 15.1vw;
+  }
+}
+
+@keyframes piano4-4 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 15.1vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(16):hover {
@@ -989,6 +1601,32 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(16):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(17) {
   height: 14.5vw;
+  -webkit-animation: piano5 1s linear;
+          animation: piano5 1s linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano5 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 14.5vw;
+  }
+}
+
+@keyframes piano5 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 14.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(17):hover {
@@ -999,6 +1637,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(17):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(18) {
   height: 11.5vw;
+  -webkit-animation: piano2-5 1s linear;
+          animation: piano2-5 1s linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano2-5 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 11.5vw;
+  }
+}
+
+@keyframes piano2-5 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 11.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(18):hover {
@@ -1009,6 +1675,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(18):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(19) {
   height: 13vw;
+  -webkit-animation: piano3-5 1s linear;
+          animation: piano3-5 1s linear;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano3-5 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 13vw;
+  }
+}
+
+@keyframes piano3-5 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 13vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(19):hover {
@@ -1019,6 +1713,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(19):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(20) {
   height: 16.5vw;
+  -webkit-animation: piano4-5 1s linear;
+          animation: piano4-5 1s linear;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano4-5 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 16.5vw;
+  }
+}
+
+@keyframes piano4-5 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 16.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(20):hover {
@@ -1029,6 +1751,32 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(20):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(21) {
   height: 13vw;
+  -webkit-animation: piano6 1s linear;
+          animation: piano6 1s linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano6 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 13vw;
+  }
+}
+
+@keyframes piano6 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffebb4;
+    background-color: #ffebb4;
+  }
+  100% {
+    height: 13vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(21):hover {
@@ -1039,6 +1787,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(21):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(22) {
   height: 15.1vw;
+  -webkit-animation: piano2-6 1s linear;
+          animation: piano2-6 1s linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano2-6 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 15.1vw;
+  }
+}
+
+@keyframes piano2-6 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #a2c1d9;
+    background-color: #a2c1d9;
+  }
+  100% {
+    height: 15.1vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(22):hover {
@@ -1049,6 +1825,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(22):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(23) {
   height: 11.5vw;
+  -webkit-animation: piano3-6 1s linear;
+          animation: piano3-6 1s linear;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano3-6 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 11.5vw;
+  }
+}
+
+@keyframes piano3-6 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #b4d2c4;
+    background-color: #b4d2c4;
+  }
+  100% {
+    height: 11.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(23):hover {
@@ -1059,6 +1863,34 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(23):hover
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(24) {
   height: 16.5vw;
+  -webkit-animation: piano4-6 1s linear;
+          animation: piano4-6 1s linear;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes piano4-6 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 16.5vw;
+  }
+}
+
+@keyframes piano4-6 {
+  50% {
+    height: 17.5vw;
+    border: 1px solid #ffd0c2;
+    background-color: #ffd0c2;
+  }
+  100% {
+    height: 16.5vw;
+  }
 }
 
 main section.main-section div.piano-wrap div.piano-white div:nth-child(24):hover {
@@ -1186,10 +2018,10 @@ main section.about {
 @media screen and (min-width: 1320px) {
   main section.about {
     width: 100%;
-    max-width: 1720px;
+    max-width: 1440px;
     margin: auto;
     margin-top: 200px;
-    padding: 7rem 3% 0 3%;
+    padding: 7rem 30px 0 30px;
   }
 }
 
@@ -1328,7 +2160,7 @@ main section.about section.about-top div.about-img div:last-child img {
 @media screen and (min-width: 1320px) {
   main section.about section.about-top div.about-des {
     float: left;
-    width: 58%;
+    width: 60%;
     margin-top: 6rem;
     margin-left: 5rem;
   }
@@ -1343,12 +2175,14 @@ main section.about section.about-top div.about-des h3 {
 
 @media screen and (min-width: 768px) {
   main section.about section.about-top div.about-des h3 {
+    margin: 3rem 0;
     font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1320px) {
   main section.about section.about-top div.about-des h3 {
+    margin: 2.5rem 0;
     text-align: left;
   }
 }
@@ -1373,12 +2207,13 @@ main section.about section.about-top div.about-des p span {
 
 @media screen and (min-width: 768px) {
   main section.about section.about-top div.about-des p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1320px) {
   main section.about section.about-top div.about-des p {
+    font-size: 1.3rem;
     width: 100%;
     text-align: left;
     margin-left: 0.5rem;
