@@ -395,8 +395,8 @@ main section.main-section div.main-txt h2 {
             transform: translate(20px, 0) scale(1);
   }
   99% {
-    -webkit-transform: translate(0) scale(1.2);
-            transform: translate(0) scale(1.2);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   100% {
     -webkit-transform: translate(0) scale(1);
@@ -415,8 +415,8 @@ main section.main-section div.main-txt h2 {
             transform: translate(20px, 0) scale(1);
   }
   99% {
-    -webkit-transform: translate(0) scale(1.2);
-            transform: translate(0) scale(1.2);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   100% {
     -webkit-transform: translate(0) scale(1);
@@ -2012,7 +2012,7 @@ main section.main-section div.piano-wrap div.piano-black div:nth-child(17) {
 main section.about {
   position: relative;
   margin-top: 4.5rem;
-  padding: 7rem 4% 0 4%;
+  padding: 10rem 4% 0 4%;
 }
 
 @media screen and (min-width: 1320px) {
@@ -2021,7 +2021,7 @@ main section.about {
     max-width: 1440px;
     margin: auto;
     margin-top: 200px;
-    padding: 7rem 30px 0 30px;
+    padding: 10rem 30px 0 30px;
   }
 }
 
@@ -2227,7 +2227,7 @@ main .w-height {
 main section.skills {
   position: relative;
   margin-top: 4.5rem;
-  padding: 7rem 4% 0 4%;
+  padding: 10rem 4% 0 4%;
 }
 
 @media screen and (min-width: 1320px) {
@@ -2236,7 +2236,7 @@ main section.skills {
     max-width: 1720px;
     margin: auto;
     margin-top: 200px;
-    padding: 7rem 3% 0 3%;
+    padding: 10rem 3% 0 3%;
   }
 }
 
@@ -2541,9 +2541,7 @@ main div.line2 {
 
 @media screen and (min-width: 1320px) {
   main div.line2 {
-    height: 19rem;
-    margin: auto;
-    margin-top: 10rem;
+    height: 20rem;
   }
 }
 
@@ -2555,10 +2553,9 @@ main section.portfolio {
 @media screen and (min-width: 1320px) {
   main section.portfolio {
     width: 100%;
-    max-width: 1720px;
+    max-width: 1440px;
     margin: auto;
-    margin-top: 200px;
-    padding: 7rem 3% 0 3%;
+    padding: 10rem 30px 0 30px;
   }
 }
 
@@ -2578,49 +2575,89 @@ main section.portfolio .portfolio-title h2 {
   color: #fbeeea;
   font-size: 2.8rem;
   font-family: "HSYuJi";
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  margin: 0 2rem;
 }
 
 @media screen and (min-width: 768px) {
   main section.portfolio .portfolio-title h2 {
     font-size: 3.2rem;
+    margin: 0 2.5rem;
   }
 }
 
 @media screen and (min-width: 1320px) {
   main section.portfolio .portfolio-title h2 {
     font-size: 4rem;
+    margin: 0 3rem;
   }
 }
 
-main section.portfolio .portfolio-title h2 + div {
-  padding-top: 3%;
+main section.portfolio .portfolio-title div:first-child {
   display: inline-block;
-  width: 4.5%;
+  width: 1.5rem;
+  margin-top: 0.9rem;
 }
 
 @media screen and (min-width: 768px) {
-  main section.portfolio .portfolio-title h2 + div {
-    width: 3.5%;
+  main section.portfolio .portfolio-title div:first-child {
+    width: 1.8rem;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  main section.portfolio .portfolio-title h2 + div {
-    padding-top: 2%;
-    width: auto;
+  main section.portfolio .portfolio-title div:first-child {
+    width: 2rem;
   }
 }
 
-main section.portfolio .portfolio-title h2 + div img {
+main section.portfolio .portfolio-title div:first-child img {
   width: 100%;
+  height: auto;
+}
+
+main section.portfolio .portfolio-title div:last-child {
+  display: inline-block;
+  width: 1.35rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .portfolio-title div:last-child {
+    width: 1.65rem;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  main section.portfolio .portfolio-title div:last-child {
+    width: 1.85rem;
+  }
+}
+
+main section.portfolio .portfolio-title div:last-child img {
+  width: 100%;
+  height: auto;
 }
 
 main section.portfolio .pf-wrap {
   margin: 10rem 0;
 }
 
+@media screen and (min-width: 1320px) {
+  main section.portfolio .pf-wrap {
+    margin: 15rem 0;
+  }
+}
+
 main section.portfolio .pf-wrap .pf {
   margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf {
+    margin-bottom: 15rem;
+  }
 }
 
 @media screen and (min-width: 1320px) {
@@ -2634,12 +2671,16 @@ main section.portfolio .pf-wrap .pf {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
 }
 
 main section.portfolio .pf-wrap .pf .portfolio-mokup {
   width: 28rem;
   margin: auto;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -2650,7 +2691,7 @@ main section.portfolio .pf-wrap .pf .portfolio-mokup {
 
 @media screen and (min-width: 1320px) {
   main section.portfolio .pf-wrap .pf .portfolio-mokup {
-    width: 45%;
+    width: 48%;
   }
 }
 
@@ -2662,6 +2703,8 @@ main section.portfolio .pf-wrap .pf .pf-txt {
   position: relative;
   text-align: center;
   margin-top: 5rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -2673,102 +2716,210 @@ main section.portfolio .pf-wrap .pf .pf-txt {
 @media screen and (min-width: 1320px) {
   main section.portfolio .pf-wrap .pf .pf-txt {
     width: 50%;
-  }
-}
-
-main section.portfolio .pf-wrap .pf .pf-txt span.pf-num {
-  font-size: 1.3rem;
-}
-
-@media screen and (min-width: 768px) {
-  main section.portfolio .pf-wrap .pf .pf-txt span.pf-num {
-    font-size: 1.7rem;
-  }
-}
-
-main section.portfolio .pf-wrap .pf .pf-txt h2 {
-  font-size: 2.8rem;
-}
-
-@media screen and (min-width: 768px) {
-  main section.portfolio .pf-wrap .pf .pf-txt h2 {
-    font-size: 3.7rem;
-  }
-}
-
-main section.portfolio .pf-wrap .pf .pf-txt p {
-  margin-top: 1.4rem;
-}
-
-@media screen and (min-width: 768px) {
-  main section.portfolio .pf-wrap .pf .pf-txt p {
-    margin-top: 1.7rem;
-  }
-}
-
-main section.portfolio .pf-wrap .pf .pf-txt p span {
-  font-size: 1.45rem;
-}
-
-@media screen and (min-width: 768px) {
-  main section.portfolio .pf-wrap .pf .pf-txt p span {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  main section.portfolio .pf-wrap .pf .pf-txt p span {
-    font-size: 1.7rem;
-  }
-}
-
-main section.portfolio .pf-wrap .pf .pf-txt p span:last-child {
-  margin-top: 0.1em;
-}
-
-@media screen and (min-width: 768px) {
-  main section.portfolio .pf-wrap .pf .pf-txt p span:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin-top: 0;
   }
 }
 
-main section.portfolio .pf-wrap .pf .pf-txt p.pf-txt-add {
-  display: none;
+@media screen and (min-width: 1320px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap {
+    width: 80%;
+  }
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap span.pf-num {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap span.pf-num {
+    font-size: 1.7rem;
+  }
 }
 
 @media screen and (min-width: 1320px) {
-  main section.portfolio .pf-wrap .pf .pf-txt p.pf-txt-add {
-    width: 70%;
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap span.pf-num {
+    font-size: 1.3rem;
+  }
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap h2 {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap h2 {
+    font-size: 3.7rem;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap h2 {
+    font-size: 3rem;
+  }
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  margin-top: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p {
+    margin-top: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p {
+    margin-top: 1.4rem;
+  }
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: 1.45rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span {
+    font-size: 1.45rem;
+  }
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span:last-child {
+  margin-top: 0.1em;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span:last-child {
+    margin-top: 0;
+  }
+}
+
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p.pf-txt-add {
+  display: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (min-width: 1320px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p.pf-txt-add {
     margin: auto;
     margin-top: 2rem;
     display: block;
     color: #777;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
-main section.portfolio .pf-wrap .pf .pf-txt .pf-btn {
-  position: relative;
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   margin-top: 2.5rem;
 }
 
 @media screen and (min-width: 768px) {
-  main section.portfolio .pf-wrap .pf .pf-txt .pf-btn {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
     margin-top: 3rem;
   }
 }
 
-main section.portfolio .pf-wrap .pf .pf-txt .pf-btn .btn-wrap a svg.po-btn1 {
-  width: 18rem;
+@media screen and (min-width: 1320px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
+    margin-top: 2.5rem;
+  }
 }
 
-main section.portfolio .pf-wrap .pf .pf-txt .pf-btn .btn-wrap a svg.po-btn1 .cls-1 {
-  fill: none;
-  stroke: #ffd0c2;
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn a {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-family: "HSYuJi";
+  font-size: 2rem;
+  width: 15rem;
+  height: 5rem;
+  margin: auto;
+  border-radius: 2rem;
+  padding-top: 6px;
 }
 
-main section.portfolio .pf-wrap .pf .pf-txt .pf-btn .btn-wrap a svg.po-btn1 .cls-1:hover {
-  fill: #ffd0c2;
+main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn a:hover {
+  color: #fff;
+}
+
+main section.portfolio .pf-wrap .pf1 .pf-btn a {
+  color: #ffd0c2;
+  border: 4px solid #ffd0c2;
+}
+
+main section.portfolio .pf-wrap .pf1 .pf-btn a:hover {
+  background-color: #ffd0c2;
+}
+
+main section.portfolio .pf-wrap .pf2 .portfolio-mokup {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+main section.portfolio .pf-wrap .pf2 .pf-txt {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (min-width: 1320px) {
+  main section.portfolio .pf-wrap .pf2 .pf-txt {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+main section.portfolio .pf-wrap .pf2 .pf-btn a {
+  color: #b4d2c4;
+  border: 4px solid #b4d2c4;
+}
+
+main section.portfolio .pf-wrap .pf2 .pf-btn a:hover {
+  background-color: #b4d2c4;
+}
+
+main section.portfolio .pf-wrap .pf3 .pf-btn a {
+  color: #ffebb4;
+  border: 4px solid #ffebb4;
+}
+
+main section.portfolio .pf-wrap .pf3 .pf-btn a:hover {
+  background-color: #ffebb4;
 }
 
 footer {
