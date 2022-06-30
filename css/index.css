@@ -122,7 +122,7 @@ header div.h-wrap {
   padding: 0 4%;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   header div.h-wrap {
     padding: 0 30px;
   }
@@ -132,7 +132,7 @@ header div.h-wrap h1 a:first-child {
   display: none;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   header div.h-wrap h1 a:first-child {
     display: block;
   }
@@ -142,7 +142,7 @@ header div.h-wrap h1 a:first-child img {
   width: 350px;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   header div.h-wrap h1 a:last-child {
     display: none;
   }
@@ -161,7 +161,7 @@ header div.h-wrap h1 a:first-child img {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   header div.h-wrap ul.gnb {
     width: 550px;
   }
@@ -235,7 +235,7 @@ header div.h-wrap ul.gnb li a:hover {
   color: #e28f83;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   header div.h-wrap ul.gnb li a {
     font-size: 22px;
   }
@@ -301,7 +301,7 @@ main section.main-section div.main-txt {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.main-section div.main-txt {
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
@@ -371,7 +371,7 @@ main section.main-section div.main-txt .wel {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.main-section div.main-txt .wel {
     font-size: 2.5rem;
   }
@@ -535,7 +535,7 @@ main section.main-section div.main-txt h2 span:nth-of-type(20) {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.main-section div.main-txt h2 {
     font-size: 5.8rem;
   }
@@ -560,7 +560,7 @@ main section.main-section div.main-txt .front {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.main-section div.main-txt .front {
     font-size: 2.3rem;
   }
@@ -695,7 +695,7 @@ main section.main-section div.main-img .main-img-t {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.main-section div.main-img .main-img-t {
     display: none;
   }
@@ -860,7 +860,7 @@ main section.main-section div.main-img .main-img-p {
   display: none;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.main-section div.main-img .main-img-p {
     display: block;
   }
@@ -965,7 +965,7 @@ main section.main-section div.piano-wrap {
   display: none;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.main-section div.piano-wrap {
     position: absolute;
     width: 100%;
@@ -2015,7 +2015,7 @@ main section.about {
   padding: 10rem 4% 0 4%;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about {
     width: 100%;
     max-width: 1440px;
@@ -2049,7 +2049,7 @@ main section.about div.about-title h2 {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about div.about-title h2 {
     font-size: 4rem;
     margin-right: 2.3rem;
@@ -2068,7 +2068,7 @@ main section.about div.about-title div.about-img {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about div.about-title div.about-img {
     width: 2.8rem;
   }
@@ -2083,7 +2083,7 @@ main section.about div.about-title div.line {
   display: none;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about div.about-title div.line {
     position: absolute;
     display: block;
@@ -2110,7 +2110,7 @@ main section.about section.about-top div.about-img {
   position: relative;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about section.about-top div.about-img {
     position: absolute;
     right: 3rem;
@@ -2129,7 +2129,7 @@ main section.about section.about-top div.about-img div:last-child {
   top: -2rem;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about section.about-top div.about-img div:last-child {
     top: -1.9rem;
     left: -1.9rem;
@@ -2157,7 +2157,7 @@ main section.about section.about-top div.about-img div:last-child img {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about section.about-top div.about-des {
     float: left;
     width: 60%;
@@ -2180,7 +2180,7 @@ main section.about section.about-top div.about-des h3 {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about section.about-top div.about-des h3 {
     margin: 2.5rem 0;
     text-align: left;
@@ -2199,7 +2199,7 @@ main section.about section.about-top div.about-des p span {
   display: inline;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about section.about-top div.about-des p span {
     display: inline-block;
   }
@@ -2211,7 +2211,7 @@ main section.about section.about-top div.about-des p span {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.about section.about-top div.about-des p {
     font-size: 1.3rem;
     width: 100%;
@@ -2230,13 +2230,13 @@ main section.skills {
   padding: 10rem 4% 0 4%;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.skills {
     width: 100%;
-    max-width: 1720px;
+    max-width: 1440px;
     margin: auto;
     margin-top: 200px;
-    padding: 10rem 3% 0 3%;
+    padding: 10rem 30px 0 30px;
   }
 }
 
@@ -2247,15 +2247,19 @@ main section.skills div.skills-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 main section.skills div.skills-title div {
   display: inline-block;
   width: 2.5rem;
   margin-top: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -2264,7 +2268,7 @@ main section.skills div.skills-title div {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.skills div.skills-title div {
     width: 2.8rem;
   }
@@ -2280,6 +2284,8 @@ main section.skills div.skills-title h2 {
   font-size: 2.8rem;
   font-family: "HSYuJi";
   margin-left: 1.5rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -2289,7 +2295,7 @@ main section.skills div.skills-title h2 {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.skills div.skills-title h2 {
     font-size: 4rem;
     margin-left: 2.3rem;
@@ -2306,7 +2312,7 @@ main section.skills div.skills-des {
   margin-top: 80px;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.skills div.skills-des {
     width: 750px;
     margin: 20% auto;
@@ -2319,7 +2325,7 @@ main section.skills div.skills-des div.skills-img-wrap {
   padding: 0 5%;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.skills div.skills-des div.skills-img-wrap {
     padding: 0;
   }
@@ -2328,13 +2334,15 @@ main section.skills div.skills-des div.skills-img-wrap {
 main section.skills div.skills-des div.skills-img-wrap img {
   width: 100%;
   margin: auto;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 main section.skills div.skills-des div.skills-img-wrap img:first-child {
   display: none;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.skills div.skills-des div.skills-img-wrap img:first-child {
     display: block;
     width: 750px;
@@ -2343,33 +2351,44 @@ main section.skills div.skills-des div.skills-img-wrap img:first-child {
   }
 }
 
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des div.skills-img-wrap img:nth-child(2) {
-    display: none;
-  }
-}
-
-main section.skills div.skills-des ul {
+main section.skills div.skills-des div.circle-wrap {
   margin-top: 15%;
-  padding: 0 4%;
 }
 
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul {
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap {
     margin-top: 0;
     padding: 0;
   }
 }
 
-main section.skills div.skills-des ul li {
+main section.skills div.skills-des div.circle-wrap .circle-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
   position: relative;
   border-radius: 50%;
   background-color: #333;
   margin: 1rem;
+  width: 11rem;
+  height: 11rem;
 }
 
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li {
+@media screen and (min-width: 768px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
     position: absolute;
     width: 14rem;
     height: 14rem;
@@ -2377,129 +2396,7 @@ main section.skills div.skills-des ul li {
   }
 }
 
-main section.skills div.skills-des ul li:nth-child(1) {
-  border: 3px solid #f44336;
-  width: 12rem;
-  height: 12rem;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(1) {
-    top: -6rem;
-    left: 7.5rem;
-    border: 5px solid #f44336;
-  }
-}
-
-main section.skills div.skills-des ul li:nth-child(2) {
-  border: 3px solid #ff9800;
-  width: 12rem;
-  height: 12rem;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(2) {
-    top: -6rem;
-    right: 7.5rem;
-    border: 5px solid #ff9800;
-  }
-}
-
-main section.skills div.skills-des ul li:nth-child(3) {
-  border: 3px solid #d5b71d;
-  width: 12rem;
-  height: 12rem;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(3) {
-    top: 7.5rem;
-    right: -6rem;
-    border: 5px solid #d5b71d;
-  }
-}
-
-main section.skills div.skills-des ul li:nth-child(4) {
-  border: 3px solid #abba19;
-  width: 12rem;
-  height: 12rem;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(4) {
-    bottom: 7.5rem;
-    right: -6rem;
-    border: 5px solid #abba19;
-  }
-}
-
-main section.skills div.skills-des ul li:nth-child(4) div p {
-  font-size: 5.5vw;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(4) div p {
-    font-size: 32px;
-  }
-}
-
-main section.skills div.skills-des ul li:nth-child(5) {
-  border: 3px solid #0c9688;
-  width: 12rem;
-  height: 12rem;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(5) {
-    bottom: -6rem;
-    left: 7.5rem;
-    border: 5px solid #0c9688;
-  }
-}
-
-main section.skills div.skills-des ul li:nth-child(6) {
-  border: 3px solid #2196f3;
-  width: 12rem;
-  height: 12rem;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(6) {
-    bottom: -6rem;
-    right: 7.5rem;
-    border: 5px solid #2196f3;
-  }
-}
-
-main section.skills div.skills-des ul li:nth-child(7) {
-  border: 3px solid #3f51b5;
-  width: 12rem;
-  height: 12rem;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(7) {
-    top: 7.5rem;
-    left: -6rem;
-    border: 5px solid #3f51b5;
-  }
-}
-
-main section.skills div.skills-des ul li:nth-child(8) {
-  border: 3px solid #673ab7;
-  width: 12rem;
-  height: 12rem;
-}
-
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li:nth-child(8) {
-    bottom: 7.5rem;
-    left: -6rem;
-    border: 5px solid #673ab7;
-  }
-}
-
-main section.skills div.skills-des ul li .s-text-wrap {
+main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2509,25 +2406,152 @@ main section.skills div.skills-des ul li .s-text-wrap {
           transform: translate(-50%, -50%);
 }
 
-main section.skills div.skills-des ul li .s-text-wrap p {
-  font-size: 7vw;
-  margin-bottom: 5%;
+main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap p {
+  font-size: 1.9rem;
+  margin-bottom: 5px;
 }
 
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li .s-text-wrap p {
-    font-size: 40px;
-    margin-bottom: 5px;
+@media screen and (min-width: 768px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap p {
+    font-size: 2.5rem;
   }
 }
 
-main section.skills div.skills-des ul li .s-text-wrap span {
-  font-size: 5vw;
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap p {
+    font-size: 40px;
+  }
 }
 
-@media screen and (min-width: 1320px) {
-  main section.skills div.skills-des ul li .s-text-wrap span {
+main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap span {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap span {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap span {
     font-size: 30px;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
+  width: 50%;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
+    width: 60%;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
+    display: none;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle-box .circle-des p {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .circle-des p {
+    font-size: 1.2rem;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle1 {
+  border: 5px solid #f44336;
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle1 {
+    top: -6rem;
+    left: 7.5rem;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle2 {
+  border: 5px solid #ff9800;
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle2 {
+    top: -6rem;
+    right: 7.5rem;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle3 {
+  border: 5px solid #d5b71d;
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle3 {
+    top: 7.5rem;
+    right: -6rem;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle4 {
+  border: 5px solid #abba19;
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle4 {
+    bottom: 7.5rem;
+    right: -6rem;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle5 {
+  border: 5px solid #0c9688;
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle5 {
+    bottom: -6rem;
+    left: 7.5rem;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle6 {
+  border: 5px solid #2196f3;
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle6 {
+    bottom: -6rem;
+    right: 7.5rem;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle7 {
+  border: 5px solid #3f51b5;
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle7 {
+    top: 7.5rem;
+    left: -6rem;
+  }
+}
+
+main section.skills div.skills-des div.circle-wrap .circle8 {
+  border: 5px solid #673ab7;
+}
+
+@media screen and (min-width: 1440) {
+  main section.skills div.skills-des div.circle-wrap .circle8 {
+    bottom: 7.5rem;
+    left: -6rem;
   }
 }
 
@@ -2539,7 +2563,7 @@ main div.line2 {
   margin-top: 10rem;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main div.line2 {
     height: 20rem;
   }
@@ -2550,7 +2574,7 @@ main section.portfolio {
   padding: 10rem 4% 0 4%;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio {
     width: 100%;
     max-width: 1440px;
@@ -2587,7 +2611,7 @@ main section.portfolio .portfolio-title h2 {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .portfolio-title h2 {
     font-size: 4rem;
     margin: 0 3rem;
@@ -2598,6 +2622,8 @@ main section.portfolio .portfolio-title div:first-child {
   display: inline-block;
   width: 1.5rem;
   margin-top: 0.9rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -2606,7 +2632,7 @@ main section.portfolio .portfolio-title div:first-child {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .portfolio-title div:first-child {
     width: 2rem;
   }
@@ -2621,6 +2647,8 @@ main section.portfolio .portfolio-title div:last-child {
   display: inline-block;
   width: 1.35rem;
   margin-top: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 768px) {
@@ -2629,7 +2657,7 @@ main section.portfolio .portfolio-title div:last-child {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .portfolio-title div:last-child {
     width: 1.85rem;
   }
@@ -2644,7 +2672,7 @@ main section.portfolio .pf-wrap {
   margin: 10rem 0;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap {
     margin: 15rem 0;
   }
@@ -2660,7 +2688,7 @@ main section.portfolio .pf-wrap .pf {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2677,6 +2705,7 @@ main section.portfolio .pf-wrap .pf {
 }
 
 main section.portfolio .pf-wrap .pf .portfolio-mokup {
+  position: relative;
   width: 28rem;
   margin: auto;
   -webkit-transition: all 0.3s ease-in;
@@ -2689,14 +2718,63 @@ main section.portfolio .pf-wrap .pf .portfolio-mokup {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .portfolio-mokup {
     width: 48%;
   }
 }
 
-main section.portfolio .pf-wrap .pf .portfolio-mokup img {
+main section.portfolio .pf-wrap .pf .portfolio-mokup a img {
   width: 100%;
+}
+
+main section.portfolio .pf-wrap .pf .portfolio-mokup .w-img-wrap {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.75rem;
+  width: 26.5rem;
+  height: 14.95rem;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf .portfolio-mokup .w-img-wrap {
+    width: 37.9rem;
+    height: 21.4rem;
+    top: 1rem;
+    left: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1440) {
+  main section.portfolio .pf-wrap .pf .portfolio-mokup .w-img-wrap {
+    width: 39.15rem;
+    height: 22.1rem;
+    top: 1.1rem;
+    left: 1.1rem;
+  }
+}
+
+main section.portfolio .pf-wrap .pf .portfolio-mokup .w-img-wrap div.w-img {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main section.portfolio .pf-wrap .pf .portfolio-mokup .w-img-wrap div.w-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main section.portfolio .pf-wrap .pf .portfolio-mokup .w-img-wrap div.w-img img {
+  width: 100%;
+  height: 100%;
 }
 
 main section.portfolio .pf-wrap .pf .pf-txt {
@@ -2713,7 +2791,7 @@ main section.portfolio .pf-wrap .pf .pf-txt {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .pf-txt {
     width: 50%;
     display: -webkit-box;
@@ -2733,7 +2811,7 @@ main section.portfolio .pf-wrap .pf .pf-txt {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap {
     width: 80%;
   }
@@ -2751,7 +2829,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap span.pf-num {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap span.pf-num {
     font-size: 1.3rem;
   }
@@ -2770,7 +2848,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap h2 {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap h2 {
     font-size: 3rem;
   }
@@ -2788,7 +2866,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p {
     margin-top: 1.4rem;
   }
@@ -2806,7 +2884,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span {
     font-size: 1.45rem;
   }
@@ -2828,7 +2906,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p.pf-txt-add {
   transition: all 0.3s ease-in;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p.pf-txt-add {
     margin: auto;
     margin-top: 2rem;
@@ -2850,7 +2928,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
     margin-top: 2.5rem;
   }
@@ -2893,7 +2971,7 @@ main section.portfolio .pf-wrap .pf2 .pf-txt {
           order: 1;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   main section.portfolio .pf-wrap .pf2 .pf-txt {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2942,7 +3020,7 @@ footer section.contact {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   footer section.contact {
     width: 100%;
     max-width: 1720px;
@@ -2964,7 +3042,7 @@ footer section.contact .con-title h2 {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   footer section.contact .con-title h2 {
     font-size: 80px;
   }
@@ -2983,7 +3061,7 @@ footer section.contact .con-form form fieldset {
   margin: 10% 0 5% 0;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   footer section.contact .con-form form fieldset {
     width: 100%;
     height: 50vw;
@@ -3000,7 +3078,7 @@ footer section.contact .con-form form fieldset input {
   margin-bottom: 6%;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   footer section.contact .con-form form fieldset input {
     margin-bottom: 5%;
   }
@@ -3015,7 +3093,7 @@ footer section.contact .con-form form fieldset textarea {
   margin-top: 5%;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   footer section.contact .con-form form fieldset textarea {
     margin-top: 2%;
   }
@@ -3041,7 +3119,7 @@ footer section.contact .con-form form .i-wrap input#sub {
   background-color: #333;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   footer section.contact .con-form form .i-wrap input#sub {
     width: 30%;
     font-size: 4vw;
@@ -3055,7 +3133,7 @@ footer .footer-bottom {
   margin-top: 8%;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   footer .footer-bottom {
     margin-top: 5%;
     padding: 20px 0;
@@ -3068,7 +3146,7 @@ footer .footer-bottom p {
   font-size: 3.5vw;
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440) {
   footer .footer-bottom p {
     font-size: 25px;
   }

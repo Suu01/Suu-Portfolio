@@ -9,6 +9,7 @@
         <title>Suu Portfolio</title>
         <link rel="stylesheet" href="./css/index.css">
         <script src="./js/index.js"></script>
+        <script src="./js/jquery.js"></script>
         <link rel="shortcut icon" href="images/suu.ico">
     </head>
     <body>
@@ -186,57 +187,107 @@
                 <div class="skills-des">
                     <div class="skills-img-wrap">
                         <img src="./images/skills.png" alt="skills-circle">
+                        <!-- <img src="./images/skills_m.png" alt="skills-circle"> -->
                     </div> 
-                    <ul>
-                        <li>
-                            <div class="s-text-wrap">
-                                <p style="color: #f44336;">Ps</p>
-                                <span>85%</span>
+
+                    <div class="circle-wrap">
+                        <div class="circle-box">
+                            <div class="circle circle1">
+                                <div class="s-text-wrap">
+                                    <p style="color: #f44336;">Ps</p>
+                                    <span>85%</span>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="s-text-wrap">
-                                <p style="color: #ff9800">Ai</p>
-                                <span>75%</span>
+                            <div class="circle-des">
+                                <p>기본적인 툴에 대한 이해도가 높으며, 와이어프레임을 구성하여 웹페이지 시안 작업이 가능합니다.</p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="s-text-wrap">
-                                <p style="color: #d5b71d">HTML</p>
-                                <span>90%</span>
+                        </div>
+
+                        <div class="circle-box">
+                            <div class="circle circle2">
+                                <div class="s-text-wrap">
+                                    <p style="color: #ff9800">Ai</p>
+                                    <span>75%</span>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="s-text-wrap">
-                                <p style="color: #abba19;">CSS/SASS</p>
-                                <span>90%</span>
+                            <div class="circle-des">
+                                <p>로고제작을 할 수 있으며, 펜툴을 사용하여 기본적인 드로잉 작업이 가능합니다.</p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="s-text-wrap">
-                                <p style="color: #0c9688">JS</p>
-                                <span>75%</span>
+                        </div>
+
+                        <div class="circle-box">
+                            <div class="circle circle3">
+                                <div class="s-text-wrap">
+                                    <p style="color: #d5b71d">HTML</p>
+                                    <span>90%</span>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="s-text-wrap">
-                                <p style="color: #2196f3">jQuery</p>
-                                <span>75%</span>
+                            <div class="circle-des">
+                                <p>상황에 알맞게 태그를 사용할 수 있으며, 시멘틱 태그를 활용하여 웹표준에 알맞게 구조를 짤 수 있습니다.</p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="s-text-wrap">
-                                <p style="color: #3f51b5">Git</p>
-                                <span>90%</span>
+                        </div>
+
+                        <div class="circle-box">
+                            <div class="circle circle4">
+                                <div class="s-text-wrap">
+                                    <p style="color: #abba19;">CSS/SASS</p>
+                                    <span>90%</span>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="s-text-wrap">
-                                <p style="color: #673ab7">React</p>
-                                <span>75%</span>
+                            <div class="circle-des">
+                                <p>flex, animation 등을 사용해 다양한 디자인 효과를 나타낼 수 있으며, 미디어 쿼리를 통해 반응형 웹을 구현할 수 있습니다.</p>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+
+                        <div class="circle-box">
+                            <div class="circle circle5">
+                                <div class="s-text-wrap">
+                                    <p style="color: #0c9688">JS</p>
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                            <div class="circle-des">
+                                <p>함수, 제어문, 객체, 이벤트 등 자바스크립트에 대한 기본적인 코딩이 가능합니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="circle-box">
+                            <div class="circle circle6">
+                                <div class="s-text-wrap">
+                                    <p style="color: #2196f3">jQuery</p>
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                            <div class="circle-des">
+                                <p>함수, 제어문, 객체, 이벤트 등 기본적인 코딩이 가능합니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="circle-box">
+                            <div class="circle circle7">
+                                <div class="s-text-wrap">
+                                    <p style="color: #3f51b5">Git</p>
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                            <div class="circle-des">
+                                <p>팀프로젝트를 진행하며 깃허브를 사용한 협업의 경험이 있어 Git에 능숙합니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="circle-box">
+                            <div class="circle circle8">
+                                <div class="s-text-wrap">
+                                    <p style="color: #673ab7">React</p>
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                            <div class="circle-des">
+                                <p>리액트의 기초적인 지식을 가지고 있어 어느정도의 코딩이 가능합니다.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </section>
 
@@ -253,6 +304,11 @@
                     <div class="pf pf1">
                         <div class="portfolio-mokup">
                             <a href="https://suu01.github.io/" target="_blank"><img src="./images/pf1.png" alt="be-us"></a>
+                            <div class="w-img-wrap">
+                                <div class="w-img">
+                                    <img src="./images/beus-pf.png" alt="be-us">
+                                </div>
+                            </div>
                         </div>
                         <div class="pf-txt">
                             <div class="pf-txt-wrap">
@@ -270,6 +326,11 @@
                     <div class="pf pf2">
                         <div class="portfolio-mokup">
                             <a href="http://www.suu823.com/" target="_blank"><img src="./images/pf2.png" alt="be-us"></a>
+                            <div class="w-img-wrap">
+                                <div class="w-img">
+                                    <img src="./images/simmons-pf.png" alt="be-us">
+                                </div>
+                            </div>
                         </div>
                         <div class="pf-txt">
                             <div class="pf-txt-wrap">
@@ -287,6 +348,11 @@
                     <div class="pf pf3">
                         <div class="portfolio-mokup">
                             <a href="./index.html" target="_blank"><img src="./images/pf3.png" alt="be-us"></a>
+                            <div class="w-img-wrap">
+                                <div class="w-img">
+                                    <img src="./images/suu-pf.png" alt="be-us">
+                                </div>
+                            </div>
                         </div>
                         <div class="pf-txt">
                             <div class="pf-txt-wrap">
