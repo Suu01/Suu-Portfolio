@@ -2104,11 +2104,15 @@ footer {
 
                 fieldset {
                     width: 100%;
-                    height: 75vw;
+                    height: 27rem;
                     border: 2px solid #fff;
                     border-radius: 20px;
-                    padding: 7% 5%;
-                    margin: 10% 0 5% 0;
+                    padding: 0 1.7rem;
+                    margin: 4rem 0 2rem 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
 
                     @include responsive(pc-size) {
                         width: 100%;
@@ -2122,7 +2126,7 @@ footer {
                         border-bottom: 2px solid #fff;
                         background-color: transparent;
                         width: 100%;
-                        margin-bottom: 6%;
+                        margin-bottom: 0.5rem;
 
                         @include responsive(pc-size) {
                             margin-bottom: 5%;
@@ -2131,11 +2135,11 @@ footer {
                     
                     textarea {
                         width: 100%;
-                        height: 27vw;
+                        height: 15rem;
                         border: 2px solid #fff;
                         border-radius: 10px;
                         background-color: transparent;
-                        margin-top: 5%;
+                        margin-top: 0.2rem;
 
                         @include responsive(pc-size) {
                             margin-top: 2%;
