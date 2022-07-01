@@ -1,4 +1,5 @@
 window.onload = function() {
+
     // header 상세메뉴의 스크립트 동작 이벤트
     const button = ()=> {
         const burger = document.getElementById("burger");
