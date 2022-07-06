@@ -2003,6 +2003,13 @@ main section.portfolio .pf-wrap .pf3 .pf-btn a {
 main section.portfolio .pf-wrap .pf3 .pf-btn a:hover {
   background-color: #ffebb4;
 }
+main section.portfolio .pf-wrap .pf4 .pf-btn a {
+  color: #a2c1d9;
+  border: 4px solid #a2c1d9;
+}
+main section.portfolio .pf-wrap .pf4 .pf-btn a:hover {
+  background-color: #a2c1d9;
+}
 
 footer {
   width: 100%;

@@ -2058,6 +2058,19 @@ main {
                     }
                 }
             }
+
+            .pf4 {
+                .pf-btn {
+                    a {
+                        color: $color-blue;
+                        border: 4px solid $color-blue;
+
+                        &:hover {
+                            background-color: $color-blue;
+                        }
+                    }
+                }
+            }
         }
     }
 }
