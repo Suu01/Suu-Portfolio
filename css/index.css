@@ -1468,8 +1468,6 @@ main section.skills div.skills-des {
   position: relative;
   width: 100%;
   margin-top: 80px;
-  transition: all 0.3s;
-  animation: skill-circle 2s linear 0s infinite;
 }
 main section.skills div.skills-des:hover {
   animation-play-state: paused;
@@ -1489,6 +1487,8 @@ main section.skills div.skills-des:hover {
   main section.skills div.skills-des {
     width: 750px;
     margin: 20% auto;
+    transition: all 0.3s;
+    animation: skill-circle 2s linear 0s infinite;
   }
 }
 main section.skills div.skills-des .skills-ci-wrap {
@@ -1936,7 +1936,7 @@ main section.portfolio .pf-wrap {
 }
 @media screen and (min-width: 1320px) {
   main section.portfolio .pf-wrap {
-    margin: 15rem 0;
+    margin: 15rem 0 0 0;
   }
 }
 main section.portfolio .pf-wrap .pf {
@@ -1945,6 +1945,9 @@ main section.portfolio .pf-wrap .pf {
 @media screen and (min-width: 768px) {
   main section.portfolio .pf-wrap .pf {
     margin-bottom: 15rem;
+  }
+  main section.portfolio .pf-wrap .pf:last-child {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1320px) {
@@ -2201,13 +2204,14 @@ main section.portfolio .pf-wrap .pf4 .pf-btn div:hover {
 footer {
   width: 100%;
   height: 100%;
-  background: url("../images/con-bg-m.png") no-repeat;
+  background: url("../images/con-bg.png") no-repeat;
   background-size: cover;
+  margin-top: 30rem;
 }
 footer section.contact {
   width: 100%;
   margin-top: 4.5rem;
-  padding: 10rem 4% 0 4%;
+  padding: 12rem 4% 0 4%;
   position: relative;
 }
 @media screen and (min-width: 1320px) {
@@ -2215,8 +2219,7 @@ footer section.contact {
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    margin-top: 200px;
-    padding: 10rem 30px 0 30px;
+    padding: 15rem 30px 0 30px;
   }
 }
 footer section.contact .con-title h2 {
@@ -2263,6 +2266,7 @@ footer section.contact .con-form form fieldset input {
   background-color: transparent;
   width: 100%;
   margin-bottom: 0.5rem;
+  outline: none;
 }
 @media screen and (min-width: 1320px) {
   footer section.contact .con-form form fieldset input {
@@ -2276,6 +2280,7 @@ footer section.contact .con-form form fieldset textarea {
   border-radius: 10px;
   background-color: transparent;
   margin-top: 0.2rem;
+  outline: none;
 }
 @media screen and (min-width: 1320px) {
   footer section.contact .con-form form fieldset textarea {
