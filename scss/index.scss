@@ -1499,10 +1499,60 @@ main {
             position: relative;
             width: 100%;
             margin-top: 80px;
+            transition: all 0.3s;
+            animation: skill-circle 2s linear 0s infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+
+            @keyframes skill-circle {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+            }
 
             @include responsive(pc-size) {
                 width: 750px;
                 margin: 20% auto;
+            }
+
+            .skills-ci-wrap {
+                visibility: hidden;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                transition: 0.5s;
+                padding: 30px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 23rem;
+                height: 23rem;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(15px);
+                background-color: rgba(255, 255, 255, .25);
+                border-radius: 50%;
+                box-shadow: 0 6px 20px -15px #000;
+                border-width: 1px 1px 0 0;
+                border-color: #fff;
+                border-style: solid;
+
+                p {
+                    font-size: 16px;
+                }
+
+                .show {
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                .n-show {
+                    visibility: hidden;
+                    opacity: 0;
+                }
             }
 
             div.skills-img-wrap {
@@ -1557,6 +1607,7 @@ main {
                         margin: 1rem;
                         width: 11rem;
                         height: 11rem;
+                        transition: 0.5s;
 
                         @include responsive(tablet-size) {
                             width: 14rem;
