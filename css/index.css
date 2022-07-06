@@ -147,6 +147,17 @@ header div.h-wrap ul.gnb .toggle .line3 {
 }
 header div.h-wrap ul.gnb li {
   display: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease-in;
+}
+header div.h-wrap ul.gnb li:hover {
+  color: #e28f83;
+}
+@media screen and (min-width: 1320px) {
+  header div.h-wrap ul.gnb li {
+    font-size: 22px;
+  }
 }
 @media screen and (min-width: 768px) {
   header div.h-wrap ul.gnb li {
@@ -175,18 +186,6 @@ header div.h-wrap ul.gnb li .burger div {
   background-color: #fbeeea;
   transition: all 0.5s;
 }
-header div.h-wrap ul.gnb li a {
-  font-size: 20px;
-  transition: all 0.3s ease-in;
-}
-header div.h-wrap ul.gnb li a:hover {
-  color: #e28f83;
-}
-@media screen and (min-width: 1320px) {
-  header div.h-wrap ul.gnb li a {
-    font-size: 22px;
-  }
-}
 header .title-none {
   display: none;
 }
@@ -206,16 +205,15 @@ header .sub-menu li {
   margin-bottom: 35px;
   font-family: "HSYuJi";
   font-size: 1.8rem;
+  cursor: pointer;
+}
+header .sub-menu li:hover {
+  color: #444;
+  background-color: #fbeeea;
+  transition: all 0.3s ease-in;
 }
 header .sub-menu li:last-child {
   margin-bottom: 0;
-}
-header .sub-menu li a:hover {
-  width: 100%;
-  height: 100%;
-  color: #e28f83;
-  background-color: #fbeeea;
-  transition: all 0.3s ease-in;
 }
 
 main {

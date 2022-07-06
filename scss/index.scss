@@ -77,6 +77,17 @@ header {
 
             li {
                 display: none;
+                cursor: pointer;
+                font-size: 20px;
+                transition: all 0.3s ease-in;
+
+                &:hover {
+                    color: $point-color;
+                }
+
+                @include responsive(pc-size) {
+                    font-size: 22px;
+                }
 
                 @include responsive(tablet-size) {
                     display: block;
@@ -105,19 +116,6 @@ header {
                         transition: all 0.5s;
                     }
                 }
-
-                a {
-                    font-size: 20px;
-                    transition: all 0.3s ease-in;
-
-                    &:hover {
-                        color: $point-color;
-                    }
-
-                    @include responsive(pc-size) {
-                        font-size: 22px;
-                    }
-                }
             }
         }
     }
@@ -142,20 +140,16 @@ header {
             margin-bottom: 35px;
             font-family: $point-font;
             font-size: 1.8rem;
+            cursor: pointer;
+
+            &:hover {
+                color: #444;
+                background-color: #fbeeea;
+                transition: all 0.3s ease-in;
+            }
 
             &:last-child {
                 margin-bottom: 0;
-            }
-            
-            a {
-                &:hover {
-                    width: 100%;
-                    height: 100%;
-                    color: $point-color;
-                    background-color: #fbeeea;
-                    transition: all 0.3s ease-in;
-                }
-
             }
         }
     }
