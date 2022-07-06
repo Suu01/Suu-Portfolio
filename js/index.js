@@ -1,7 +1,5 @@
 window.onload = function() {
 
-    // 못해도 한 프로젝트 당 스크립트 코드 최소 500줄 이상
-
     // header 상세메뉴의 스크립트 동작 이벤트
     const button = ()=> {
         const burger = document.getElementById("burger");
