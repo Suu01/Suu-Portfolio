@@ -2190,6 +2190,7 @@ main {
                         .pf-btn {
                             transition: all 0.3s ease-in;
                             margin-top: 2.5rem;
+                            cursor: pointer;
     
                             @include responsive(tablet-size) {
                                 margin-top: 3rem;
@@ -2297,7 +2298,7 @@ main {
 footer {
     width: 100%;
     height: 100%;
-    background: url('../images/con-bg.png') no-repeat;
+    background: url('../images/con-bg.png') no-repeat center;
     background-size: cover;
     margin-top: 30rem;
 
@@ -2350,7 +2351,7 @@ footer {
                     @include responsive(pc-size) {
                         width: 100%;
                         height: 35rem;
-                        margin: 5rem 0 5rem 0;
+                        margin: 5rem 0 3rem 0;
                         padding: 0 2rem;
                     }
 
@@ -2363,7 +2364,7 @@ footer {
                         outline: none;
 
                         @include responsive(pc-size) {
-                            margin-bottom: 1rem;
+                            margin-bottom: 1.5rem;
                         }
                     }
                     
@@ -2375,9 +2376,11 @@ footer {
                         background-color: transparent;
                         margin-top: 0.2rem;
                         outline: none;
+                        padding: 3px 6px;
 
                         @include responsive(pc-size) {
-                            margin-top: 0.4rem;
+                            margin-top: 0;
+                            height: 20rem;
                         }
                     }
                 }
@@ -2395,10 +2398,16 @@ footer {
                         border-radius: 15px;
                         padding-bottom: 0.4rem;
                         background-color: #333;
+                        cursor: pointer;
+
+                        @include responsive(tablet-size) {
+                            width: 15rem;
+                            font-size: 2rem;
+                        }
 
                         @include responsive(pc-size) {
-                            width: 30%;
-                            font-size: 4vw;
+                            width: 20rem;
+                            font-size: 3rem;
                         }
                     }
                 }

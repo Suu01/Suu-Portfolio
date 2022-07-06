@@ -7,11 +7,22 @@
 }
 
 body {
+  overflow-x: hidden;
   cursor: url("../images/mouse-cursor.png"), auto;
 }
 
 body::-webkit-scrollbar {
   width: 10px;
+}
+
+::-moz-input-placeholder, ::-moz-textarea-placeholder {
+  color: #ffffff;
+  font-size: 1.3em;
+}
+
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+  color: #ffffff;
+  font-size: 1.3em;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -2124,6 +2135,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p.pf-txt-add {
 main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
   transition: all 0.3s ease-in;
   margin-top: 2.5rem;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
@@ -2204,7 +2216,7 @@ main section.portfolio .pf-wrap .pf4 .pf-btn div:hover {
 footer {
   width: 100%;
   height: 100%;
-  background: url("../images/con-bg.png") no-repeat;
+  background: url("../images/con-bg.png") no-repeat center;
   background-size: cover;
   margin-top: 30rem;
 }
@@ -2256,7 +2268,7 @@ footer section.contact .con-form form fieldset {
   footer section.contact .con-form form fieldset {
     width: 100%;
     height: 35rem;
-    margin: 5rem 0 5rem 0;
+    margin: 5rem 0 3rem 0;
     padding: 0 2rem;
   }
 }
@@ -2270,7 +2282,7 @@ footer section.contact .con-form form fieldset input {
 }
 @media screen and (min-width: 1320px) {
   footer section.contact .con-form form fieldset input {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 footer section.contact .con-form form fieldset textarea {
@@ -2281,10 +2293,12 @@ footer section.contact .con-form form fieldset textarea {
   background-color: transparent;
   margin-top: 0.2rem;
   outline: none;
+  padding: 3px 6px;
 }
 @media screen and (min-width: 1320px) {
   footer section.contact .con-form form fieldset textarea {
-    margin-top: 0.4rem;
+    margin-top: 0;
+    height: 20rem;
   }
 }
 footer section.contact .con-form form .i-wrap {
@@ -2300,11 +2314,18 @@ footer section.contact .con-form form .i-wrap input#sub {
   border-radius: 15px;
   padding-bottom: 0.4rem;
   background-color: #333;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  footer section.contact .con-form form .i-wrap input#sub {
+    width: 15rem;
+    font-size: 2rem;
+  }
 }
 @media screen and (min-width: 1320px) {
   footer section.contact .con-form form .i-wrap input#sub {
-    width: 30%;
-    font-size: 4vw;
+    width: 20rem;
+    font-size: 3rem;
   }
 }
 footer .footer-bottom {

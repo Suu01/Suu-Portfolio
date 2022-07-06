@@ -8,11 +8,22 @@
 }
 
 body {
+    overflow-x: hidden;
     cursor: url('../images/mouse-cursor.png'), auto;
 }
 
 body::-webkit-scrollbar {
     width: 10px;
+}
+
+::-moz-input-placeholder, ::-moz-textarea-placeholder {
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+    color: #ffffff;
+    font-size: 1.3em;
 }
 
 body::-webkit-scrollbar-thumb {
