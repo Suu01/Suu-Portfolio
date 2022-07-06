@@ -2303,7 +2303,25 @@ footer section.contact .con-form form fieldset textarea {
 }
 footer section.contact .con-form form .i-wrap {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
+}
+footer section.contact .con-form form .i-wrap .i-wrap-icon {
+  display: flex;
+  align-items: center;
+}
+footer section.contact .con-form form .i-wrap .i-wrap-icon span {
+  width: 60px;
+  margin-right: 35px;
+}
+footer section.contact .con-form form .i-wrap .i-wrap-icon span img {
+  width: 100%;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+footer section.contact .con-form form .i-wrap .i-wrap-icon span img:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 footer section.contact .con-form form .i-wrap input#sub {
   width: 12rem;

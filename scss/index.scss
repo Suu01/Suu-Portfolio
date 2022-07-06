@@ -2386,7 +2386,29 @@ footer {
 
                 .i-wrap {
                     display: flex;
-                    justify-content: end;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .i-wrap-icon {
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            width: 60px;
+                            margin-right: 35px;
+
+                            img {
+                                width: 100%;
+                                opacity: 0.6;
+                                transition: 0.3s;
+
+                                &:hover {
+                                    opacity: 1;
+                                    transform: scale(1.05);
+                                }
+                            }
+                        }
+                    }
 
                     input#sub {
                         width: 12rem;
