@@ -1724,6 +1724,165 @@ main {
             padding: 10rem 30px 0 30px;
         }
 
+        .pf-des {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            // opacity: 0;
+            transition: all 0.5s;
+
+            overflow-y: scroll;
+
+            @include responsive(pc-size) {
+                overflow-y: hidden;
+            }
+
+            .pf-overlay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .overlay {
+                    padding: 0 20px;
+                    width: 100%;
+
+                    @include responsive(pc-size) {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .pf-d-img {
+                        width: 400px;
+                        margin: 60px auto;
+
+                        @include responsive(tablet-size) {
+                            width: 550px;
+                        }
+
+                        @include responsive(pc-size) {
+                            width: 45%;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .pf-d-txt {
+                        width: 400px;
+                        margin: auto;
+
+                        @include responsive(tablet-size) {
+                            width: 550px;
+                        }
+
+                        @include responsive(pc-size) {
+                            width: 50%;
+                            margin: 0;
+                            padding: 0 20px;
+                        }
+
+                        h3 {
+                            margin-bottom: 10px;
+                        }
+
+                        .h3-p {
+                            margin-bottom: 20px;
+                        }
+
+                        .pf-d-txt-des {
+                            font-size: 16px;
+                            margin-bottom: 2px;
+                        }
+
+                        .pf-d-btn {
+                            width: 150px;
+                            margin: 40px auto;
+
+                            a {
+                                padding: 3px 0 5px 0;
+                                font-size: 18px;
+                                text-align: center;
+        
+                                &:hover {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .closebtn {
+                    position: absolute;
+                    right: 4%;
+                    top: 1%;
+                    font-weight: bolder;
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .pf-des1 {
+            .pf-d-btn {
+                a {
+                    color: $color-pink;
+                    border: 4px solid $color-pink;
+
+                    &:hover {
+                        background-color: $color-pink;
+                    }
+                }
+            }
+        }
+
+        .pf-des2 {
+            .pf-d-btn {
+                a {
+                    color: $color-green;
+                    border: 4px solid $color-green;
+
+                    &:hover {
+                        background-color: $color-green;
+                    }
+                }
+            }
+        }
+
+        .pf-des3 {
+            .pf-d-btn {
+                a {
+                    color: $color-yellow;
+                    border: 4px solid $color-yellow;
+
+                    &:hover {
+                        background-color: $color-yellow;
+                    }
+                }
+            }
+        }
+
+        .pf-des4 {
+            .pf-d-btn {
+                a {
+                    color: $color-blue;
+                    border: 4px solid $color-blue;
+
+                    &:hover {
+                        background-color: $color-blue;
+                    }
+                }
+            }
+        }
+
         .portfolio-title {
             display: flex;
             align-items: center;
@@ -1984,7 +2143,7 @@ main {
                                 margin-top: 2.5rem;
                             }
     
-                            a {
+                            div {
                                 transition: all 0.3s ease-in;
                                 font-family: $point-font;
                                 font-size: 2rem;
@@ -2005,7 +2164,7 @@ main {
 
             .pf1 {
                 .pf-btn {
-                    a {
+                    div {
                         color: $color-pink;
                         border: 4px solid $color-pink;
 
@@ -2029,7 +2188,7 @@ main {
                 }
 
                 .pf-btn {
-                    a {
+                    div {
                         color: $color-green;
                         border: 4px solid $color-green;
 
@@ -2042,7 +2201,7 @@ main {
 
             .pf3 {
                 .pf-btn {
-                    a {
+                    div {
                         color: $color-yellow;
                         border: 4px solid $color-yellow;
 
@@ -2054,8 +2213,19 @@ main {
             }
 
             .pf4 {
+                .portfolio-mokup {
+                    order: 2;
+                }
+                .pf-txt {
+                    order: 1;
+                    @include responsive(pc-size) {
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+                }
+
                 .pf-btn {
-                    a {
+                    div {
                         color: $color-blue;
                         border: 4px solid $color-blue;
 

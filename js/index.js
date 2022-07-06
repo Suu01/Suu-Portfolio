@@ -73,7 +73,6 @@ window.onload = function() {
     
     // 스크롤 부드럽게 이동하는 스크립트
     document.querySelector(".home-m").addEventListener('click', function(){
-        alert("클릭되었어요");
         var location = document.querySelector("#main-section").offsetTop;
         window.scroll({
             behavior: 'smooth',
@@ -113,4 +112,56 @@ window.onload = function() {
             top: location5
         });
     });
+
+
+    // portfolio
+    const detail = document.querySelector(".details");
+    const overlay = document.querySelector(".pf-des1");
+    const closeBtn = document.querySelector(".closebtn");
+    detail.addEventListener("click", () => {
+        overlay.style.visibility = 'visible';
+        document.body.style.height = '100%';
+        document.body.style.overflow = 'hidden';
+    })
+    closeBtn.addEventListener("click", () => {
+        overlay.style.visibility = 'hidden';
+        document.body.style.overflow = 'scroll';
+    })
+
+    const detail2 = document.querySelector(".details2");
+    const overlay2 = document.querySelector(".pf-des2");
+    const closeBtn2 = document.querySelector(".pf-des2 .closebtn");
+    detail2.addEventListener("click", () => {
+        overlay2.style.visibility = 'visible';
+        document.body.style.overflow = 'hidden';
+    })
+    closeBtn2.addEventListener("click", () => {
+        overlay2.style.visibility = 'hidden';
+        document.body.style.overflow = 'scroll';
+    })
+
+    const detail3 = document.querySelector(".details3");
+    const overlay3 = document.querySelector(".pf-des3");
+    const closeBtn3 = document.querySelector(".pf-des3 .closebtn");
+    detail3.addEventListener("click", () => {
+        overlay3.style.visibility = 'visible';
+        document.body.style.overflow = 'hidden';
+    })
+    closeBtn3.addEventListener("click", () => {
+        overlay3.style.visibility = 'hidden';
+        document.body.style.overflow = 'scroll';
+    })
+
+    const detail4 = document.querySelector(".details4");
+    const overlay4 = document.querySelector(".pf-des4");
+    const closeBtn4 = document.querySelector(".pf-des4 .closebtn");
+    detail4.addEventListener("click", () => {
+        overlay4.style.visibility = 'visible';
+        document.body.style.overflow = 'hidden';
+    })
+    closeBtn4.addEventListener("click", () => {
+        overlay4.style.visibility = 'hidden';
+        document.body.style.overflow = 'scroll';
+    })
+
 };
