@@ -134,6 +134,9 @@ header div.h-wrap h1 a:first-child img {
     display: none;
   }
 }
+header div.h-wrap ul.gnb {
+  position: relative;
+}
 @media screen and (min-width: 768px) {
   header div.h-wrap ul.gnb {
     display: flex;
@@ -162,8 +165,30 @@ header div.h-wrap ul.gnb li {
   font-size: 20px;
   transition: all 0.3s ease-in;
 }
+@media screen and (min-width: 768px) {
+  header div.h-wrap ul.gnb li::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #e28f83;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+  }
+}
+@media screen and (min-width: 768px) {
+  header div.h-wrap ul.gnb li::before {
+    width: 100%;
+  }
+}
 header div.h-wrap ul.gnb li:hover {
   color: #e28f83;
+}
+header div.h-wrap ul.gnb li:hover::before {
+  transform: scaleX(1);
 }
 @media screen and (min-width: 1320px) {
   header div.h-wrap ul.gnb li {
@@ -1480,26 +1505,11 @@ main section.skills div.skills-des {
   width: 100%;
   margin-top: 80px;
 }
-main section.skills div.skills-des:hover {
-  animation-play-state: paused;
-}
-@keyframes skill-circle {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @media screen and (min-width: 1320px) {
   main section.skills div.skills-des {
     width: 750px;
     margin: 20% auto;
     transition: all 0.3s;
-    animation: skill-circle 2s linear 0s infinite;
   }
 }
 main section.skills div.skills-des .skills-ci-wrap {
@@ -1575,6 +1585,14 @@ main section.skills div.skills-des div.circle-wrap .circle-box {
   display: flex;
   align-items: center;
 }
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
   position: relative;
   border-radius: 50%;
@@ -1583,6 +1601,9 @@ main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
   width: 11rem;
   height: 11rem;
   transition: 0.5s;
+}
+main section.skills div.skills-des div.circle-wrap .circle-box div.circle:hover {
+  animation: rotate-circle 0.5s linear 0s;
 }
 @media screen and (min-width: 768px) {
   main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
@@ -2217,12 +2238,16 @@ footer {
   width: 100%;
   height: 100%;
   background: #777;
-  margin-top: 30rem;
+  margin-top: 20rem;
+}
+@media screen and (min-width: 1320px) {
+  footer {
+    margin-top: 30rem;
+  }
 }
 footer section.contact {
   width: 100%;
-  margin-top: 4.5rem;
-  padding: 12rem 4% 0 4%;
+  padding: 2.5rem 4% 0 4%;
   position: relative;
 }
 @media screen and (min-width: 1320px) {
@@ -2230,7 +2255,7 @@ footer section.contact {
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    padding: 15rem 30px 0 30px;
+    padding: 5rem 30px 0 30px;
   }
 }
 footer section.contact .con-title h2 {
@@ -2310,8 +2335,20 @@ footer section.contact .con-form form .i-wrap .i-wrap-icon {
   align-items: center;
 }
 footer section.contact .con-form form .i-wrap .i-wrap-icon span {
-  width: 60px;
+  width: 40px;
   margin-right: 35px;
+}
+@media screen and (min-width: 768px) {
+  footer section.contact .con-form form .i-wrap .i-wrap-icon span {
+    width: 45px;
+    margin-right: 45px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  footer section.contact .con-form form .i-wrap .i-wrap-icon span {
+    width: 55px;
+    margin-right: 60px;
+  }
 }
 footer section.contact .con-form form .i-wrap .i-wrap-icon span img {
   width: 100%;
@@ -2347,20 +2384,25 @@ footer section.contact .con-form form .i-wrap input#sub {
 }
 footer .footer-bottom {
   width: 100%;
-  padding: 3% 0;
+  padding: 15px 0;
   border-top: 2px solid #fff;
-  margin-top: 8%;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1320px) {
   footer .footer-bottom {
-    margin-top: 5%;
-    padding: 20px 0;
+    margin-top: 100px;
+    padding: 25px 0;
   }
 }
 footer .footer-bottom p {
   text-align: center;
   color: #fff;
-  font-size: 3.5vw;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-bottom p {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 1320px) {
   footer .footer-bottom p {

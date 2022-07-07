@@ -52,6 +52,8 @@ header {
         }
 
         ul.gnb {
+            position: relative;
+
             @include responsive(tablet-size) {
                 display: flex;
                 justify-content: space-between;
@@ -81,8 +83,32 @@ header {
                 font-size: 20px;
                 transition: all 0.3s ease-in;
 
+                &::before {
+                    @include responsive(tablet-size) {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 4px;
+                        background: $point-color;
+
+                        transform: scaleX(0);
+                        transition: transform 0.4s;
+                    }
+
+                    @include responsive(tablet-size) {
+                        width: 100%;
+                    }
+                }
+
                 &:hover {
                     color: $point-color;
+                }
+
+                &:hover::before {
+                    transform: scaleX(1);
                 }
 
                 @include responsive(pc-size) {
@@ -1500,21 +1526,21 @@ main {
             width: 100%;
             margin-top: 80px;
 
-            &:hover {
-                animation-play-state: paused;
-            }
+            // &:hover {
+            //     animation-play-state: paused;
+            // }
 
-            @keyframes skill-circle {
-            0% {transform: scale(1);}
-            50% {transform: scale(1.1);}
-            100% {transform: scale(1);}
-            }
+            // @keyframes skill-circle {
+            // 0% {transform: scale(1);}
+            // 50% {transform: scale(1.1);}
+            // 100% {transform: scale(1);}
+            // }
 
             @include responsive(pc-size) {
                 width: 750px;
                 margin: 20% auto;
                 transition: all 0.3s;
-                animation: skill-circle 2s linear 0s infinite;
+                // animation: skill-circle 2s linear 0s infinite;
             }
 
             .skills-ci-wrap {
@@ -1579,12 +1605,6 @@ main {
                             height: auto;
                         }
                     }
-
-                    // &:nth-child(2) {
-                    //     @include responsive(pc-size) {
-                    //         display: none;
-                    //     }
-                    // }
                 }
             }
 
@@ -1600,6 +1620,11 @@ main {
                     display: flex;
                     align-items: center;
 
+                    @keyframes rotate-circle {
+                        0% {transform: rotate(0deg);}
+                        100% {transform: rotate(360deg);}
+                    }
+
                     div.circle {
                         position: relative;
                         border-radius: 50%;
@@ -1608,6 +1633,10 @@ main {
                         width: 11rem;
                         height: 11rem;
                         transition: 0.5s;
+
+                        &:hover {
+                            animation: rotate-circle 0.5s linear 0s;
+                        }
 
                         @include responsive(tablet-size) {
                             width: 14rem;
@@ -2298,20 +2327,22 @@ footer {
     width: 100%;
     height: 100%;
     background: $color-gray;
-    margin-top: 30rem;
+    margin-top: 20rem;
 
+    @include responsive(pc-size) {
+        margin-top: 30rem;
+    }
 
     section.contact {
         width: 100%;
-        margin-top: 4.5rem;
-        padding: 12rem 4% 0 4%;
+        padding: 2.5rem 4% 0 4%;
         position: relative;
 
         @include responsive(pc-size) {
             width: 100%;
             max-width: 1440px;
             margin: auto;
-            padding: 15rem 30px 0 30px;
+            padding: 5rem 30px 0 30px;
         }
 
         .con-title {
@@ -2393,8 +2424,18 @@ footer {
                         align-items: center;
 
                         span {
-                            width: 60px;
+                            width: 40px;
                             margin-right: 35px;
+
+                            @include responsive(tablet-size) {
+                                width: 45px;
+                                margin-right: 45px;
+                            }
+
+                            @include responsive(pc-size) {
+                                width: 55px;
+                                margin-right: 60px;
+                            }
 
                             img {
                                 width: 100%;
@@ -2437,19 +2478,23 @@ footer {
 
     .footer-bottom {
         width: 100%;
-        padding: 3% 0;
+        padding: 15px 0;
         border-top: 2px solid #fff;
-        margin-top: 8%;
+        margin-top: 60px;
 
         @include responsive(pc-size) {
-            margin-top: 5%;
-            padding: 20px 0;
+            margin-top: 100px;
+            padding: 25px 0;
         }
 
         p {
             text-align: center;
             color: #fff;
-            font-size: 3.5vw;
+            font-size: 1.2rem;
+
+            @include responsive(tablet-size) {
+                font-size: 1.5rem;
+            }
 
             @include responsive(pc-size) {
                 font-size: 25px;
