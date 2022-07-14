@@ -116,6 +116,7 @@ window.onload = function() {
 
     // portfolio
     const detail = document.querySelector(".de");
+    const details = document.querySelector(".details");
     const overlay = document.querySelector(".pf-des1");
     const closeBtn = document.querySelector(".closebtn");
     detail.addEventListener("click", () => {
@@ -127,8 +128,12 @@ window.onload = function() {
         overlay.style.visibility = 'hidden';
         document.body.style.overflow = 'scroll';
     })
+    details.addEventListener("click", () => {
+        alert('클릭되었어요');
+    })
 
     const detail2 = document.querySelector(".de2");
+    const details2 = document.querySelector(".details2");
     const overlay2 = document.querySelector(".pf-des2");
     const closeBtn2 = document.querySelector(".pf-des2 .closebtn");
     detail2.addEventListener("click", () => {
@@ -139,8 +144,12 @@ window.onload = function() {
         overlay2.style.visibility = 'hidden';
         document.body.style.overflow = 'scroll';
     })
+    details2.addEventListener("click", () => {
+        alert('클릭되었어요');
+    })
 
     const detail3 = document.querySelector(".de3");
+    const details3 = document.querySelector(".details3");
     const overlay3 = document.querySelector(".pf-des3");
     const closeBtn3 = document.querySelector(".pf-des3 .closebtn");
     detail3.addEventListener("click", () => {
@@ -151,8 +160,12 @@ window.onload = function() {
         overlay3.style.visibility = 'hidden';
         document.body.style.overflow = 'scroll';
     })
+    details3.addEventListener("click", () => {
+        alert('클릭되었어요');
+    })
 
     const detail4 = document.querySelector(".de4");
+    const details4 = document.querySelector(".details4");
     const overlay4 = document.querySelector(".pf-des4");
     const closeBtn4 = document.querySelector(".pf-des4 .closebtn");
     detail4.addEventListener("click", () => {
@@ -162,6 +175,9 @@ window.onload = function() {
     closeBtn4.addEventListener("click", () => {
         overlay4.style.visibility = 'hidden';
         document.body.style.overflow = 'scroll';
+    })
+    details4.addEventListener("click", () => {
+        alert('클릭되었어요');
     })
 
 
