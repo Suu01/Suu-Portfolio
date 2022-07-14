@@ -150,6 +150,12 @@ header {
         display: none;
     }
 
+    @keyframes flip {
+        0%,80% {
+        transform: rotateY(360deg) 
+        }
+    }
+
     .sub-menu {
         width: 100%;
         position: fixed;
@@ -167,8 +173,16 @@ header {
 
             &:hover {
                 color: $point-color;
-                background-color: #222;
+                // background-color: #222;
                 transition: all 0.3s ease-in;
+                animation: flip 2s;
+            }
+
+            span {
+                display: inline-block;
+                background-color: aqua;
+                &:hover {
+                }
             }
         }
     }
