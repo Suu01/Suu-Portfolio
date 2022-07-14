@@ -114,9 +114,8 @@ window.onload = function() {
     });
 
 
-    // portfolio
+    // portfolio details 모달창
     const detail = document.querySelector(".de");
-    const details = document.querySelector(".details");
     const overlay = document.querySelector(".pf-des1");
     const closeBtn = document.querySelector(".closebtn");
     detail.addEventListener("click", () => {
@@ -128,12 +127,8 @@ window.onload = function() {
         overlay.style.visibility = 'hidden';
         document.body.style.overflow = 'scroll';
     })
-    details.addEventListener("click", () => {
-        alert('클릭되었어요');
-    })
 
     const detail2 = document.querySelector(".de2");
-    const details2 = document.querySelector(".details2");
     const overlay2 = document.querySelector(".pf-des2");
     const closeBtn2 = document.querySelector(".pf-des2 .closebtn");
     detail2.addEventListener("click", () => {
@@ -144,12 +139,8 @@ window.onload = function() {
         overlay2.style.visibility = 'hidden';
         document.body.style.overflow = 'scroll';
     })
-    details2.addEventListener("click", () => {
-        alert('클릭되었어요');
-    })
 
     const detail3 = document.querySelector(".de3");
-    const details3 = document.querySelector(".details3");
     const overlay3 = document.querySelector(".pf-des3");
     const closeBtn3 = document.querySelector(".pf-des3 .closebtn");
     detail3.addEventListener("click", () => {
@@ -160,12 +151,8 @@ window.onload = function() {
         overlay3.style.visibility = 'hidden';
         document.body.style.overflow = 'scroll';
     })
-    details3.addEventListener("click", () => {
-        alert('클릭되었어요');
-    })
 
     const detail4 = document.querySelector(".de4");
-    const details4 = document.querySelector(".details4");
     const overlay4 = document.querySelector(".pf-des4");
     const closeBtn4 = document.querySelector(".pf-des4 .closebtn");
     detail4.addEventListener("click", () => {
@@ -176,6 +163,22 @@ window.onload = function() {
         overlay4.style.visibility = 'hidden';
         document.body.style.overflow = 'scroll';
     })
+
+    // 포트폴리오 디자인가이드 모달창 띄워주기
+    const design = document.querySelector(".deguide");
+    const details = document.querySelector(".details");
+    details.addEventListener("click", () => {
+        alert('클릭되었어요');
+    })
+    const details2 = document.querySelector(".details2");
+    details2.addEventListener("click", () => {
+        alert('클릭되었어요');
+    })
+    const details3 = document.querySelector(".details3");
+    details3.addEventListener("click", () => {
+        alert('클릭되었어요');
+    })
+    const details4 = document.querySelector(".details4");
     details4.addEventListener("click", () => {
         alert('클릭되었어요');
     })
