@@ -113,7 +113,7 @@ header div.h-wrap {
   height: 100%;
   padding: 0 4%;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   header div.h-wrap {
     padding: 0 30px;
   }
@@ -121,7 +121,7 @@ header div.h-wrap {
 header div.h-wrap h1 a:first-child {
   display: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   header div.h-wrap h1 a:first-child {
     display: block;
   }
@@ -129,7 +129,7 @@ header div.h-wrap h1 a:first-child {
 header div.h-wrap h1 a:first-child img {
   width: 350px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   header div.h-wrap h1 a:last-child {
     display: none;
   }
@@ -145,7 +145,7 @@ header div.h-wrap ul.gnb {
     font-family: "HSYuJi";
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   header div.h-wrap ul.gnb {
     width: 550px;
   }
@@ -190,7 +190,7 @@ header div.h-wrap ul.gnb li:hover {
 header div.h-wrap ul.gnb li:hover::before {
   transform: scaleX(1);
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   header div.h-wrap ul.gnb li {
     font-size: 22px;
   }
@@ -293,7 +293,7 @@ main section.main-section div.main-txt {
     top: 20%;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.main-section div.main-txt {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -331,7 +331,7 @@ main section.main-section div.main-txt .wel {
     font-size: 2.1rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.main-section div.main-txt .wel {
     font-size: 2.5rem;
   }
@@ -425,7 +425,7 @@ main section.main-section div.main-txt h2 span:nth-of-type(20) {
     font-size: 4.9rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.main-section div.main-txt h2 {
     font-size: 5.8rem;
   }
@@ -444,7 +444,7 @@ main section.main-section div.main-txt .front {
     font-size: 2.1rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.main-section div.main-txt .front {
     font-size: 2.3rem;
   }
@@ -521,7 +521,7 @@ main section.main-section div.main-img .main-img-t {
     display: block;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.main-section div.main-img .main-img-t {
     display: none;
   }
@@ -611,7 +611,7 @@ main section.main-section div.main-img .main-img-t div:nth-child(6) {
 main section.main-section div.main-img .main-img-p {
   display: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.main-section div.main-img .main-img-p {
     display: block;
   }
@@ -673,7 +673,7 @@ main section.main-section div.main-img .main-img-p div:nth-child(8) {
 main section.main-section div.piano-wrap {
   display: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.main-section div.piano-wrap {
     position: absolute;
     width: 100%;
@@ -991,7 +991,7 @@ main section.about {
   margin-top: 4.5rem;
   padding: 10rem 4% 0 4%;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about {
     width: 100%;
     max-width: 1440px;
@@ -1017,7 +1017,7 @@ main section.about div.about-title h2 {
     margin-right: 2.1rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about div.about-title h2 {
     font-size: 4rem;
     margin-right: 2.3rem;
@@ -1033,7 +1033,7 @@ main section.about div.about-title div.about-img {
     width: 2.6rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about div.about-title div.about-img {
     width: 2.8rem;
   }
@@ -1045,7 +1045,7 @@ main section.about div.about-title div.about-img img {
 main section.about div.about-title div.line {
   display: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about div.about-title div.line {
     position: absolute;
     display: block;
@@ -1068,7 +1068,7 @@ main section.about section.about-top div.about-img {
   margin: 7rem 0;
   position: relative;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about section.about-top div.about-img {
     position: absolute;
     right: 3rem;
@@ -1084,7 +1084,7 @@ main section.about section.about-top div.about-img div:last-child {
   position: absolute;
   top: -2rem;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about section.about-top div.about-img div:last-child {
     top: -1.9rem;
     left: -1.9rem;
@@ -1100,7 +1100,7 @@ main section.about section.about-top div.about-img div:last-child img {
     transform: rotate(360deg);
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about section.about-top div.about-des {
     float: left;
     width: 60%;
@@ -1120,7 +1120,7 @@ main section.about section.about-top div.about-des h3 {
     font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about section.about-top div.about-des h3 {
     margin: 2.5rem 0;
     text-align: left;
@@ -1136,7 +1136,7 @@ main section.about section.about-top div.about-des p {
 main section.about section.about-top div.about-des p span {
   display: inline;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about section.about-top div.about-des p span {
     display: inline-block;
   }
@@ -1146,7 +1146,7 @@ main section.about section.about-top div.about-des p span {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.about section.about-top div.about-des p {
     font-size: 1.3rem;
     width: 100%;
@@ -1162,7 +1162,7 @@ main section.skills {
   margin-top: 4.5rem;
   padding: 10rem 4% 0 4%;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills {
     width: 100%;
     max-width: 1440px;
@@ -1188,7 +1188,7 @@ main section.skills div.skills-title div {
     width: 2.6rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-title div {
     width: 2.8rem;
   }
@@ -1210,7 +1210,7 @@ main section.skills div.skills-title h2 {
     margin-left: 2.1rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-title h2 {
     font-size: 4rem;
     margin-left: 2.3rem;
@@ -1224,7 +1224,7 @@ main section.skills div.skills-des {
   width: 100%;
   margin-top: 80px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des {
     width: 750px;
     margin: 20% auto;
@@ -1270,7 +1270,7 @@ main section.skills div.skills-des div.skills-img-wrap {
   margin: auto;
   padding: 0 5%;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.skills-img-wrap {
     padding: 0;
   }
@@ -1283,7 +1283,7 @@ main section.skills div.skills-des div.skills-img-wrap img {
 main section.skills div.skills-des div.skills-img-wrap img:first-child {
   display: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.skills-img-wrap img:first-child {
     display: block;
     width: 750px;
@@ -1294,7 +1294,7 @@ main section.skills div.skills-des div.skills-img-wrap img:first-child {
 main section.skills div.skills-des div.circle-wrap {
   margin-top: 15%;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap {
     margin-top: 0;
     padding: 0;
@@ -1330,7 +1330,7 @@ main section.skills div.skills-des div.circle-wrap .circle-box div.circle:hover 
     height: 14rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
     position: absolute;
     width: 14rem;
@@ -1355,7 +1355,7 @@ main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-tex
     font-size: 2.5rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap p {
     font-size: 40px;
   }
@@ -1368,7 +1368,7 @@ main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-tex
     font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap span {
     font-size: 30px;
   }
@@ -1383,7 +1383,7 @@ main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
     margin-left: 2rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
     display: none;
   }
@@ -1399,7 +1399,7 @@ main section.skills div.skills-des div.circle-wrap .circle-box .circle-des p {
 main section.skills div.skills-des div.circle-wrap .circle1 {
   border: 5px solid #f44336;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle1 {
     top: -6rem;
     left: 7.5rem;
@@ -1408,7 +1408,7 @@ main section.skills div.skills-des div.circle-wrap .circle1 {
 main section.skills div.skills-des div.circle-wrap .circle2 {
   border: 5px solid #ff9800;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle2 {
     top: -6rem;
     right: 7.5rem;
@@ -1417,7 +1417,7 @@ main section.skills div.skills-des div.circle-wrap .circle2 {
 main section.skills div.skills-des div.circle-wrap .circle3 {
   border: 5px solid #d5b71d;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle3 {
     top: 7.5rem;
     right: -6rem;
@@ -1426,7 +1426,7 @@ main section.skills div.skills-des div.circle-wrap .circle3 {
 main section.skills div.skills-des div.circle-wrap .circle4 {
   border: 5px solid #abba19;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle4 {
     bottom: 7.5rem;
     right: -6rem;
@@ -1435,7 +1435,7 @@ main section.skills div.skills-des div.circle-wrap .circle4 {
 main section.skills div.skills-des div.circle-wrap .circle5 {
   border: 5px solid #0c9688;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle5 {
     bottom: -6rem;
     left: 7.5rem;
@@ -1444,7 +1444,7 @@ main section.skills div.skills-des div.circle-wrap .circle5 {
 main section.skills div.skills-des div.circle-wrap .circle6 {
   border: 5px solid #2196f3;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle6 {
     bottom: -6rem;
     right: 7.5rem;
@@ -1453,7 +1453,7 @@ main section.skills div.skills-des div.circle-wrap .circle6 {
 main section.skills div.skills-des div.circle-wrap .circle7 {
   border: 5px solid #3f51b5;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle7 {
     top: 7.5rem;
     left: -6rem;
@@ -1462,7 +1462,7 @@ main section.skills div.skills-des div.circle-wrap .circle7 {
 main section.skills div.skills-des div.circle-wrap .circle8 {
   border: 5px solid #673ab7;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle8 {
     bottom: 7.5rem;
     left: -6rem;
@@ -1475,7 +1475,7 @@ main div.line2 {
   margin: auto;
   margin-top: 10rem;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main div.line2 {
     height: 20rem;
   }
@@ -1484,7 +1484,7 @@ main section.portfolio {
   position: relative;
   padding: 10rem 4% 0 4%;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio {
     width: 100%;
     max-width: 1440px;
@@ -1507,7 +1507,7 @@ main section.portfolio .pf-des {
   transition: all 0.5s;
   overflow-y: scroll;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-des {
     overflow-y: hidden;
   }
@@ -1521,7 +1521,7 @@ main section.portfolio .pf-des .pf-overlay .overlay {
   padding: 0 20px;
   width: 100%;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-des .pf-overlay .overlay {
     display: flex;
     align-items: center;
@@ -1536,7 +1536,7 @@ main section.portfolio .pf-des .pf-overlay .overlay .pf-d-img {
     width: 550px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-des .pf-overlay .overlay .pf-d-img {
     width: 45%;
   }
@@ -1553,7 +1553,7 @@ main section.portfolio .pf-des .pf-overlay .overlay .pf-d-txt {
     width: 550px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-des .pf-overlay .overlay .pf-d-txt {
     width: 50%;
     margin: 0;
@@ -1636,7 +1636,7 @@ main section.portfolio .portfolio-title h2 {
     margin: 0 2.5rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .portfolio-title h2 {
     font-size: 4rem;
     margin: 0 3rem;
@@ -1653,7 +1653,7 @@ main section.portfolio .portfolio-title div:first-child {
     width: 1.8rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .portfolio-title div:first-child {
     width: 2rem;
   }
@@ -1673,7 +1673,7 @@ main section.portfolio .portfolio-title div:last-child {
     width: 1.65rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .portfolio-title div:last-child {
     width: 1.85rem;
   }
@@ -1685,7 +1685,7 @@ main section.portfolio .portfolio-title div:last-child img {
 main section.portfolio .pf-wrap {
   margin: 10rem 0;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap {
     margin: 15rem 0 0 0;
   }
@@ -1701,7 +1701,7 @@ main section.portfolio .pf-wrap .pf {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf {
     display: flex;
     justify-content: flex-start;
@@ -1720,7 +1720,7 @@ main section.portfolio .pf-wrap .pf .portfolio-mokup {
     width: 40rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .portfolio-mokup {
     width: 662.39px;
   }
@@ -1745,7 +1745,7 @@ main section.portfolio .pf-wrap .pf .portfolio-mokup .w-img-wrap {
     left: 1.1rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .portfolio-mokup .w-img-wrap {
     width: 39.15rem;
     height: 22.1rem;
@@ -1779,7 +1779,7 @@ main section.portfolio .pf-wrap .pf .pf-txt {
     margin-top: 8rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .pf-txt {
     width: 50%;
     display: flex;
@@ -1789,7 +1789,7 @@ main section.portfolio .pf-wrap .pf .pf-txt {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap {
     width: 80%;
   }
@@ -1803,7 +1803,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap span.pf-num {
     font-size: 1.7rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap span.pf-num {
     font-size: 1.3rem;
   }
@@ -1818,7 +1818,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap h2 {
     font-size: 3.7rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap h2 {
     font-size: 3rem;
   }
@@ -1832,7 +1832,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p {
     margin-top: 1.7rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p {
     margin-top: 1.4rem;
   }
@@ -1846,7 +1846,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span {
     font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p span {
     font-size: 1.45rem;
   }
@@ -1863,7 +1863,7 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p.pf-txt-add {
   display: none;
   transition: all 0.3s ease-in;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p.pf-txt-add {
     margin: auto;
     margin-top: 2rem;
@@ -1874,28 +1874,40 @@ main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap p.pf-txt-add {
 }
 main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
   transition: all 0.3s ease-in;
-  margin-top: 2.5rem;
+  margin: 4rem 2rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
-    margin-top: 3rem;
+    margin: 5rem 2rem 0 2rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn {
-    margin-top: 2.5rem;
+    margin-top: 2.5rem 0 0 0;
   }
 }
 main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn div {
   transition: all 0.3s ease-in;
   font-family: "HSYuJi";
-  font-size: 2rem;
-  width: 15rem;
+  font-size: 1.8rem;
+  width: 48%;
   height: 5rem;
   margin: auto;
   border-radius: 2rem;
-  padding-top: 6px;
+  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn div {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn div {
+    font-size: 1.8rem;
+  }
 }
 main section.portfolio .pf-wrap .pf .pf-txt .pf-txt-wrap .pf-btn div:hover {
   color: #fff;
@@ -1913,7 +1925,7 @@ main section.portfolio .pf-wrap .pf2 .portfolio-mokup {
 main section.portfolio .pf-wrap .pf2 .pf-txt {
   order: 1;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf2 .pf-txt {
     justify-content: flex-start;
     align-items: flex-start;
@@ -1939,7 +1951,7 @@ main section.portfolio .pf-wrap .pf4 .portfolio-mokup {
 main section.portfolio .pf-wrap .pf4 .pf-txt {
   order: 1;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   main section.portfolio .pf-wrap .pf4 .pf-txt {
     justify-content: flex-start;
     align-items: flex-start;
@@ -1959,7 +1971,7 @@ footer {
   background: #777;
   margin-top: 20rem;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer {
     margin-top: 30rem;
   }
@@ -1969,7 +1981,7 @@ footer section.contact {
   padding: 2.5rem 4% 0 4%;
   position: relative;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer section.contact {
     width: 100%;
     max-width: 1440px;
@@ -1987,7 +1999,7 @@ footer section.contact .con-title h2 {
     font-size: 3.2rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer section.contact .con-title h2 {
     font-size: 4rem;
   }
@@ -2007,7 +2019,7 @@ footer section.contact .con-form form fieldset {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer section.contact .con-form form fieldset {
     width: 100%;
     height: 35rem;
@@ -2023,7 +2035,7 @@ footer section.contact .con-form form fieldset input {
   margin-bottom: 0.5rem;
   outline: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer section.contact .con-form form fieldset input {
     margin-bottom: 1.5rem;
   }
@@ -2038,7 +2050,7 @@ footer section.contact .con-form form fieldset textarea {
   outline: none;
   padding: 3px 6px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer section.contact .con-form form fieldset textarea {
     margin-top: 0;
     height: 20rem;
@@ -2063,7 +2075,7 @@ footer section.contact .con-form form .i-wrap .i-wrap-icon span {
     margin-right: 45px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer section.contact .con-form form .i-wrap .i-wrap-icon span {
     width: 55px;
     margin-right: 60px;
@@ -2095,7 +2107,7 @@ footer section.contact .con-form form .i-wrap input#sub {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer section.contact .con-form form .i-wrap input#sub {
     width: 20rem;
     font-size: 3rem;
@@ -2107,7 +2119,7 @@ footer .footer-bottom {
   border-top: 2px solid #fff;
   margin-top: 60px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer .footer-bottom {
     margin-top: 100px;
     padding: 25px 0;
@@ -2123,7 +2135,7 @@ footer .footer-bottom p {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1440px) {
   footer .footer-bottom p {
     font-size: 25px;
   }

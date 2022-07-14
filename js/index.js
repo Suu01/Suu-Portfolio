@@ -115,7 +115,7 @@ window.onload = function() {
 
 
     // portfolio
-    const detail = document.querySelector(".details");
+    const detail = document.querySelector(".de");
     const overlay = document.querySelector(".pf-des1");
     const closeBtn = document.querySelector(".closebtn");
     detail.addEventListener("click", () => {
@@ -128,7 +128,7 @@ window.onload = function() {
         document.body.style.overflow = 'scroll';
     })
 
-    const detail2 = document.querySelector(".details2");
+    const detail2 = document.querySelector(".de2");
     const overlay2 = document.querySelector(".pf-des2");
     const closeBtn2 = document.querySelector(".pf-des2 .closebtn");
     detail2.addEventListener("click", () => {
@@ -140,7 +140,7 @@ window.onload = function() {
         document.body.style.overflow = 'scroll';
     })
 
-    const detail3 = document.querySelector(".details3");
+    const detail3 = document.querySelector(".de3");
     const overlay3 = document.querySelector(".pf-des3");
     const closeBtn3 = document.querySelector(".pf-des3 .closebtn");
     detail3.addEventListener("click", () => {
@@ -152,7 +152,7 @@ window.onload = function() {
         document.body.style.overflow = 'scroll';
     })
 
-    const detail4 = document.querySelector(".details4");
+    const detail4 = document.querySelector(".de4");
     const overlay4 = document.querySelector(".pf-des4");
     const closeBtn4 = document.querySelector(".pf-des4 .closebtn");
     detail4.addEventListener("click", () => {
@@ -283,10 +283,10 @@ window.onload = function() {
             skills.style.opacity = "0";
             skills.style.transition = "0.5s";
         })
-      }
-      
-      window.onresize = function(){
+    }
+
+    window.onresize = function(){
         document.location.reload();
-      };
+    };
     
 };

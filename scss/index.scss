@@ -1978,25 +1978,36 @@ main {
     
                         .pf-btn {
                             transition: all 0.3s ease-in;
-                            margin-top: 2.5rem;
+                            margin: 4rem 2rem 0 2rem;
+                            display: flex;
+                            justify-content: space-between;
+
                             cursor: pointer;
     
                             @include responsive(tablet-size) {
-                                margin-top: 3rem;
+                                margin: 5rem 2rem 0 2rem;
                             }
                             @include responsive(pc-size) {
-                                margin-top: 2.5rem;
+                                margin-top: 2.5rem 0 0 0;
                             }
     
                             div {
                                 transition: all 0.3s ease-in;
                                 font-family: $point-font;
-                                font-size: 2rem;
-                                width: 15rem;
+                                font-size: 1.8rem;
+                                width: 48%;
                                 height: 5rem;
                                 margin: auto;
                                 border-radius: 2rem;
-                                padding-top: 6px;
+                                padding-top: 10px;
+
+                                @include responsive(tablet-size) {
+                                    font-size: 2rem;
+                                }
+
+                                @include responsive(tablet-size) {
+                                    font-size: 1.8rem;
+                                }
 
                                 &:hover {
                                     color: #fff;
