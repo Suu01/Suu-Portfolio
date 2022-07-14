@@ -225,11 +225,6 @@ header div.h-wrap ul.gnb li .burger div {
 header .title-none {
   display: none;
 }
-@keyframes flip {
-  0%, 80% {
-    transform: rotateY(360deg);
-  }
-}
 header .sub-menu {
   width: 100%;
   position: fixed;
@@ -248,11 +243,7 @@ header .sub-menu li {
 header .sub-menu li:hover {
   color: #e28f83;
   transition: all 0.3s ease-in;
-  animation: flip 2s;
-}
-header .sub-menu li span {
-  display: inline-block;
-  background-color: aqua;
+  background-color: #222;
 }
 main {
   width: 100%;
