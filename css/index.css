@@ -232,24 +232,18 @@ header .sub-menu {
   left: 0;
   text-align: center;
   margin-top: 80px;
-  padding: 45px 0;
   background-color: #444;
-  border-top: 1px solid #fbeeea;
-  border-bottom: 1px solid #fbeeea;
 }
 header .sub-menu li {
-  margin-bottom: 35px;
+  padding: 25px;
   font-family: "HSYuJi";
   font-size: 1.8rem;
   cursor: pointer;
 }
 header .sub-menu li:hover {
-  color: #444;
-  background-color: #fbeeea;
+  color: #e28f83;
+  background-color: #222;
   transition: all 0.3s ease-in;
-}
-header .sub-menu li:last-child {
-  margin-bottom: 0;
 }
 
 main {
