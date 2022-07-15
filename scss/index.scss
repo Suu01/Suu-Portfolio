@@ -1830,9 +1830,13 @@ main {
     
                 .portfolio-mokup {
                     position: relative;
-                    width: 28rem;
+                    width: 280px;
                     margin: auto;
                     transition: all 0.3s ease-in;
+
+                    @media screen and (min-width: 500px) {
+                        width: 28rem;
+                    }
 
                     @include responsive(tablet-size) {
                         width: 40rem;
@@ -1850,12 +1854,19 @@ main {
 
                     .w-img-wrap {
                         position: absolute;
-                        top: 0.7rem;
-                        left: 0.75rem;
-                        width: 26.5rem;
-                        height: 14.95rem;
+                        top: 0.5rem;
+                        left: 0.5rem;
+                        width: 16.5rem;
+                        height: 9.25rem;
                         overflow: hidden;
                         transition: all 0.3s ease-in;
+
+                        @media screen and (min-width: 500px) {
+                            top: 0.7rem;
+                            left: 0.75rem;
+                            width: 26.5rem;
+                            height: 14.95rem;
+                        }
 
                         @include responsive(tablet-size) {
                             width: 37.9rem;
@@ -1911,9 +1922,8 @@ main {
                     }
 
                     .pf-txt-wrap { 
-                                            
                         @include responsive(pc-size) {
-                            width: 80%;
+                            width: 85%;
                         }
                         span.pf-num {
                             transition: all 0.3s ease-in;
@@ -1991,28 +2001,39 @@ main {
     
                         .pf-btn {
                             transition: all 0.3s ease-in;
-                            margin: 4rem 2rem 0 2rem;
+                            margin: 4rem 0 0 0;
                             display: flex;
                             justify-content: space-between;
 
                             cursor: pointer;
-    
+
+                            @media screen and (min-width: 500px) {
+                                margin: 4rem 2rem 0 2rem;
+                            }
+
                             @include responsive(tablet-size) {
                                 margin: 5rem 2rem 0 2rem;
                             }
                             @include responsive(pc-size) {
-                                margin-top: 2.5rem 0 0 0;
+                                margin: 4.5rem 0 0 0;
                             }
     
                             div {
                                 transition: all 0.3s ease-in;
                                 font-family: $point-font;
-                                font-size: 1.8rem;
+                                font-size: 1.2rem;
                                 width: 48%;
-                                height: 5rem;
+                                height: 4rem;
                                 margin: auto;
-                                border-radius: 2rem;
-                                padding-top: 10px;
+                                border-radius: 1.5rem;
+                                padding-top: 11px;
+
+                                @media screen and (min-width: 500px) {
+                                    font-size: 1.6rem;
+                                    height: 5rem;
+                                    border-radius: 2rem;
+                                    padding-top: 13px;
+                                }
 
                                 @include responsive(tablet-size) {
                                     font-size: 2rem;
@@ -2032,7 +2053,14 @@ main {
             }
 
             .pf1 {
+                .pf-txt {
+                    @include responsive (pc-size) {
+                        text-align: left;
+                    }
+                }
                 .pf-btn {
+                    text-align: center;
+
                     div {
                         color: $color-pink;
                         border: 4px solid $color-pink;
@@ -2062,10 +2090,11 @@ main {
                     @include responsive(pc-size) {
                         justify-content: flex-start;
                         align-items: flex-start;
+                        text-align: right;
                     }
                 }
-
                 .pf-btn {
+                    text-align: center;
                     div {
                         color: $color-green;
                         border: 4px solid $color-green;
@@ -2087,10 +2116,25 @@ main {
             }
 
             .pf3 {
+                .pf-txt {
+                    @include responsive(pc-size) {
+                        text-align: left;
+                    }
+                }
                 .pf-btn {
+                    text-align: center;
                     div {
                         color: $color-yellow;
                         border: 4px solid $color-yellow;
+
+                        a {
+                            height: 100%;
+                            color: $color-yellow;
+
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
 
                         &:hover {
                             background-color: $color-yellow;
@@ -2108,13 +2152,24 @@ main {
                     @include responsive(pc-size) {
                         justify-content: flex-start;
                         align-items: flex-start;
+                        text-align: right;
                     }
                 }
 
                 .pf-btn {
+                    text-align: center;
                     div {
                         color: $color-blue;
                         border: 4px solid $color-blue;
+
+                        a {
+                            height: 100%;
+                            color: $color-blue;
+
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
 
                         &:hover {
                             background-color: $color-blue;
