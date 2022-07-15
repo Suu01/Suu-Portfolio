@@ -2120,11 +2120,16 @@ footer section.contact .con-form form .i-wrap input#sub {
   font-size: 1.8rem;
   font-family: "HSYuJi", sans-serif;
   color: #fff;
-  border: 1px solid #333;
+  border: 8px solid #333;
   border-radius: 15px;
   padding-bottom: 0.4rem;
   background-color: #333;
+  transition: 0.3s;
   cursor: pointer;
+}
+footer section.contact .con-form form .i-wrap input#sub:hover {
+  color: #333;
+  background-color: #fff;
 }
 @media screen and (min-width: 768px) {
   footer section.contact .con-form form .i-wrap input#sub {
