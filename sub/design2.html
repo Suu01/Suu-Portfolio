@@ -16,9 +16,31 @@
             }
 
             img { width: 100%; height: auto; }
+
+            .back-btn {
+                position: absolute;
+                top: 2%;
+                right: 2%;
+                cursor: pointer;
+                width: 11rem;
+                border: 7px solid #333;
+                background-color: #333;
+                color: white;
+                font-family: 'HSYuJi', sans-serif;
+                font-size: 3rem;
+                padding-bottom: 10px;
+                text-align: center;
+                border-radius: 1.5rem;
+            }
+
+            .back-btn:hover {
+                background-color: white;
+                color: #333;
+            }
         </style>
     </head>
     <body>
-        <img src="./images/design_guide2.png" alt="guide1">
+        <img class="design_guide" src="./images/design_guide2.png" alt="guide2">
+        <div class="back-btn"><a href="../index.html">Back</a></div>
     </body>
 </html>

@@ -10,15 +10,44 @@
         <script src="./js/design.js"></script>
         <link rel="shortcut icon" href="images/suu.ico">
         <style>
+            @font-face {
+                font-family: 'HSYuji-Regular';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
             * {
                 padding: 0;
                 margin: 0;
             }
 
             img { width: 100%; height: auto; }
+
+            .back-btn {
+                position: absolute;
+                top: 2%;
+                right: 2%;
+                cursor: pointer;
+                width: 11rem;
+                border: 7px solid #333;
+                background-color: #333;
+                color: white;
+                font-family: 'HSYuJi', sans-serif;
+                font-size: 3rem;
+                padding-bottom: 10px;
+                text-align: center;
+                border-radius: 1.5rem;
+            }
+
+            .back-btn:hover {
+                background-color: white;
+                color: #333;
+            }
         </style>
     </head>
     <body>
         <img src="./images/design_guide1.png" alt="guide1">
+        <div class="back-btn"><a href="../index.html">Back</a></div>
     </body>
 </html>
