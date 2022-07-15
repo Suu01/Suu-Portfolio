@@ -325,12 +325,17 @@ main section.main-section div.main-txt {
 }
 main section.main-section div.main-txt .wel {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 5.8vw;
   color: #777;
   opacity: 0;
   transition: all 0.3s ease-in;
   animation: 3s anim-lineUp forwards;
   animation-delay: 1.6s;
+}
+@media screen and (min-width: 500px) {
+  main section.main-section div.main-txt .wel {
+    font-size: 1.8rem;
+  }
 }
 @media screen and (min-width: 768px) {
   main section.main-section div.main-txt .wel {
@@ -344,9 +349,15 @@ main section.main-section div.main-txt .wel {
 }
 main section.main-section div.main-txt h2 {
   font-weight: 600;
-  font-size: 3.7rem;
-  margin: 1rem 0 1.5rem 0;
+  font-size: 11.8vw;
+  margin: 2% 0 5% 0;
   transition: all 0.5s ease-in;
+}
+@media screen and (min-width: 500px) {
+  main section.main-section div.main-txt h2 {
+    font-size: 3.7rem;
+    margin: 1rem 0 1.5rem 0;
+  }
 }
 @keyframes sideSlide {
   60% {
@@ -438,12 +449,17 @@ main section.main-section div.main-txt h2 span:nth-of-type(20) {
 }
 main section.main-section div.main-txt .front {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 5vw;
   color: #e28f83;
   opacity: 0;
   transition: all 0.3s ease-in;
   animation: 3s anim-lineUp forwards;
   animation-delay: 1.6s;
+}
+@media screen and (min-width: 500px) {
+  main section.main-section div.main-txt .front {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 768px) {
   main section.main-section div.main-txt .front {
@@ -466,6 +482,15 @@ main section.main-section div.main-img .main-img-m div {
 }
 main section.main-section div.main-img .main-img-m div:nth-child(1), main section.main-section div.main-img .main-img-m div:nth-child(2), main section.main-section div.main-img .main-img-m div:nth-child(3), main section.main-section div.main-img .main-img-m div:nth-child(4) {
   display: block;
+}
+main section.main-section div.main-img .main-img-m div:nth-child(1) img, main section.main-section div.main-img .main-img-m div:nth-child(2) img, main section.main-section div.main-img .main-img-m div:nth-child(3) img, main section.main-section div.main-img .main-img-m div:nth-child(4) img {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (min-width: 500px) {
+  main section.main-section div.main-img .main-img-m div:nth-child(1) img, main section.main-section div.main-img .main-img-m div:nth-child(2) img, main section.main-section div.main-img .main-img-m div:nth-child(3) img, main section.main-section div.main-img .main-img-m div:nth-child(4) img {
+    width: 100%;
+  }
 }
 main section.main-section div.main-img .main-img-m div:nth-child(1) {
   bottom: 13%;
@@ -1082,8 +1107,14 @@ main section.about section.about-top div.about-img {
   }
 }
 main section.about section.about-top div.about-img div:first-child img {
-  width: 18rem;
+  width: 13rem;
   margin: auto;
+}
+@media screen and (min-width: 500px) {
+  main section.about section.about-top div.about-img div:first-child img {
+    width: 18rem;
+    margin: auto;
+  }
 }
 main section.about section.about-top div.about-img div:last-child {
   width: 100%;
@@ -1097,9 +1128,14 @@ main section.about section.about-top div.about-img div:last-child {
   }
 }
 main section.about section.about-top div.about-img div:last-child img {
-  width: 22rem;
+  width: 17rem;
   margin: auto;
   animation: rotate 9s linear infinite;
+}
+@media screen and (min-width: 500px) {
+  main section.about section.about-top div.about-img div:last-child img {
+    width: 22rem;
+  }
 }
 @keyframes rotate {
   100% {
@@ -1117,8 +1153,13 @@ main section.about section.about-top div.about-img div:last-child img {
 main section.about section.about-top div.about-des h3 {
   margin: 2.5rem 0;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #e28f83;
+}
+@media screen and (min-width: 500px) {
+  main section.about section.about-top div.about-des h3 {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (min-width: 768px) {
   main section.about section.about-top div.about-des h3 {

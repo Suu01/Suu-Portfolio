@@ -255,12 +255,16 @@ main {
 
             .wel {
                 font-weight: 600;
-                font-size: 1.8rem;
+                font-size: 5.8vw;
                 color: #777;
                 opacity: 0;
                 transition: all 0.3s ease-in;
                 animation: 3s anim-lineUp forwards;
                 animation-delay: 1.6s;
+
+                @media screen and (min-width: 500px) {
+                    font-size: 1.8rem;
+                }
 
                 @include responsive(tablet-size) {
                     font-size: 2.1rem;
@@ -273,9 +277,14 @@ main {
 
             h2 {
                 font-weight: 600;
-                font-size: 3.7rem;
-                margin: 1rem 0 1.5rem 0;
+                font-size: 11.8vw;
+                margin: 2% 0 5% 0;
                 transition: all 0.5s ease-in;
+
+                @media screen and (min-width: 500px) {
+                    font-size: 3.7rem;
+                    margin: 1rem 0 1.5rem 0;
+                }
 
                 @keyframes sideSlide {
                     60% {
@@ -369,12 +378,16 @@ main {
 
             .front {
                 font-weight: 500;
-                font-size: 1.5rem;
+                font-size: 5vw;
                 color: $point-color;
                 opacity: 0;
                 transition: all 0.3s ease-in;
                 animation: 3s anim-lineUp forwards;
                 animation-delay: 1.6s;
+
+                @media screen and (min-width: 500px) {
+                    font-size: 1.5rem;
+                }
 
                 @include responsive(tablet-size) {
                     font-size: 2.1rem;
@@ -401,6 +414,15 @@ main {
                     &:nth-child(3),
                     &:nth-child(4) {
                         display: block;
+
+                        img {
+                            width: 80%;
+                            margin: auto;
+
+                            @media screen and (min-width: 500px) {
+                                width: 100%;
+                            }
+                        }
                     }
                     
                     &:nth-child(1) {
@@ -1110,8 +1132,13 @@ main {
 
                 div {
                     &:first-child img {
-                        width: 18rem;
+                        width: 13rem;
                         margin: auto;
+
+                        @media screen and (min-width: 500px) {
+                            width: 18rem;
+                            margin: auto;
+                        }
                     }
 
                     &:last-child {
@@ -1125,9 +1152,13 @@ main {
                         }
 
                         img {
-                            width: 22rem;
+                            width: 17rem;
                             margin: auto;
                             animation: rotate 9s linear infinite;
+
+                            @media screen and (min-width: 500px) {
+                                width: 22rem;
+                            }
                         }
                     }
 
@@ -1150,8 +1181,12 @@ main {
                 h3 {
                     margin: 2.5rem 0;
                     text-align: center;
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     color: $point-color;
+
+                    @media screen and (min-width: 500px) {
+                        font-size: 1.6rem;
+                    }
 
                     @include responsive(tablet-size) {
                         margin: 3rem 0;
