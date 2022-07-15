@@ -330,7 +330,7 @@ main section.main-section div.main-txt .wel {
   opacity: 0;
   transition: all 0.3s ease-in;
   animation: 3s anim-lineUp forwards;
-  animation-delay: 1.8s;
+  animation-delay: 1.6s;
 }
 @media screen and (min-width: 768px) {
   main section.main-section div.main-txt .wel {
@@ -443,7 +443,7 @@ main section.main-section div.main-txt .front {
   opacity: 0;
   transition: all 0.3s ease-in;
   animation: 3s anim-lineUp forwards;
-  animation-delay: 1.8s;
+  animation-delay: 1.6s;
 }
 @media screen and (min-width: 768px) {
   main section.main-section div.main-txt .front {
@@ -702,7 +702,7 @@ main section.main-section div.piano-wrap div.piano-white div {
   border-collapse: collapse;
   border-radius: 5px 5px 0 0;
   transition: all 0.3s ease-in;
-  animation: piano1 0.7s linear;
+  animation: piano1 0.7s ease-in-out;
   animation-direction: alternate;
   background: #333;
 }
@@ -725,7 +725,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(1):hover 
   background-color: #ffebb4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.05s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(2):hover {
   height: 17.5vw;
@@ -733,7 +733,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(2):hover 
   background-color: #a2c1d9;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 0.1s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(3):hover {
   height: 17.5vw;
@@ -741,7 +741,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(3):hover 
   background-color: #b4d2c4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(4) {
-  animation-delay: 0.6s;
+  animation-delay: 0.15s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(4):hover {
   height: 17.5vw;
@@ -749,7 +749,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(4):hover 
   background-color: #ffd0c2;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(5) {
-  animation-delay: 0.8s;
+  animation-delay: 0.2s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(5):hover {
   height: 17.5vw;
@@ -757,7 +757,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(5):hover 
   background-color: #ffebb4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(6) {
-  animation-delay: 1s;
+  animation-delay: 0.25s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(6):hover {
   height: 17.5vw;
@@ -765,7 +765,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(6):hover 
   background-color: #a2c1d9;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(7) {
-  animation-delay: 1.2s;
+  animation-delay: 0.3s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(7):hover {
   height: 17.5vw;
@@ -773,7 +773,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(7):hover 
   background-color: #b4d2c4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(8) {
-  animation-delay: 1.4s;
+  animation-delay: 0.35s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(8):hover {
   height: 17.5vw;
@@ -781,7 +781,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(8):hover 
   background-color: #ffd0c2;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(9) {
-  animation-delay: 1.6s;
+  animation-delay: 0.4s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(9):hover {
   height: 17.5vw;
@@ -789,7 +789,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(9):hover 
   background-color: #ffebb4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(10) {
-  animation-delay: 1.8s;
+  animation-delay: 0.45s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(10):hover {
   height: 17.5vw;
@@ -797,7 +797,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(10):hover
   background-color: #a2c1d9;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(11) {
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(11):hover {
   height: 17.5vw;
@@ -805,7 +805,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(11):hover
   background-color: #b4d2c4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(12) {
-  animation-delay: 2.2s;
+  animation-delay: 0.55s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(12):hover {
   height: 17.5vw;
@@ -813,7 +813,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(12):hover
   background-color: #ffd0c2;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(13) {
-  animation-delay: 2.4s;
+  animation-delay: 0.6s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(13):hover {
   height: 17.5vw;
@@ -821,7 +821,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(13):hover
   background-color: #ffebb4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(14) {
-  animation-delay: 2.6s;
+  animation-delay: 0.65s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(14):hover {
   height: 17.5vw;
@@ -829,7 +829,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(14):hover
   background-color: #a2c1d9;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(15) {
-  animation-delay: 2.8s;
+  animation-delay: 0.7s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(15):hover {
   height: 17.5vw;
@@ -837,7 +837,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(15):hover
   background-color: #b4d2c4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(16) {
-  animation-delay: 3s;
+  animation-delay: 0.75s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(16):hover {
   height: 17.5vw;
@@ -845,7 +845,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(16):hover
   background-color: #ffd0c2;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(17) {
-  animation-delay: 3.2s;
+  animation-delay: 0.8s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(17):hover {
   height: 17.5vw;
@@ -853,7 +853,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(17):hover
   background-color: #ffebb4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(18) {
-  animation-delay: 3.4s;
+  animation-delay: 0.85s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(18):hover {
   height: 17.5vw;
@@ -861,7 +861,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(18):hover
   background-color: #a2c1d9;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(19) {
-  animation-delay: 3.6s;
+  animation-delay: 0.9s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(19):hover {
   height: 17.5vw;
@@ -869,7 +869,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(19):hover
   background-color: #b4d2c4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(20) {
-  animation-delay: 3.8s;
+  animation-delay: 0.95s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(20):hover {
   height: 17.5vw;
@@ -877,7 +877,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(20):hover
   background-color: #ffd0c2;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(21) {
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(21):hover {
   height: 17.5vw;
@@ -885,7 +885,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(21):hover
   background-color: #ffebb4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(22) {
-  animation-delay: 4.2s;
+  animation-delay: 1.05s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(22):hover {
   height: 17.5vw;
@@ -893,7 +893,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(22):hover
   background-color: #a2c1d9;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(23) {
-  animation-delay: 4.4s;
+  animation-delay: 1.1s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(23):hover {
   height: 17.5vw;
@@ -901,7 +901,7 @@ main section.main-section div.piano-wrap div.piano-white div:nth-child(23):hover
   background-color: #b4d2c4;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(24) {
-  animation-delay: 4.6s;
+  animation-delay: 1.15s;
 }
 main section.main-section div.piano-wrap div.piano-white div:nth-child(24):hover {
   height: 17.5vw;
