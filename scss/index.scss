@@ -2182,6 +2182,8 @@ footer {
                         width: 100%;
                         margin-bottom: 0.5rem;
                         outline: none;
+                        color: white;
+                        font-size: 18px;
 
                         @include responsive(pc-size) {
                             margin-bottom: 1.5rem;
@@ -2197,6 +2199,8 @@ footer {
                         margin-top: 0.2rem;
                         outline: none;
                         padding: 3px 6px;
+                        color: white;
+                        font-size: 18px;
 
                         @include responsive(pc-size) {
                             margin-top: 0;

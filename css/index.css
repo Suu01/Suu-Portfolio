@@ -2055,6 +2055,8 @@ footer section.contact .con-form form fieldset input {
   width: 100%;
   margin-bottom: 0.5rem;
   outline: none;
+  color: white;
+  font-size: 18px;
 }
 @media screen and (min-width: 1440px) {
   footer section.contact .con-form form fieldset input {
@@ -2070,6 +2072,8 @@ footer section.contact .con-form form fieldset textarea {
   margin-top: 0.2rem;
   outline: none;
   padding: 3px 6px;
+  color: white;
+  font-size: 18px;
 }
 @media screen and (min-width: 1440px) {
   footer section.contact .con-form form fieldset textarea {
