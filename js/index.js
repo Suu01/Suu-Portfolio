@@ -164,26 +164,6 @@ window.onload = function() {
         document.body.style.overflow = 'scroll';
     })
 
-    // 포트폴리오 디자인가이드 모달창 띄워주기
-    const design = document.querySelector(".deguide");
-    const details = document.querySelector(".details");
-    details.addEventListener("click", () => {
-        alert('클릭되었어요');
-    })
-    const details2 = document.querySelector(".details2");
-    details2.addEventListener("click", () => {
-        alert('클릭되었어요');
-    })
-    const details3 = document.querySelector(".details3");
-    details3.addEventListener("click", () => {
-        alert('클릭되었어요');
-    })
-    const details4 = document.querySelector(".details4");
-    details4.addEventListener("click", () => {
-        alert('클릭되었어요');
-    })
-
-
     // skills 원 클릭 시 텍스트 효과
     if(matchMedia("screen and (max-width: 320px)").matches){
       }else if(matchMedia("screen and (max-width: 768px)").matches){

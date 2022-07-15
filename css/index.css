@@ -1623,18 +1623,6 @@ main section.portfolio .pf-des4 .pf-d-btn a {
 main section.portfolio .pf-des4 .pf-d-btn a:hover {
   background-color: #a2c1d9;
 }
-main section.portfolio .deguide {
-  display: none;
-  position: fixed;
-  width: 100%;
-  margin: auto;
-  z-index: 100;
-  top: 0;
-  left: 0;
-}
-main section.portfolio .deguide img {
-  width: 100%;
-}
 main section.portfolio .portfolio-title {
   display: flex;
   align-items: center;
