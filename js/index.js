@@ -3,7 +3,6 @@ window.onload = function() {
     // header 상세메뉴의 스크립트 동작 이벤트
     const burger = document.getElementById("burger");
     const sMenu = document.getElementById("sub-menu");
-
     const sMenuBtn1 = document.querySelector(".s-menu-btn1");
     const sMenuBtn2 = document.querySelector(".s-menu-btn2");
     const sMenuBtn3 = document.querySelector(".s-menu-btn3");
@@ -71,7 +70,7 @@ window.onload = function() {
     });
 
     
-    // 스크롤 부드럽게 이동하는 스크립트
+    // 메뉴 클릭 시, 스크롤 부드럽게 이동
     document.querySelector(".home-m").addEventListener('click', function(){
         var location = document.querySelector("#main-section").offsetTop;
         window.scroll({
@@ -114,7 +113,7 @@ window.onload = function() {
     });
 
 
-    // portfolio details 모달창
+    // portfolio details 상세창
     const detail = document.querySelector(".de");
     const overlay = document.querySelector(".pf-des1");
     const closeBtn = document.querySelector(".closebtn");
@@ -164,10 +163,11 @@ window.onload = function() {
         document.body.style.overflowY = 'scroll';
     })
 
-    // skills 원 클릭 시 텍스트 효과
+    // skills 원 클릭 시 상세 내용 출력
     if(matchMedia("screen and (max-width: 320px)").matches){
-      }else if(matchMedia("screen and (max-width: 768px)").matches){
-      }else if(matchMedia("screen and (min-width: 1320px)").matches){
+    }else if(matchMedia("screen and (max-width: 768px)").matches){
+    }else if(matchMedia("screen and (min-width: 1320px)").matches){
+
         const circle1 = document.querySelector(".circle1");
         const circle2 = document.querySelector(".circle2");
         const circle3 = document.querySelector(".circle3");
