@@ -1581,6 +1581,7 @@ main {
             transition: all 0.5s;
 
             overflow-y: scroll;
+            overflow-x: hidden;
 
             @include responsive(pc-size) {
                 overflow-y: hidden;
@@ -2024,6 +2025,14 @@ main {
                         color: $color-pink;
                         border: 4px solid $color-pink;
 
+                        a {
+                            color: $color-pink;
+
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+
                         &:hover {
                             background-color: $color-pink;
                         }
@@ -2047,6 +2056,14 @@ main {
                     div {
                         color: $color-green;
                         border: 4px solid $color-green;
+
+                        a {
+                            color: $color-green;
+
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
 
                         &:hover {
                             background-color: $color-green;

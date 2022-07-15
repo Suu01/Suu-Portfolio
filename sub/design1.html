@@ -10,12 +10,7 @@
         <script src="./js/design.js"></script>
         <link rel="shortcut icon" href="images/suu.ico">
         <style>
-            @font-face {
-                font-family: 'HSYuji-Regular';
-                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
-                font-weight: normal;
-                font-style: normal;
-            }
+            @import url('https://webfontworld.github.io/HSYuJi/HSYuJi.css');
 
             * {
                 padding: 0;
@@ -26,18 +21,19 @@
 
             .back-btn {
                 position: absolute;
-                top: 5%;
+                top: 2%;
                 right: 2%;
                 cursor: pointer;
-                width: 11rem;
+                width: 8rem;
                 border: 7px solid #333;
                 background-color: #333;
                 color: white;
                 font-family: 'HSYuJi', sans-serif;
-                font-size: 3rem;
+                font-size: 2rem;
                 padding-bottom: 10px;
                 text-align: center;
-                border-radius: 1.5rem;
+                border-radius: 1rem;
+                transition: all 0.3s;
             }
 
             .back-btn:hover {
@@ -48,6 +44,6 @@
     </head>
     <body>
         <img src="./images/design_guide1.png" alt="guide1">
-        <div class="back-btn">Back</div>
+        <div class="back-btn">HOME</div>
     </body>
 </html>

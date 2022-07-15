@@ -125,7 +125,7 @@ window.onload = function() {
     })
     closeBtn.addEventListener("click", () => {
         overlay.style.visibility = 'hidden';
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflowY = 'scroll';
     })
 
     const detail2 = document.querySelector(".de2");
@@ -137,7 +137,7 @@ window.onload = function() {
     })
     closeBtn2.addEventListener("click", () => {
         overlay2.style.visibility = 'hidden';
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflowY = 'scroll';
     })
 
     const detail3 = document.querySelector(".de3");
@@ -149,7 +149,7 @@ window.onload = function() {
     })
     closeBtn3.addEventListener("click", () => {
         overlay3.style.visibility = 'hidden';
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflowY = 'scroll';
     })
 
     const detail4 = document.querySelector(".de4");
@@ -161,7 +161,7 @@ window.onload = function() {
     })
     closeBtn4.addEventListener("click", () => {
         overlay4.style.visibility = 'hidden';
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflowY = 'scroll';
     })
 
     // skills 원 클릭 시 텍스트 효과
