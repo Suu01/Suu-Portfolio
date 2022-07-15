@@ -44,6 +44,11 @@
     </head>
     <body>
         <img class="design_guide" src="./images/design_guide2.png" alt="guide2">
-        <div class="back-btn">HOME</div>
+        <div class="back-btn" onclick="backPage()">BACK</div>
+        <script>
+            function backPage() {
+                window.history.back(-1);
+            }
+        </script>
     </body>
 </html>
