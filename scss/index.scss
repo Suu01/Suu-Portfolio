@@ -1062,9 +1062,14 @@ main {
 
             h2 {
                 color: $font-color;
-                font-size: 2.8rem;
+                font-size: 2.5rem;
                 font-family: $point-font;
-                margin-right: 1.5rem;
+                margin-right: 1.2rem;
+
+                @media screen and (min-width: 500px) {
+                    font-size: 2.8rem;
+                    margin-right: 1.5rem;
+                }
 
                 @include responsive(tablet-size) {
                     font-size: 3.2rem;
@@ -1079,8 +1084,12 @@ main {
 
             div.about-img {
                 display: inline-block;
-                width: 2.5rem;
+                width: 2.2rem;
                 margin-top: 1rem;
+
+                @media screen and (min-width: 500px) {
+                    width: 2.5rem;
+                }
 
                 @include responsive(tablet-size) {
                     width: 2.6rem;
@@ -1253,9 +1262,14 @@ main {
 
             div {
                 display: inline-block;
-                width: 2.5rem;
-                margin-top: 1rem;
+                width: 2.1rem;
+                margin-top: 0.6rem;
                 transition: all 0.3s ease-in;
+
+                @media screen and (min-width: 500px) {
+                    width: 2.5rem;
+                    margin-top: 1rem;
+                }
 
                 @include responsive(tablet-size) {
                     width: 2.6rem;
@@ -1273,10 +1287,15 @@ main {
 
             h2 {
                 color: $font-color;
-                font-size: 2.8rem;
+                font-size: 2.4rem;
                 font-family: $point-font;
-                margin-left: 1.5rem;
+                margin-left: 1.2rem;
                 transition: all 0.3s ease-in;
+
+                @media screen and (min-width: 500px) {
+                    font-size: 2.8rem;
+                    margin-right: 1.5rem;
+                }
 
                 @include responsive(tablet-size) {
                     font-size: 3.2rem;
@@ -1733,10 +1752,16 @@ main {
 
             h2 {
                 color: $font-color;
-                font-size: 2.8rem;
+                font-size: 2.2rem;
                 font-family: $point-font;
                 transition: all 0.3s ease-in;
-                margin: 0 2rem;
+                margin: 0 1.2rem;
+                // margin: 0 2rem;
+
+                @media screen and (min-width: 500px) {
+                    font-size: 2.8rem;
+                    margin-right: 1.5rem;
+                }
 
                 @include responsive(tablet-size) {
                     font-size: 3.2rem;
@@ -1752,9 +1777,13 @@ main {
             div {
                 &:first-child {
                     display: inline-block;
-                    width: 1.5rem;
-                    margin-top: 0.9rem;
+                    width: 1.2rem;
                     transition: all 0.3s ease-in;
+
+                    @media screen and (min-width: 500px) {
+                        width: 1.5rem;
+                        margin-top: 0.9rem;
+                    }
 
                     @include responsive(tablet-size) {
                         width: 1.8rem;
@@ -1772,9 +1801,15 @@ main {
 
                 &:last-child {
                     display: inline-block;
-                    width: 1.35rem;
-                    margin-top: 1rem;
+                    width: 1.1rem;
+                    margin-top: 0.8rem;
                     transition: all 0.3s ease-in;
+
+                    @media screen and (min-width: 500px) {
+                        width: 1.35rem;
+                        margin-top: 1rem;
+                    }
+
 
                     @include responsive(tablet-size) {
                         width: 1.65rem;
@@ -2195,8 +2230,13 @@ footer {
         .con-title {
             h2 {
                 color: #fff;
-                font-size: 2.8rem;
+                font-size: 2.5rem;
                 font-family: $point-font;
+
+                @media screen and (min-width: 500px) {
+                    font-size: 2.8rem;
+                    margin-right: 1.5rem;
+                }
 
                 @include responsive(tablet-size) {
                     font-size: 3.2rem;
