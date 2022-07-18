@@ -1275,7 +1275,6 @@ main section.skills div.skills-des {
   main section.skills div.skills-des {
     width: 750px;
     margin: 20% auto;
-    transition: all 0.3s;
   }
 }
 main section.skills div.skills-des .skills-ci-wrap {
@@ -1285,7 +1284,6 @@ main section.skills div.skills-des .skills-ci-wrap {
   justify-content: center;
   align-items: center;
   position: absolute;
-  transition: 0.5s;
   padding: 30px;
   top: 50%;
   left: 50%;
@@ -1325,7 +1323,6 @@ main section.skills div.skills-des div.skills-img-wrap {
 main section.skills div.skills-des div.skills-img-wrap img {
   width: 100%;
   margin: auto;
-  transition: all 0.3s ease-in;
 }
 main section.skills div.skills-des div.skills-img-wrap img:first-child {
   display: none;
@@ -1366,7 +1363,6 @@ main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
   margin: 1rem;
   width: 11rem;
   height: 11rem;
-  transition: 0.5s;
 }
 main section.skills div.skills-des div.circle-wrap .circle-box div.circle:hover {
   animation: rotate-circle 0.5s linear 0s;
