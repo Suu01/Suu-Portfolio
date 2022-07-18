@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="Suu Protfolio">
+        <meta name="Author" content="Suu01">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suu Portfolio - design_guide</title>
+        <script src="./js/design.js"></script>
+        <link rel="shortcut icon" href="images/suu.ico">
+        <style>
+            @import url('https://webfontworld.github.io/HSYuJi/HSYuJi.css');
+            
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            img { width: 100%; height: auto; }
+
+            .back-btn {
+                position: fixed;
+                top: 2%;
+                right: 2%;
+                cursor: pointer;
+                width: 8rem;
+                border: 7px solid #333;
+                background-color: #333;
+                color: white;
+                font-family: 'HSYuJi', sans-serif;
+                font-size: 2rem;
+                padding-bottom: 10px;
+                text-align: center;
+                border-radius: 1rem;
+                transition: all 0.3s;
+            }
+
+            .back-btn:hover {
+                background-color: white;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="design_guide" src="./images/design_guide3.png" alt="guide3">
+        <div class="back-btn" onclick="backPage()">BACK</div>
+        <script>
+            function backPage() {
+                window.history.back(-1);
+            }
+        </script>
+    </body>
+</html>
