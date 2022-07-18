@@ -1061,6 +1061,7 @@ main {
             position: relative;
 
             h2 {
+                position: relative;
                 color: $font-color;
                 font-size: 2.5rem;
                 font-family: $point-font;
@@ -1079,6 +1080,18 @@ main {
                 @include responsive(pc-size) {
                     font-size: 4rem;
                     margin-right: 2.3rem;
+                }
+                
+                span {
+                    position: relative;
+                    display: inline-block;
+                    animation: flip4 2s infinite;
+                    animation-delay: calc(.2s * var(--i))
+                }
+                @keyframes flip4 {
+                    0%,80% {
+                    transform: rotateY(360deg) 
+                    }
                 }
             }
 
@@ -1286,6 +1299,7 @@ main {
             }
 
             h2 {
+                position: relative;
                 color: $font-color;
                 font-size: 2.4rem;
                 font-family: $point-font;
@@ -1305,6 +1319,18 @@ main {
                 @include responsive(pc-size) {
                     font-size: 4rem;
                     margin-left: 2.3rem;
+                }
+                
+                span {
+                    position: relative;
+                    display: inline-block;
+                    animation: flip3 2s infinite;
+                    animation-delay: calc(.2s * var(--i))
+                }
+                @keyframes flip3 {
+                    0%,80% {
+                    transform: rotateY(360deg) 
+                    }
                 }
             }
         }
@@ -1751,12 +1777,12 @@ main {
             justify-content: center;
 
             h2 {
+                position: relative;
                 color: $font-color;
                 font-size: 2.2rem;
                 font-family: $point-font;
                 transition: all 0.3s ease-in;
                 margin: 0 1.2rem;
-                // margin: 0 2rem;
 
                 @media screen and (min-width: 500px) {
                     font-size: 2.8rem;
@@ -1771,6 +1797,18 @@ main {
                 @include responsive(pc-size) {
                     font-size: 4rem;
                     margin: 0 3rem;
+                }
+
+                span {
+                    position: relative;
+                    display: inline-block;
+                    animation: flip2 2s infinite;
+                    animation-delay: calc(.2s * var(--i));
+                }
+                @keyframes flip2 {
+                    0%,80% {
+                    transform: rotateY(360deg);
+                    }
                 }
             }
 
@@ -2229,6 +2267,7 @@ footer {
 
         .con-title {
             h2 {
+                position: relative;
                 color: #fff;
                 font-size: 2.5rem;
                 font-family: $point-font;
@@ -2244,6 +2283,19 @@ footer {
 
                 @include responsive(pc-size) {
                     font-size: 4rem;
+                }
+
+                span {
+                    position: relative;
+                    display: inline-block;
+                    animation: flip 2s infinite;
+                    animation-delay: calc(.2s * var(--i));
+                }
+
+                @keyframes flip {
+                    0%,80% {
+                    transform: rotateY(360deg) 
+                    }
                 }
             }
         }

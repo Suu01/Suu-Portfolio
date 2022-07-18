@@ -1037,6 +1037,7 @@ main section.about div.about-title {
   position: relative;
 }
 main section.about div.about-title h2 {
+  position: relative;
   color: #fbeeea;
   font-size: 2.5rem;
   font-family: "HSYuJi", sans-serif;
@@ -1058,6 +1059,17 @@ main section.about div.about-title h2 {
   main section.about div.about-title h2 {
     font-size: 4rem;
     margin-right: 2.3rem;
+  }
+}
+main section.about div.about-title h2 span {
+  position: relative;
+  display: inline-block;
+  animation: flip4 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip4 {
+  0%, 80% {
+    transform: rotateY(360deg);
   }
 }
 main section.about div.about-title div.about-img {
@@ -1262,6 +1274,7 @@ main section.skills div.skills-title div img {
   height: auto;
 }
 main section.skills div.skills-title h2 {
+  position: relative;
   color: #fbeeea;
   font-size: 2.4rem;
   font-family: "HSYuJi", sans-serif;
@@ -1284,6 +1297,17 @@ main section.skills div.skills-title h2 {
   main section.skills div.skills-title h2 {
     font-size: 4rem;
     margin-left: 2.3rem;
+  }
+}
+main section.skills div.skills-title h2 span {
+  position: relative;
+  display: inline-block;
+  animation: flip3 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip3 {
+  0%, 80% {
+    transform: rotateY(360deg);
   }
 }
 main section.skills div.license {
@@ -1691,6 +1715,7 @@ main section.portfolio .portfolio-title {
   justify-content: center;
 }
 main section.portfolio .portfolio-title h2 {
+  position: relative;
   color: #fbeeea;
   font-size: 2.2rem;
   font-family: "HSYuJi", sans-serif;
@@ -1713,6 +1738,17 @@ main section.portfolio .portfolio-title h2 {
   main section.portfolio .portfolio-title h2 {
     font-size: 4rem;
     margin: 0 3rem;
+  }
+}
+main section.portfolio .portfolio-title h2 span {
+  position: relative;
+  display: inline-block;
+  animation: flip2 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip2 {
+  0%, 80% {
+    transform: rotateY(360deg);
   }
 }
 main section.portfolio .portfolio-title div:first-child {
@@ -2152,6 +2188,7 @@ footer section.contact {
   }
 }
 footer section.contact .con-title h2 {
+  position: relative;
   color: #fff;
   font-size: 2.5rem;
   font-family: "HSYuJi", sans-serif;
@@ -2170,6 +2207,17 @@ footer section.contact .con-title h2 {
 @media screen and (min-width: 1440px) {
   footer section.contact .con-title h2 {
     font-size: 4rem;
+  }
+}
+footer section.contact .con-title h2 span {
+  position: relative;
+  display: inline-block;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
   }
 }
 footer section.contact .con-form form {
