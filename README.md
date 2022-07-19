@@ -1,9 +1,9 @@
-# First Project : Be-us
-> Responsive Renewal Website
->> 100% 개인프로젝트 : 반응형 리뉴얼 웹사이트
-- 소요기간 : 1개월 (디자인 + 코딩 포함)
+# Third Project : Sujin's Portfolio
+> Responsive Portfolio Profile Website
+>> 100% 개인프로젝트 : 반응형 포트폴리오 프로필 웹사이트
+- 소요기간 : 1.5개월 (디자인 + 코딩 포함)
 - 사용기술 : HTML5, CSS3, Sass, Javascript
-- 제작페이지 : 메인페이지, 로그인페이지
+- 제작페이지 : 메인페이지
 
 * * *
 ### 1. CONCEPT
