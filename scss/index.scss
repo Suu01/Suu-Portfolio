@@ -943,7 +943,6 @@ main {
                     position: absolute;
                     width: 2%;
                     height: 6.2vw;
-                    // background: $bg-color;
                     background: $font-color;
                     border-radius: 7px 7px 0 0;
                     transition: all 0.3s ease-in;
@@ -1347,7 +1346,7 @@ main {
             @include responsive(pc-size) {
                 width: 750px;
                 margin: 20% auto;
-                // transition: all 0.3s;
+                transition: all 0.3s;
             }
 
             .skills-ci-wrap {
@@ -1357,7 +1356,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                // transition: 0.5s;
+                transition: 0.5s;
                 padding: 30px;
                 top: 50%;
                 left: 50%;
@@ -1400,7 +1399,7 @@ main {
                 img {
                     width: 100%;
                     margin: auto;
-                    // transition: all 0.3s ease-in;
+                    transition: all 0.3s ease-in;
 
                     &:first-child {
                         display: none;
@@ -1439,7 +1438,7 @@ main {
                         margin: 1rem;
                         width: 11rem;
                         height: 11rem;
-                        // transition: 0.5s;
+                        transition: 0.5s;
 
                         &:hover {
                             animation: rotate-circle 0.5s linear 0s;
@@ -1623,7 +1622,6 @@ main {
             justify-content: center;
             align-items: center;
             visibility: hidden;
-            // opacity: 0;
             transition: all 0.5s;
 
             overflow-y: scroll;
