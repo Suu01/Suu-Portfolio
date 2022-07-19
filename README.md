@@ -29,11 +29,11 @@
 
 ###
 ### FONT
-**영어 폰트로는 Roboto, 한글 폰트로는 Noto Sans KR을 사용하였습니다.** 
+**메인 폰트로는 Noto Sans KR, 포인트 폰트로는 HSYuJi - Regular를 사용하였습니다.** 
 
 
 * * *
 ### 3. PAGE
-**메인페이지와 로그인페이지를 제작하였습니다.** 
+**메인페이지를 제작하였습니다.** 
 
-[사이트보기](https://suu01.github.io/index.html, Be-us)
+[사이트보기](http://www.suu823.com/, Sujin's Portfolio)
