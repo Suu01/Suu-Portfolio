@@ -10,13 +10,10 @@
 **그동안 진행해 온 작업물들을 담기위한 프로필 포트폴리오 사이트입니다. 전체적으로 차분한 느낌을 줄 수 있도록 블랙 계열의 색상을 배경으로 깔았고, 내용물들을 한 눈에 파악할 수 있도록 깔끔하고 직관적으로 디자인을 진행하였습니다.** 
 ### GRID
 - Full Width : 1920px
-- Grid Width : 1320px
-- Column Width : 70px
-- Gutter Width : 40px (양쪽 끝 사이드 20px)
-- Number of Column : 12
+- Grid Width : 1440px
 ###
 ###
-![CONCEPT](./images/pf1-d.png)
+![CONCEPT](./images/pf2-d.png)
 
 * * *
 ### 2. COLOR & FONT
