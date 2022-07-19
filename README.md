@@ -14,6 +14,8 @@
 ###
 ###
 ![CONCEPT](./images/pf3-d.png)
+###
+###
 
 * * *
 ### 2. COLOR & FONT
@@ -28,7 +30,6 @@
 ###
 ### FONT
 **영어 폰트로는 Roboto, 한글 폰트로는 Noto Sans KR을 사용하였습니다.** 
-
 
 * * *
 ### 3. PAGE
