@@ -11,17 +11,6 @@
     opacity: 0;
     transition: all .5s ease;
 }
-.sa.sa-rotate {
-    @keyframes flip {
-        0%,80% {
-        transform: rotateY(360deg);
-        }
-    }
-    span {
-        animation: flip 2s 2;
-        animation-delay: calc(.2s * var(--i));
-    }
-}
 .sa-up {
     transform: translate(0, 100px);
 }
@@ -2314,9 +2303,17 @@ footer {
                     font-size: 4rem;
                 }
 
+                @keyframes flip {
+                    0%,80% {
+                    transform: rotateY(360deg);
+                    }
+                }
+                
                 span {
                     position: relative;
                     display: inline-block;
+                    animation: flip 2s 2;
+                    animation-delay: calc(.2s * var(--i));
                 }
             }
         }

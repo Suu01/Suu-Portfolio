@@ -105,16 +105,6 @@ footer {
   transition: all 0.5s ease;
 }
 
-@keyframes flip {
-  0%, 80% {
-    transform: rotateY(360deg);
-  }
-}
-.sa.sa-rotate span {
-  animation: flip 2s 2;
-  animation-delay: calc(0.2s * var(--i));
-}
-
 .sa-up {
   transform: translate(0, 100px);
 }
@@ -2239,9 +2229,16 @@ footer section.contact .con-title h2 {
     font-size: 4rem;
   }
 }
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
 footer section.contact .con-title h2 span {
   position: relative;
   display: inline-block;
+  animation: flip 2s 2;
+  animation-delay: calc(0.2s * var(--i));
 }
 footer section.contact .con-form form {
   width: 100%;
