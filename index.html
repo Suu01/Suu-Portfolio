@@ -142,7 +142,7 @@
 
             <section id="about" class="about">
                 <div class="about-title">
-                    <h2>
+                    <h2 class="sa sa-rotate" data-sa-margin="100">
                         <span style="--i:1">A</span><span style="--i:2">B</span><span style="--i:3">O</span><span style="--i:4">U</span><span style="--i:5">T</span>
                         <span style="--i:6">M</span><span style="--i:7">E</span>
                     </h2>
@@ -151,7 +151,7 @@
                 </div>
 
                 <section class="about-top">
-                    <div class="about-img">
+                    <div class="sa about-img">
                         <div class="photo-img"><img src="./images/pic.png" alt="사진"></div>
                         <div class="photo-img2"><img src="./images/txt-about.png" alt="사진"></div>
                     </div> 
@@ -517,5 +517,54 @@
                 <p>Thank you for watching :)</p>
             </div>
         </footer>
+        
+        <script>
+            // 스크롤 애니메이션을 위한 자바스크립트
+            // const saTriggerMargin = 300;
+            // const saElementList = document.querySelectorAll('.sa');
+
+            // const saFunc = function() {
+            //     for (const element of saElementList) {
+            //         if (!element.classList.contains('show')) {
+            //             if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
+            //                 element.classList.add('show');
+            //             }
+            //         }
+            //     }
+            // };
+
+            // window.addEventListener('load', saFunc);
+            // window.addEventListener('scroll', saFunc);
+
+            const saDefaultMargin = 300;
+            let saTriggerMargin = 0;
+            let saTriggerHeight = 0;
+            const saElementList = document.querySelectorAll('.sa');
+
+            const saFunc = function() {
+            for (const element of saElementList) {
+                if (!element.classList.contains('show')) {
+                if (element.dataset.saMargin) {
+                    saTriggerMargin = parseInt(element.dataset.saMargin);
+                } else {
+                    saTriggerMargin = saDefaultMargin;
+                }
+
+                if (element.dataset.saTrigger) {
+                    saTriggerHeight = document.querySelector(element.dataset.saTrigger).getBoundingClientRect().top + saTriggerMargin;
+                } else {
+                    saTriggerHeight = element.getBoundingClientRect().top + saTriggerMargin;
+                }
+
+                if (window.innerHeight > saTriggerHeight) {
+                    element.classList.add('show');
+                }
+                }
+            }
+            }
+
+            window.addEventListener('load', saFunc);
+            window.addEventListener('scroll', saFunc);
+        </script>
     </body>
 </html>

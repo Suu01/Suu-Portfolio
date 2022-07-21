@@ -95,6 +95,58 @@ footer {
   display: block;
 }
 
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
+.sa.sa-rotate span {
+  animation: flip 2s;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.sa.sa-up {
+  transform: translate(0, 100px);
+}
+
+.sa.sa-down {
+  transform: translate(0, -100px);
+}
+
+.sa.sa-right {
+  transform: translate(-100px, 0);
+}
+
+.sa.sa-left {
+  transform: translate(100px, 0);
+}
+
+.sa.sa-rotateL {
+  transform: rotate(180deg);
+}
+
+.sa.sa-rotateR {
+  transform: rotate(-180deg);
+}
+
+.sa.sa-scaleUp {
+  transform: scale(0.5);
+}
+
+.sa.sa-scaleDown {
+  transform: scale(1.5);
+}
+
 header {
   width: 100%;
   height: 80px;
@@ -1064,13 +1116,6 @@ main section.about div.about-title h2 {
 main section.about div.about-title h2 span {
   position: relative;
   display: inline-block;
-  animation: flip4 2s infinite;
-  animation-delay: calc(0.2s * var(--i));
-}
-@keyframes flip4 {
-  0%, 80% {
-    transform: rotateY(360deg);
-  }
 }
 main section.about div.about-title div.about-img {
   display: inline-block;
@@ -1302,13 +1347,6 @@ main section.skills div.skills-title h2 {
 main section.skills div.skills-title h2 span {
   position: relative;
   display: inline-block;
-  animation: flip3 2s infinite;
-  animation-delay: calc(0.2s * var(--i));
-}
-@keyframes flip3 {
-  0%, 80% {
-    transform: rotateY(360deg);
-  }
 }
 main section.skills div.license {
   display: none;
@@ -1747,13 +1785,6 @@ main section.portfolio .portfolio-title h2 {
 main section.portfolio .portfolio-title h2 span {
   position: relative;
   display: inline-block;
-  animation: flip2 2s infinite;
-  animation-delay: calc(0.2s * var(--i));
-}
-@keyframes flip2 {
-  0%, 80% {
-    transform: rotateY(360deg);
-  }
 }
 main section.portfolio .portfolio-title div:first-child {
   display: inline-block;

@@ -2,6 +2,55 @@
 @import "common.scss";
 @import "mixin.scss";
 
+.sa.show {
+    opacity: 1;
+    transform: none;
+}
+
+.sa {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.sa.sa-rotate {
+    // transform: translate(0, 100px);
+    @keyframes flip {
+        0%,80% {
+        transform: rotateY(360deg);
+        }
+    }
+
+    span {
+        animation: flip 2s;
+        animation-delay: calc(.2s * var(--i));
+    }
+}
+
+.sa.sa-up {
+    transform: translate(0, 100px);
+}
+.sa.sa-down {
+    transform: translate(0, -100px);
+}
+.sa.sa-right {
+    transform: translate(-100px, 0);
+}
+.sa.sa-left {
+    transform: translate(100px, 0);
+}
+.sa.sa-rotateL {
+    transform: rotate(180deg);
+}
+.sa.sa-rotateR {
+    transform: rotate(-180deg);
+}
+.sa.sa-scaleUp {
+    transform: scale(.5);
+}
+.sa.sa-scaleDown {
+    transform: scale(1.5);
+}
+
 header {
     width: 100%;
     height: 80px;
@@ -1084,13 +1133,6 @@ main {
                 span {
                     position: relative;
                     display: inline-block;
-                    animation: flip4 2s infinite;
-                    animation-delay: calc(.2s * var(--i))
-                }
-                @keyframes flip4 {
-                    0%,80% {
-                    transform: rotateY(360deg) 
-                    }
                 }
             }
 
@@ -1323,13 +1365,6 @@ main {
                 span {
                     position: relative;
                     display: inline-block;
-                    animation: flip3 2s infinite;
-                    animation-delay: calc(.2s * var(--i))
-                }
-                @keyframes flip3 {
-                    0%,80% {
-                    transform: rotateY(360deg) 
-                    }
                 }
             }
         }
@@ -1800,13 +1835,6 @@ main {
                 span {
                     position: relative;
                     display: inline-block;
-                    animation: flip2 2s infinite;
-                    animation-delay: calc(.2s * var(--i));
-                }
-                @keyframes flip2 {
-                    0%,80% {
-                    transform: rotateY(360deg);
-                    }
                 }
             }
 
