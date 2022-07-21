@@ -22,33 +22,8 @@
         animation-delay: calc(.2s * var(--i));
     }
 }
-.sa.sa-scaleup {
-    @keyframes scaleUP {
-        
-    }
-    animation: scaleUP 2s;
-}
 .sa-up {
-    @keyframes up {
-        0% {
-            transform: translateY(100px);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-    animation: up 2s 2;
-}
-.sa-left {
-    @keyframes left {
-        0% {
-            transform: translateX(-200px);
-        }
-        100% {
-            transform: translateX(0);
-        }
-    }
-    animation: left 2s;
+    transform: translate(0, 100px);
 }
 
 // 공통소스 title-img

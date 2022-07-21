@@ -115,33 +115,8 @@ footer {
   animation-delay: calc(0.2s * var(--i));
 }
 
-.sa.sa-scaleup {
-  animation: scaleUP 2s;
-}
-@keyframes scaleUP {}
-
 .sa-up {
-  animation: up 2s 2;
-}
-@keyframes up {
-  0% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.sa-left {
-  animation: left 2s;
-}
-@keyframes left {
-  0% {
-    transform: translateX(-200px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  transform: translate(0, 100px);
 }
 
 .title-img {
