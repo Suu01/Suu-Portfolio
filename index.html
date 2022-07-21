@@ -43,7 +43,7 @@
                 <li class="s-menu-btn5"><span>CONTACT</span></li>
             </ul>
         </header>
-
+        
         <main>
             <section id="main-section" class="main-section">
                 <div class="main-txt">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
             </section>
-
+            
             <section id="about" class="about">
                 <div class="about-title">
                     <h2 class="sa sa-up">
@@ -151,14 +151,14 @@
                 </div>
 
                 <section class="about-top">
-                    <div class="sa about-img scaleup">
+                    <div class="sa about-img sa-scaleUp">
                         <div class="photo-img"><img src="./images/pic.png" alt="사진"></div>
                         <div class="photo-img2"><img src="./images/txt-about.png" alt="사진"></div>
                     </div> 
                     
                     <div class="about-des">
                         <h3 id="about-hi"><q>프론트엔드 웹개발자를 꿈꾸는 김수진입니다.</q></h3>
-                        <p>
+                        <p class="sa">
                             <span>컴퓨터공학과를 졸업한 후 방송정보국제교육원에서 스마트웹 국비 과정을 들으며 퍼블리싱과 프론트엔드 개발의 기본을 다졌습니다.</span>
                             <span>HTML, CSS, SASS, Javascript, JQuery를 사용하여 웹페이지를 구축할 수 있으며, Git에 대한 이해도가 높아 협업도 가능합니다. 현재 React와 자바스크립트를 매일같이 공부하며 프론트엔드 개발자로서의 자질을 갖추기 위해 노력하고 있습니다.</span>
                             <span>다른 무엇보다 기초가 탄탄히 다져져있는 개발자가 더 좋은 코드를 만들 수 있다고 생각합니다. 기술의 변화를 유연하게 받아들이고 그에 발맞춰 함께 발전하는 개발자가 되는 것이 목표입니다.</span>
@@ -169,6 +169,7 @@
 
             <div class="w-height"></div>
 
+            <!-- *skills*모바일구조수정(박스선효과레퍼런스), 퍼센트구현, 내용수정, 글씨 가독성 -->
             <section id="skills" class="skills">
                 <div class="skills-title">
                     <div class="title-img"><img src="./images/music1.png" alt="skills-t-img"></div>
@@ -290,6 +291,7 @@
 
             <div class="line2"></div>
 
+            <!-- *portfolio*글씨투명도,목업사이드에서등장,모달구조수정(모바일,x,top,레퍼런스) -->
             <section id="portfolio" class="portfolio">
                 <div class="pf-des1 pf-des">
                     <div class="pf-overlay">
@@ -489,7 +491,7 @@
 
         <footer>
             <section id="contact" class="contact">
-                <div class="con-title sa sa-rotate" data-sa-margin="300">
+                <div class="con-title">
                     <h2>
                         <span style="--i:1">C</span><span style="--i:2">O</span><span style="--i:3">N</span><span style="--i:4">T</span><span style="--i:5">A</span><span style="--i:6">C</span><span style="--i:7">T</span>
                     </h2>
@@ -503,7 +505,7 @@
                             <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message" required></textarea>
                         </fieldset>
                         <div class="i-wrap">
-                            <div class="i-wrap-icon">
+                            <div class="i-wrap-icon sa sa-left">
                                 <span><a href="https://github.com/Suu01/suu-portfolio" target="_blank"><img src="./images/Asset1.png" alt="Asset"></a></span>
                                 <span><a href="mailto:ksj19990823@naver.com"><img src="./images/Asset2.png" alt="Asset"></a></span>
                                 <span><a href="https://open.kakao.com/o/sjTYoSoe" target="_blank"><img src="./images/Asset3.png" alt="Asset"></a></span>
@@ -514,7 +516,7 @@
                 </div>
             </section>
             <div class="footer-bottom">
-                <p id="demo">Thank you for watching :)</p>
+                <p>Thank you for watching :)</p>
             </div>
         </footer>
         
@@ -532,7 +534,6 @@
                 }
                 }
             }
-
             window.addEventListener('load', saFunc);
             window.addEventListener('scroll', saFunc);
         </script>
