@@ -1473,7 +1473,6 @@ main section.skills div.skills-des div.circle-wrap .circle-box {
 main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle {
   position: relative;
   border-radius: 50%;
-  background-color: #333;
   width: 8rem;
   height: 8rem;
   transition: 0.5s;
@@ -1507,7 +1506,33 @@ main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.cir
   top: 50%;
   text-align: center;
   font-family: "HSYuJi", sans-serif;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
   transform: translate(-50%, -50%);
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 500px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
 }
 main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap p {
   font-size: 1.4rem;
@@ -1569,7 +1594,8 @@ main section.skills div.skills-des div.circle-wrap .circle-box .circle-des p {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle1 {
-  border: 5px solid #f44336;
+  border: 3px solid #f44336;
+  background-color: #f44336;
 }
 @media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle1 {
@@ -1578,7 +1604,8 @@ main section.skills div.skills-des div.circle-wrap .circle1 {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle2 {
-  border: 5px solid #ff9800;
+  border: 3px solid #ff9800;
+  background-color: #ff9800;
 }
 @media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle2 {
@@ -1587,7 +1614,8 @@ main section.skills div.skills-des div.circle-wrap .circle2 {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle3 {
-  border: 5px solid #d5b71d;
+  border: 3px solid #d5b71d;
+  background-color: #d5b71d;
 }
 @media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle3 {
@@ -1596,7 +1624,8 @@ main section.skills div.skills-des div.circle-wrap .circle3 {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle4 {
-  border: 5px solid #abba19;
+  border: 3px solid #abba19;
+  background-color: #abba19;
 }
 @media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle4 {
@@ -1605,7 +1634,8 @@ main section.skills div.skills-des div.circle-wrap .circle4 {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle5 {
-  border: 5px solid #0c9688;
+  border: 3px solid #0c9688;
+  background-color: #0c9688;
 }
 @media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle5 {
@@ -1614,7 +1644,8 @@ main section.skills div.skills-des div.circle-wrap .circle5 {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle6 {
-  border: 5px solid #2196f3;
+  border: 3px solid #2196f3;
+  background-color: #2196f3;
 }
 @media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle6 {
@@ -1623,7 +1654,8 @@ main section.skills div.skills-des div.circle-wrap .circle6 {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle7 {
-  border: 5px solid #3f51b5;
+  border: 3px solid #3f51b5;
+  background-color: #3f51b5;
 }
 @media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle7 {
@@ -1632,7 +1664,8 @@ main section.skills div.skills-des div.circle-wrap .circle7 {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle8 {
-  border: 5px solid #673ab7;
+  border: 3px solid #673ab7;
+  background-color: #673ab7;
 }
 @media screen and (min-width: 1440px) {
   main section.skills div.skills-des div.circle-wrap .circle8 {

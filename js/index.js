@@ -286,4 +286,39 @@ window.onload = function() {
         overlay4.style.visibility = 'hidden';
         document.body.style.overflowY = 'scroll';
     })
+
+    // 퍼센트 원차트 스크립트
+    const chart1 = document.querySelector('.circle1');
+    const chart2 = document.querySelector('.circle2');
+    const chart3 = document.querySelector('.circle3');
+    const chart4 = document.querySelector('.circle4');
+    const chart5 = document.querySelector('.circle5');
+    const chart6 = document.querySelector('.circle6');
+    const chart7 = document.querySelector('.circle7');
+    const chart8 = document.querySelector('.circle8');
+
+    const makeChart = (percent, classname, color) => {
+        let i = 1;
+        let chartFn = setInterval(function() {
+            if(i <= percent) {
+                colorFn(i, classname, color);
+                i++;
+            } else {
+                clearInterval(chartFn);
+            }
+        }, 10);
+    }
+
+    const colorFn = (i, classname, color) => {
+        classname.style.background = "conic-gradient(" + color + " 0% " + i + "%, #222 " + i + "% 100%)";
+    }
+
+    makeChart(90, chart1, '#f44336');
+    makeChart(80, chart2, '#ff9800');
+    makeChart(95, chart3, '#d5b71d');
+    makeChart(90, chart4, '#abba19');
+    makeChart(75, chart5, '#0c9688');
+    makeChart(75, chart6, '#2196f3');
+    makeChart(90, chart7, '#3f51b5');
+    makeChart(70, chart8, '#673ab7');
 };

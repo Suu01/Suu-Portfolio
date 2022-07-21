@@ -1494,7 +1494,6 @@ main {
                         div.circle {
                             position: relative;
                             border-radius: 50%;
-                            background-color: $bg-color;
                             width: 8rem;
                             height: 8rem;
                             transition: 0.5s;
@@ -1526,7 +1525,30 @@ main {
                                 top: 50%;
                                 text-align: center;
                                 font-family: $point-font;
+                                width: 7rem;
+                                height: 7rem;
+                                border-radius: 50%;
                                 transform: translate(-50%, -50%);
+                                background-color: #333;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                @media screen and (min-width: 500px) {
+                                    width: 8rem;
+                                    height: 8rem;
+                                }
+    
+                                @include responsive(tablet-size) {
+                                    width: 10.5rem;
+                                    height: 10.5rem;
+                                }
+
+                                @include responsive(pc-size) {
+                                    width: 10.5rem;
+                                    height: 10.5rem;
+                                }
         
                                 p {
                                     font-size: 1.4rem;
@@ -1587,7 +1609,8 @@ main {
                 }
 
                 .circle1 {
-                    border: 5px solid #f44336;
+                    border: 3px solid #f44336;
+                    background-color: #f44336;
 
                     @include responsive(pc-size) {
                         top: -6rem;
@@ -1596,7 +1619,8 @@ main {
                 }
 
                 .circle2 {
-                    border: 5px solid #ff9800;
+                    border: 3px solid #ff9800;
+                    background-color: #ff9800;
 
                     @include responsive(pc-size) {
                         top: -6rem;
@@ -1605,7 +1629,8 @@ main {
                 }
 
                 .circle3 {
-                    border: 5px solid #d5b71d;
+                    border: 3px solid #d5b71d;
+                    background-color: #d5b71d;
 
                     @include responsive(pc-size) {
                         top: 7.5rem;
@@ -1614,7 +1639,8 @@ main {
                 }
                 
                 .circle4 {
-                    border: 5px solid #abba19;
+                    border: 3px solid #abba19;
+                    background-color: #abba19;
 
                     @include responsive(pc-size) {
                         bottom: 7.5rem;
@@ -1623,7 +1649,8 @@ main {
                 }
 
                 .circle5 {
-                    border: 5px solid #0c9688;
+                    border: 3px solid #0c9688;
+                    background-color: #0c9688;
 
                     @include responsive(pc-size) {
                         bottom: -6rem;
@@ -1632,7 +1659,8 @@ main {
                 }
 
                 .circle6 {
-                    border: 5px solid #2196f3;
+                    border: 3px solid #2196f3;
+                    background-color: #2196f3;
 
                     @include responsive(pc-size) {
                         bottom: -6rem;
@@ -1641,7 +1669,8 @@ main {
                 }
 
                 .circle7 {
-                    border: 5px solid #3f51b5;
+                    border: 3px solid #3f51b5;
+                    background-color: #3f51b5;
 
                     @include responsive(pc-size) {
                         top: 7.5rem;
@@ -1649,7 +1678,8 @@ main {
                     }
                 }
                 .circle8 {
-                    border: 5px solid #673ab7;
+                    border: 3px solid #673ab7;
+                    background-color: #673ab7;
 
                     @include responsive(pc-size) {
                         bottom: 7.5rem;
