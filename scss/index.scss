@@ -1386,10 +1386,6 @@ main {
             }
         }
 
-        div.license {
-            display: none;
-        }
-
         div.skills-des {
             position: relative;
             width: 100%;
@@ -1426,16 +1422,6 @@ main {
 
                 p {
                     font-size: 16px;
-                }
-
-                .show {
-                    visibility: visible;
-                    opacity: 1;
-                }
-
-                .n-show {
-                    visibility: hidden;
-                    opacity: 0;
                 }
             }
 
@@ -1477,6 +1463,7 @@ main {
                 .circle-box {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
 
                     @keyframes rotate-circle {
                         0% {transform: rotate(0deg);}
@@ -1488,13 +1475,16 @@ main {
                         border-radius: 50%;
                         background-color: $bg-color;
                         margin: 1rem;
-                        width: 11rem;
-                        height: 11rem;
                         transition: 0.5s;
 
                         &:hover {
                             animation: rotate-circle 0.5s linear 0s;
                         }
+
+                        // @media screen and (min-width: 500px) {
+                        //     width: 11rem;
+                        //     height: 11rem;
+                        // }
 
                         @include responsive(tablet-size) {
                             width: 14rem;

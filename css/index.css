@@ -1361,9 +1361,6 @@ main section.skills div.skills-title h2 span {
   position: relative;
   display: inline-block;
 }
-main section.skills div.license {
-  display: none;
-}
 main section.skills div.skills-des {
   position: relative;
   width: 100%;
@@ -1401,14 +1398,6 @@ main section.skills div.skills-des .skills-ci-wrap {
 }
 main section.skills div.skills-des .skills-ci-wrap p {
   font-size: 16px;
-}
-main section.skills div.skills-des .skills-ci-wrap .show {
-  visibility: visible;
-  opacity: 1;
-}
-main section.skills div.skills-des .skills-ci-wrap .n-show {
-  visibility: hidden;
-  opacity: 0;
 }
 main section.skills div.skills-des div.skills-img-wrap {
   width: 100%;
@@ -1448,6 +1437,7 @@ main section.skills div.skills-des div.circle-wrap {
 main section.skills div.skills-des div.circle-wrap .circle-box {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @keyframes rotate-circle {
   0% {
@@ -1462,8 +1452,6 @@ main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
   border-radius: 50%;
   background-color: #333;
   margin: 1rem;
-  width: 11rem;
-  height: 11rem;
   transition: 0.5s;
 }
 main section.skills div.skills-des div.circle-wrap .circle-box div.circle:hover {
