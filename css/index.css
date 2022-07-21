@@ -111,40 +111,23 @@ footer {
   }
 }
 .sa.sa-rotate span {
-  animation: flip 2s;
+  animation: flip 2s 2;
   animation-delay: calc(0.2s * var(--i));
 }
 
-.sa.sa-up {
-  transform: translate(0, 100px);
+.title-img {
+  animation: updown 1.5s infinite;
 }
-
-.sa.sa-down {
-  transform: translate(0, -100px);
-}
-
-.sa.sa-right {
-  transform: translate(-100px, 0);
-}
-
-.sa.sa-left {
-  transform: translate(100px, 0);
-}
-
-.sa.sa-rotateL {
-  transform: rotate(180deg);
-}
-
-.sa.sa-rotateR {
-  transform: rotate(-180deg);
-}
-
-.sa.sa-scaleUp {
-  transform: scale(0.5);
-}
-
-.sa.sa-scaleDown {
-  transform: scale(1.5);
+@keyframes updown {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
 
 header {
@@ -416,7 +399,7 @@ main section.main-section div.main-txt h2 {
     transform: translate(20px, 0) scale(1);
   }
   80% {
-    transform: translate(20px, 0) scale(1);
+    transform: translate(10px, 0) scale(1);
   }
   99% {
     transform: translate(0);
@@ -1218,11 +1201,19 @@ main section.about section.about-top div.about-img div:last-child img {
     margin-left: 5rem;
   }
 }
+@keyframes flicker {
+  from {
+    text-shadow: 0 0 5px #e28f83, 0 0 5px #e28f83, 0 0 20px #e28f83, 0 0 20px #e28f83;
+  }
+  to {
+    text-shadow: 0 0 5px rgba(196, 126, 115, 0.5764705882), 0 0 5px rgba(196, 126, 115, 0.5764705882), 0 0 20px rgba(196, 126, 115, 0.5764705882), 0 0 20px rgba(196, 126, 115, 0.5764705882);
+  }
+}
 main section.about section.about-top div.about-des h3 {
   margin: 2.5rem 0;
   text-align: center;
   font-size: 1.4rem;
-  color: #e28f83;
+  animation: flicker 1s linear infinite alternate;
 }
 @media screen and (min-width: 500px) {
   main section.about section.about-top div.about-des h3 {
@@ -2247,13 +2238,6 @@ footer section.contact .con-title h2 {
 footer section.contact .con-title h2 span {
   position: relative;
   display: inline-block;
-  animation: flip 2s infinite;
-  animation-delay: calc(0.2s * var(--i));
-}
-@keyframes flip {
-  0%, 80% {
-    transform: rotateY(360deg);
-  }
 }
 footer section.contact .con-form form {
   width: 100%;

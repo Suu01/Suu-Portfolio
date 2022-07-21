@@ -19,38 +19,25 @@
         }
     }
     span {
-        animation: flip 2s;
+        animation: flip 2s 2;
         animation-delay: calc(.2s * var(--i));
     }
-}
-.sa.sa-up {
-    transform: translate(0, 100px);
-}
-.sa.sa-down {
-    transform: translate(0, -100px);
-}
-.sa.sa-right {
-    transform: translate(-100px, 0);
-}
-.sa.sa-left {
-    transform: translate(100px, 0);
-}
-.sa.sa-rotateL {
-    transform: rotate(180deg);
-}
-.sa.sa-rotateR {
-    transform: rotate(-180deg);
-}
-.sa.sa-scaleUp {
-    transform: scale(.5);
-}
-.sa.sa-scaleDown {
-    transform: scale(1.5);
 }
 
 // 공통소스 title-img
 .title-img {
-    
+    @keyframes updown {
+        0% {
+        transform: translateY(5px);
+        }
+        50% {
+        transform: translateY(-5px);
+        }
+        100% {
+            transform: translateY(5px);
+            }
+    }
+    animation: updown 1.5s infinite;
 }
 
 header {
@@ -342,7 +329,7 @@ main {
                         transform: translate(20px, 0) scale(1);
                     }
                     80% {
-                        transform: translate(20px, 0) scale(1);
+                        transform: translate(10px, 0) scale(1);
                     }
                     99% {
                         transform: translate(0);
@@ -1243,11 +1230,24 @@ main {
                     margin-left: 5rem;
                 }
 
+                @keyframes flicker {
+                from {
+                    text-shadow:
+                    0 0 5px $point-color,0 0 5px $point-color,
+                    0 0 20px $point-color, 0 0 20px $point-color;
+                }
+                to {
+                    text-shadow:
+                    0 0 5px #c47e7393, 0 0 5px #c47e7393,
+                    0 0 20px #c47e7393, 0 0 20px #c47e7393;
+                }
+                }
+
                 h3 {
                     margin: 2.5rem 0;
                     text-align: center;
                     font-size: 1.4rem;
-                    color: $point-color;
+                    animation: flicker 1s linear infinite alternate;
 
                     @media screen and (min-width: 500px) {
                         font-size: 1.6rem;
@@ -1295,7 +1295,6 @@ main {
     }
 
     .w-height { height: 5rem; }
-    
     
     section.skills {
         position: relative;
@@ -2316,14 +2315,6 @@ footer {
                 span {
                     position: relative;
                     display: inline-block;
-                    animation: flip 2s infinite;
-                    animation-delay: calc(.2s * var(--i));
-                }
-
-                @keyframes flip {
-                    0%,80% {
-                    transform: rotateY(360deg) 
-                    }
                 }
             }
         }
