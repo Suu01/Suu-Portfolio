@@ -12,7 +12,6 @@
     transition: all .5s ease;
 }
 .sa.sa-rotate {
-    // transform: translate(0, 100px);
     @keyframes flip {
         0%,80% {
         transform: rotateY(360deg);
@@ -22,6 +21,12 @@
         animation: flip 2s 2;
         animation-delay: calc(.2s * var(--i));
     }
+}
+.sa.sa-scaleup {
+    @keyframes scaleUP {
+        
+    }
+    animation: scaleUP 2s;
 }
 
 // 공통소스 title-img

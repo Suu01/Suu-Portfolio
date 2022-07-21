@@ -115,6 +115,11 @@ footer {
   animation-delay: calc(0.2s * var(--i));
 }
 
+.sa.sa-scaleup {
+  animation: scaleUP 2s;
+}
+@keyframes scaleUP {}
+
 .title-img {
   animation: updown 1.5s infinite;
 }
