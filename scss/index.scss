@@ -1470,74 +1470,89 @@ main {
                         100% {transform: rotate(360deg);}
                     }
 
-                    div.circle {
-                        position: relative;
-                        border-radius: 50%;
-                        background-color: $bg-color;
-                        margin: 1rem;
-                        transition: 0.5s;
+                    .c-c-wrap {
+                        display: flex;
+                        justify-content: flex-start;
 
-                        &:hover {
-                            animation: rotate-circle 0.5s linear 0s;
-                        }
-
-                        // @media screen and (min-width: 500px) {
-                        //     width: 11rem;
-                        //     height: 11rem;
-                        // }
-
-                        @include responsive(tablet-size) {
-                            width: 14rem;
-                            height: 14rem;
-                        }
+                        div.circle {
+                            position: relative;
+                            border-radius: 50%;
+                            background-color: $bg-color;
+                            margin: 1rem;
+                            width: 8rem;
+                            height: 8rem;
+                            transition: 0.5s;
     
-                        @include responsive(pc-size) {
-                            position: absolute;
-                            width: 14rem;
-                            height: 14rem;
-                            margin: 0;
-                        }
-    
-                        .s-text-wrap {
-                            position: absolute;
-                            left: 50%;
-                            top: 50%;
-                            text-align: center;
-                            font-family: $point-font;
-                            transform: translate(-50%, -50%);
-    
-                            p {
-                                font-size: 1.9rem;
-                                margin-bottom: 5px;
-    
-                                @include responsive(tablet-size) {
-                                    font-size: 2.5rem;
-                                }
-
-                                @include responsive(pc-size) {
-                                    font-size: 40px;
-                                }
+                            &:hover {
+                                animation: rotate-circle 0.5s linear 0s;
                             }
     
-                            span {
-                                font-size: 1.6rem;
-
-                                @include responsive(tablet-size) {
-                                    font-size: 1.8rem;
-                                }
+                            @media screen and (min-width: 500px) {
+                                width: 11rem;
+                                height: 11rem;
+                            }
     
-                                @include responsive(pc-size) {
-                                    font-size: 30px;
+                            @include responsive(tablet-size) {
+                                width: 14rem;
+                                height: 14rem;
+                            }
+        
+                            @include responsive(pc-size) {
+                                position: absolute;
+                                width: 14rem;
+                                height: 14rem;
+                                margin: 0;
+                            }
+        
+                            .s-text-wrap {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                text-align: center;
+                                font-family: $point-font;
+                                transform: translate(-50%, -50%);
+        
+                                p {
+                                    font-size: 1.4rem;
+                                    margin-bottom: 5px;
+
+                                    @media screen and (min-width: 500px) {
+                                        font-size: 1.9rem;
+                                    }
+        
+                                    @include responsive(tablet-size) {
+                                        font-size: 2.5rem;
+                                    }
+    
+                                    @include responsive(pc-size) {
+                                        font-size: 40px;
+                                    }
+                                }
+        
+                                span {
+                                    font-size: 1.6rem;
+    
+                                    @include responsive(tablet-size) {
+                                        font-size: 1.8rem;
+                                    }
+        
+                                    @include responsive(pc-size) {
+                                        font-size: 30px;
+                                    }
                                 }
                             }
                         }
                     }
+
                     .circle-des {
-                        width: 50%;
+                        width: 100%;
                         margin-left: 1rem;
 
+                        @media screen and (min-width: 500px) {
+                            margin-: 0 1rem;
+                        }
+
                         @include responsive(tablet-size) {
-                            width: 60%;
                             margin-left: 2rem;
                         }
 
@@ -1546,10 +1561,14 @@ main {
                         }
 
                         p {
-                            font-size: 0.9rem;   
-                            
+                            font-size: 0.7rem; 
+
+                            @media screen and (min-width: 500px) {
+                                font-size: 0.9rem;   
+                            }
+
                             @include responsive(tablet-size) {
-                                font-size: 1.2rem;
+                                font-size: 1.5rem;
                             }
                         }
                     }

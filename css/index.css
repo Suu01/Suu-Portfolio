@@ -1447,31 +1447,43 @@ main section.skills div.skills-des div.circle-wrap .circle-box {
     transform: rotate(360deg);
   }
 }
-main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
+main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle {
   position: relative;
   border-radius: 50%;
   background-color: #333;
   margin: 1rem;
+  width: 8rem;
+  height: 8rem;
   transition: 0.5s;
 }
-main section.skills div.skills-des div.circle-wrap .circle-box div.circle:hover {
+main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle:hover {
   animation: rotate-circle 0.5s linear 0s;
 }
+@media screen and (min-width: 500px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle {
+    width: 11rem;
+    height: 11rem;
+  }
+}
 @media screen and (min-width: 768px) {
-  main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle {
     width: 14rem;
     height: 14rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  main section.skills div.skills-des div.circle-wrap .circle-box div.circle {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle {
     position: absolute;
     width: 14rem;
     height: 14rem;
     margin: 0;
   }
 }
-main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap {
+main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1479,40 +1491,49 @@ main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-tex
   font-family: "HSYuJi", sans-serif;
   transform: translate(-50%, -50%);
 }
-main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap p {
-  font-size: 1.9rem;
+main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap p {
+  font-size: 1.4rem;
   margin-bottom: 5px;
 }
+@media screen and (min-width: 500px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap p {
+    font-size: 1.9rem;
+  }
+}
 @media screen and (min-width: 768px) {
-  main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap p {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap p {
     font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap p {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap p {
     font-size: 40px;
   }
 }
-main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap span {
+main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap span {
   font-size: 1.6rem;
 }
 @media screen and (min-width: 768px) {
-  main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap span {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap span {
     font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  main section.skills div.skills-des div.circle-wrap .circle-box div.circle .s-text-wrap span {
+  main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.circle .s-text-wrap span {
     font-size: 30px;
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
-  width: 50%;
+  width: 100%;
   margin-left: 1rem;
+}
+@media screen and (min-width: 500px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
+    margin-: 0 1rem;
+  }
 }
 @media screen and (min-width: 768px) {
   main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
-    width: 60%;
     margin-left: 2rem;
   }
 }
@@ -1522,11 +1543,16 @@ main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle-box .circle-des p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
+}
+@media screen and (min-width: 500px) {
+  main section.skills div.skills-des div.circle-wrap .circle-box .circle-des p {
+    font-size: 0.9rem;
+  }
 }
 @media screen and (min-width: 768px) {
   main section.skills div.skills-des div.circle-wrap .circle-box .circle-des p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 main section.skills div.skills-des div.circle-wrap .circle1 {
