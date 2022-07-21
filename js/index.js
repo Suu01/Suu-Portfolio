@@ -236,10 +236,6 @@ window.onload = function() {
             skills.style.transition = "0.5s";
         })
     }
-    // window.onresize = function(){
-    //     document.location.reload();
-    // };
-
 
     // portfolio details 상세창
     const detail = document.querySelector(".de");
