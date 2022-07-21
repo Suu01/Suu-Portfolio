@@ -1233,7 +1233,7 @@ main section.about section.about-top div.about-des h3 {
   margin: 2.5rem 0;
   text-align: center;
   font-size: 1.4rem;
-  animation: flicker 1s linear infinite alternate;
+  color: #e28f83;
 }
 @media screen and (min-width: 500px) {
   main section.about section.about-top div.about-des h3 {
@@ -1250,6 +1250,8 @@ main section.about section.about-top div.about-des h3 {
   main section.about section.about-top div.about-des h3 {
     margin: 2.5rem 0;
     text-align: left;
+    color: #fff;
+    animation: flicker 1s linear infinite alternate;
   }
 }
 main section.about section.about-top div.about-des p {

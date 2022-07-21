@@ -1261,7 +1261,7 @@ main {
                     margin: 2.5rem 0;
                     text-align: center;
                     font-size: 1.4rem;
-                    animation: flicker 1s linear infinite alternate;
+                    color: $point-color;
 
                     @media screen and (min-width: 500px) {
                         font-size: 1.6rem;
@@ -1275,6 +1275,8 @@ main {
                     @include responsive(pc-size) {
                         margin: 2.5rem 0;
                         text-align: left;
+                    color: #fff;
+                        animation: flicker 1s linear infinite alternate;
                     }
                 }
 
