@@ -1525,12 +1525,6 @@ main section.skills div.skills-des div.circle-wrap .circle-box .c-c-wrap div.cir
 }
 main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
   width: 100%;
-  margin-left: 1rem;
-}
-@media screen and (min-width: 500px) {
-  main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
-    margin-: 0 1rem;
-  }
 }
 @media screen and (min-width: 768px) {
   main section.skills div.skills-des div.circle-wrap .circle-box .circle-des {
