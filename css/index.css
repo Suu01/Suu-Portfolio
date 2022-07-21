@@ -114,11 +114,19 @@ footer {
 }
 
 .sa-left {
-  transform: translate(-100px, 0);
+  transform: translate(-200px, 0);
+}
+
+.sa-right {
+  transform: translate(200px, 0);
 }
 
 .sa-scaleUp {
-  transform: scale(0.5);
+  transform: scale(0.25);
+}
+
+.sa-rotateR {
+  transform: rotate(-180deg);
 }
 
 .title-img {

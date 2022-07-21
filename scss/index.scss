@@ -18,10 +18,16 @@
     transform: translate(0, -100px);
 }
 .sa-left {
-    transform: translate(-100px, 0);
+    transform: translate(-200px, 0);
+}
+.sa-right {
+    transform: translate(200px, 0);
 }
 .sa-scaleUp {
-transform: scale(.5);
+transform: scale(.25);
+}
+.sa-rotateR {
+transform: rotate(-180deg);
 }
 
 // 공통소스 title-img
