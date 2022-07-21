@@ -120,7 +120,7 @@ window.onload = function() {
     // skills 원 클릭 시 상세 내용 출력
     if(matchMedia("screen and (max-width: 320px)").matches){
     }else if(matchMedia("screen and (max-width: 768px)").matches){
-    }else if(matchMedia("screen and (min-width: 1320px)").matches){
+    }else if(matchMedia("screen and (min-width: 1440px)").matches){
         const circle1 = document.querySelector(".circle1");
         const circle2 = document.querySelector(".circle2");
         const circle3 = document.querySelector(".circle3");

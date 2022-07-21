@@ -1416,11 +1416,11 @@ main {
                     height: 23rem;
                     -webkit-backdrop-filter: blur(10px);
                     backdrop-filter: blur(15px);
-                    background-color: rgba(255, 255, 255, .25);
+                    background-color: rgba(0, 0, 0, .5);
                     border-radius: 50%;
                     box-shadow: 0 6px 20px -15px #000;
                     border-width: 1px 1px 0 0;
-                    border-color: #fff;
+                    border-color: rgba(160, 160, 160, 0.692);
                     border-style: solid;
                 }
                 
@@ -1428,7 +1428,9 @@ main {
                     display: none;
 
                     @include responsive(pc-size) {
-                        font-size: 16px;
+                        display: block;
+                        font-size: 20px;
+                        font-weight: 600;
                     }
                 }
             }
