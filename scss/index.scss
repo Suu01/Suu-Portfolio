@@ -1398,30 +1398,38 @@ main {
             }
 
             .skills-ci-wrap {
-                visibility: hidden;
-                opacity: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                transition: 0.5s;
-                padding: 30px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 23rem;
-                height: 23rem;
-                -webkit-backdrop-filter: blur(10px);
-                backdrop-filter: blur(15px);
-                background-color: rgba(255, 255, 255, .25);
-                border-radius: 50%;
-                box-shadow: 0 6px 20px -15px #000;
-                border-width: 1px 1px 0 0;
-                border-color: #fff;
-                border-style: solid;
+                display: none;
 
+                @include responsive (pc-size) {
+                    visibility: hidden;
+                    opacity: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    transition: 0.5s;
+                    padding: 30px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 23rem;
+                    height: 23rem;
+                    -webkit-backdrop-filter: blur(10px);
+                    backdrop-filter: blur(15px);
+                    background-color: rgba(255, 255, 255, .25);
+                    border-radius: 50%;
+                    box-shadow: 0 6px 20px -15px #000;
+                    border-width: 1px 1px 0 0;
+                    border-color: #fff;
+                    border-style: solid;
+                }
+                
                 p {
-                    font-size: 16px;
+                    display: none;
+
+                    @include responsive(pc-size) {
+                        font-size: 16px;
+                    }
                 }
             }
 
@@ -1463,7 +1471,17 @@ main {
                 .circle-box {
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    margin: auto;
+
+                    margin-bottom: 2rem;
+
+                    @include responsive(tablet-size) {
+                        margin-bottom: 3rem;
+                    }
+
+                    @include responsive(pc-size) {
+                        margin-bottom: 0;
+                    }
 
                     @keyframes rotate-circle {
                         0% {transform: rotate(0deg);}
@@ -1471,14 +1489,10 @@ main {
                     }
 
                     .c-c-wrap {
-                        display: flex;
-                        justify-content: flex-start;
-
                         div.circle {
                             position: relative;
                             border-radius: 50%;
                             background-color: $bg-color;
-                            margin: 1rem;
                             width: 8rem;
                             height: 8rem;
                             transition: 0.5s;
@@ -1546,7 +1560,7 @@ main {
 
                     .circle-des {
                         width: 100%;
-                        // margin: 0 1rem;
+                        margin-left: 1rem;
 
                         @include responsive(tablet-size) {
                             margin-left: 2rem;
