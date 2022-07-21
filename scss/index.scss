@@ -14,6 +14,9 @@
 .sa-up {
     transform: translate(0, 100px);
 }
+.sa-down {
+    transform: translate(0, -100px);
+}
 
 // 공통소스 title-img
 .title-img {
@@ -289,7 +292,7 @@ main {
                 opacity: 0;
                 transition: all 0.3s ease-in;
                 animation: 3s anim-lineUp forwards;
-                animation-delay: 1.6s;
+                animation-delay: 1.2s;
 
                 @media screen and (min-width: 500px) {
                     font-size: 1.8rem;
@@ -412,7 +415,7 @@ main {
                 opacity: 0;
                 transition: all 0.3s ease-in;
                 animation: 3s anim-lineUp forwards;
-                animation-delay: 1.6s;
+                animation-delay: 1.2s;
 
                 @media screen and (min-width: 500px) {
                     font-size: 1.5rem;
@@ -2308,7 +2311,7 @@ footer {
                     transform: rotateY(360deg);
                     }
                 }
-                
+
                 span {
                     position: relative;
                     display: inline-block;
